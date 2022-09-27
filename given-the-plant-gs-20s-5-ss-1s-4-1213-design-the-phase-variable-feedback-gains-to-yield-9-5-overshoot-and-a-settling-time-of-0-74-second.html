@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/given-the-plant-gs-20s-5-ss-1s-4-1213-design-the-phase-variable-feedback-gains-to-yield-9-5-overshoot-and-a-settling-time-of-0-74-second" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Given the plant G(s) = 20(s + 5)/s(s + 1)(s + 4) (12:13) design the phase-variable feedback gains to yield 9.5% overshoot and a settling time of 0.74 second. [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Given the plant G(s) = 20(s + 5)/s(s + 1)(s + 4) (12:13) design the phase-variable feedback gains to yield 9.5% overshoot and a settling time of 0.74 second.[solved!] | Vlavar Engineering" />
+<meta name="description" content="We begin by calculating the desired closed-loop characteristic equation. Using the transient response requirements, the closed-loop poles are - 5.4 pm"/>
+<meta property="og:description" content="We begin by calculating the desired closed-loop characteristic equation. Using the transient response requirements, the closed-loop poles are - 5.4 pm" />
+
+<meta property="og:updated_time" content="2022-03-28T03:01:32+04:00" />
+<meta name="twitter:description" content="We begin by calculating the desired closed-loop characteristic equation. Using the transient response requirements, the closed-loop poles are - 5.4 pm" />
+<meta name="twitter:title" content="Given the plant G(s) = 20(s + 5)/s(s + 1)(s + 4) (12:13) design the phase-variable feedback gains to yield 9.5% overshoot and a settling time of 0.74 second.[solved!] | Vlavar Engineering" />
+
+<meta property="article:published_time" content="2022-03-26T17:17:42+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/given-the-plant-gs-20s-5-ss-1s-4-1213-design-the-phase-variable-feedback-gains-to-yield-9-5-overshoot-and-a-settling-time-of-0-74-second" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="/">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="/">Home</a>
+                    <a id="search">Search</a>
+                    <a href="/tour/1">Tour</a>
+                    <a href="/contact-us">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="/">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="/tour/1">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="/contact-us">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Given the plant</p> <p class="blog"><span class="tex-text">\(G(s) = \frac{20(s + 5)}{s(s + 1)(s + 4)}\)</span> (12:13)</p> <p class="blog">design the phase-variable feedback gains to yield 9.5% overshoot and a settling time of 0.74 second.</p>      
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+We begin by calculating the desired closed-loop characteristic equation. Using the transient response requirements, the closed-loop poles are <span class="tex-text">\(&#8211; 5.4 \pm j7.2\)</span>. Since the system is third-order, we must select another closed-loop pole. The closed-loop system will have a zero at &#8211; 5, the same as the open-loop system. We could select the third closed-loop pole to cancel the closed-loop zero. However, to demonstrate the effect of the third pole and the design process, including the need for simulation, let us choose &#8211; 5.1 as the location of the third closed-loop pole.</p>
+ <p class="blog">
+Now draw the signal-flow diagram for the plant. The result is shown in Figure 12.4(a). Next feed back all state variables to the control, u, through gains <span class="tex-text">\( k_{i}\)</span>, as shown in Figure 12.4(b).</p>
+ <p class="blog">
+Writing the closed-loop system’s state equations from Figure 12.4(b), we have</p>
+ <p class="blog">
+<span class="tex-text">\(\mathbf{\dot{x}} = \begin{bmatrix} 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ &#8211; k_{1} &amp; -(4 + k_{2}) &amp; -(5 + k_{3}) \end{bmatrix} \mathbf{x} + \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix} r\)</span> (12:14a)</p>
+ <p class="blog">
+<span class="tex-text">\(y = \begin{bmatrix} 100 &amp; 20 &amp; 0 \end{bmatrix}\mathbf{x}\)</span> (12:14b)</p>
+ <p class="blog">
+Comparing Eqs. (12.14) to Eqs. <span class="tex-text">\(\mathbf{\dot{x} = Ax + Bu (-Kx +r)=(A-BK)x + Br} , y = \mathbf{Cx}\)</span> (12.3), we identify the closed-loop system matrix as</p>
+ <p class="blog">
+<span class="tex-text">\(\mathbf{A-BK} = \begin{bmatrix} 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ &#8211; k_{1} &amp; -(4 + k_{2}) &amp; -(5 + k_{3}) \end{bmatrix}\)</span> (12:15)</p>
+ <p class="blog">
+To find the closed-loop system’s characteristic equation, form</p>
+ <p class="blog">
+<span class="tex-text">\(det(s\mathbf{I} &#8211; (\mathbf{A-BK})) = s^{3} + (5 + k_{3})s^{2} + (4 + k_{2})s + k_{1} = 0\)</span> (12:16)</p>
+ <p class="blog">
+This equation must match the desired characteristic equation,</p>
+ <p class="blog">
+<span class="tex-text">\(s^{3} + 15.9s^{2} + 136.08s + 413.1 = 0\)</span> (12:17)</p>
+ <p class="blog">
+formed from the poles &#8211; 5.4 + j7.2; &#8211; 5.4 + j7.2, and &#8211; 5.1, which were previously determined.</p>
+ <p class="blog">
+Equating the coefficients of Eqs. (12.16) and (12.17), we obtain</p>
+ <p class="blog">
+<span class="tex-text">\(k_{1} = 413.1; k_{2} = 132.08; k_{3} = 10.9\)</span> (12:18)</p>
+ <p class="blog">
+Finally, the zero term of the closed-loop transfer function is the same as the zero term of the open-loop system, or (s + 5).</p>
+ <p class="blog">
+Using Eqs. (12.14), we obtain the following state-space representation of the closed-loop system:</p>
+ <p class="blog">
+<span class="tex-text">\(\mathbf{\dot{x}} = \begin{bmatrix} 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ &#8211; 413.1 &amp; &#8211; 136.08 &amp; &#8211; 15.9\end{bmatrix} \mathbf{x} + \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix} r\)</span> (12:19a)</p>
+ <p class="blog">
+<span class="tex-text">\(y = \begin{bmatrix} 100 &amp; 20 &amp; 0 \end{bmatrix}\mathbf{x}\)</span> (12:19b)</p>
+ <p class="blog">
+The transfer function is</p>
+ <p class="blog">
+<span class="tex-text">\(T(s) = \frac{20(s + 5)}{s^{3} + 15.9s^{2} + 136.08s + 413.1}\)</span> (12:20)</p>
+ <p class="blog">
+Figure 12.5, a simulation of the closed-loop system, shows 11.5% overshoot and a settling time of 0.8 second. A redesign with the third pole canceling the zero at &#8211; 5 will yield performance equal to the requirements.</p>
+ <p class="blog">
+Since the steady-state response approaches 0.24 instead of unity, there is a large steady-state error.</p>
+ <p class="blog">
+We can use MATLAB to design controller gains using pole placement. You will enter the desired percent overshoot and settling time. We introduce the following commands: [num, den]=ord2 (wn, z), which produces a second-order system, given the natural frequency (wn) and the damping ratio (z). Then we use the denominator (den) to specify the dominant poles; and K=acker (A, B, -poles), which calculates controller gains from the system matrix (A), the input matrix (B), the desired poles (poles).</p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="/tos">terms</a>
+                <a href="/privacy">privacy</a>
+                <a href="/contact-us">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="/assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>
