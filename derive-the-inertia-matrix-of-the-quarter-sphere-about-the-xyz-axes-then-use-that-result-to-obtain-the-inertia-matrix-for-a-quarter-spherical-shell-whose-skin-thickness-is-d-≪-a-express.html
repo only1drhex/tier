@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="../assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="../assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="../assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="../assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/derive-the-inertia-matrix-of-the-quarter-sphere-about-the-xyz-axes-then-use-that-result-to-obtain-the-inertia-matrix-for-a-quarter-spherical-shell-whose-skin-thickness-is-d-%E2%89%AA-a-express" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Derive the inertia matrix of the quarter-sphere about the xyz axes; then use that result to obtain the inertia matrix for a quarter-spherical shell whose skin thickness is d ≪ a. Express each result in terms of the mass m of that body. [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Derive the inertia matrix of the quarter-sphere about the xyz axes; then use that result to obtain the inertia matrix for a quarter-spherical shell whose skin thickness is d ≪ a. Express each result in terms of the mass m of that body.[solved!] | Vlavar Engineering" />
+<meta name="description" content="Although we usually use other techniques to evaluate the inertia matrix, integration is a basic tool. This example illustrates some procedures that were used"/>
+<meta property="og:description" content="Although we usually use other techniques to evaluate the inertia matrix, integration is a basic tool. This example illustrates some procedures that were used" />
+<meta property="og:image" content="https://vlavar.com/imagesdb/uploads/2021/06/5.3-5.png" />
+<meta property="og:updated_time" content="2022-06-22T11:56:15+04:00" />
+<meta name="twitter:description" content="Although we usually use other techniques to evaluate the inertia matrix, integration is a basic tool. This example illustrates some procedures that were used" />
+<meta name="twitter:title" content="Derive the inertia matrix of the quarter-sphere about the xyz axes; then use that result to obtain the inertia matrix for a quarter-spherical shell whose skin thickness is d ≪ a. Express each result in terms of the mass m of that body.[solved!] | Vlavar Engineering" />
+<meta name="twitter:image" content="https://vlavar.com/imagesdb/uploads/2021/06/5.3-5.png" />
+<meta property="article:published_time" content="2022-06-20T18:42:12+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/derive-the-inertia-matrix-of-the-quarter-sphere-about-the-xyz-axes-then-use-that-result-to-obtain-the-inertia-matrix-for-a-quarter-spherical-shell-whose-skin-thickness-is-d-%E2%89%AA-a-express" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="../index.html">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="../index.html">Home</a>
+                    <a id="search">Search</a>
+                    <a href="../tour/1.html">Tour</a>
+                    <a href="../contact-us.html">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="../index.html">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="../tour/1.html">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="../contact-us.html">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Derive the inertia matrix of the quarter-sphere about the xyz axes; then use that result to obtain the inertia matrix for a quarter-spherical shell whose skin thickness is d ≪ a. Express each result in terms of the mass m of that body.</p> <div class="image-clearfix"><img class="question-image" src="../imagesdb/uploads/2021/06/5.3-5.png"></div>    
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+Although we usually use other techniques to evaluate the inertia matrix, integration is a basic tool. This example illustrates some procedures that were used to derive the properties tabulated in the Appendix. Spherical coordinates with an origin at the center are ideal here because the quarter-sphere&#8217;s surfaces correspond to constant values of one of these coordinates. Any coordinate axis may be employed as the reference for the polar angle <span class="tex-text">\(\phi ;\)</span> we select the <span class="tex-text">\(y\)</span> axis, so the azimuthal angle <span class="tex-text">\(\theta\)</span> is measured in the <span class="tex-text">\(x z\)</span> plane relative to the <span class="tex-text">\(x\)</span> axis. The coordinate transformation is</p>
+ <p style="text-align: center"><span class="tex-text">\(y=r \cos \phi, \quad x=r \sin \phi \cos \theta, \quad z=r \sin \phi \sin \theta.\)</span></p>
+ <p style="text-align: left">The body occupies the domain <span class="tex-text">\(0 \leq r \leq a, 0 \leq \phi \leq \pi / 2,0 \leq \theta \leq \pi\)</span>, and a differential element of mass is <span class="tex-text">\(d m=\rho(d r)(r d \phi)(r d \theta \sin \phi) .\)</span> The body is symmetric with respect to the yz plane, so the two products of inertia containing x as the subscript are zero:</p>
+ <p style="text-align: center"><span class="tex-text">\( I_{x y}=I_{x z}=0.\)</span></p>
+ <p style="text-align: left">Also, the symmetry of the quarter-sphere is such that mass is situated in the same manner relative to the <span class="tex-text">\(y\)</span> and <span class="tex-text">\(z\)</span> axes, so <span class="tex-text">\(I_{z z}=I_{y y} .\)</span> Thus it is necessary to compute only <span class="tex-text">\(I_{x x}, I_{y y}\)</span>, and <span class="tex-text">\(I_{y z}\)</span></p>
+ <p class="blog">
+The integral definitions, Eqs. (5.2.4), give</p>
+ <p style="text-align: center"><span class="tex-text">\(\begin{array}{l} I_{x x}=\iiint\left(y^{2}+z^{2}\right) d m, \quad I_{y y}=\iiint\left(x^{2}+z^{2}\right) d m, \quad I_{z z}=\iiint\left(x^{2}+y^{2}\right) d m \\\\ I_{x y}=I_{y x}=\iiint x y d m, \quad I_{x z}=I_{z x}=\iiint x z d m, \quad I_{y z}=I_{z y}=\iiint y z d m.\end{array} (5.2.4) \)</span></p>
+ <p class="blog">
+&nbsp;</p>
+ <p style="text-align: center"><span class="tex-text">\(\begin{aligned}I_{x x} &amp;=\int_{0}^{a} \int_{0}^{\pi / 2} \int_{0}^{\pi}\left(y^{2}+z^{2}\right) \rho r^{2} \sin \phi~ d \theta~ d \phi~ d r \\\\&amp;=\rho \int_{0}^{a} \int_{0}^{\pi / 2} \int_{0}^{\pi}\left[(r \cos \phi)^{2}+(r \sin \phi \sin \theta)^{2}\right] r^{2} \sin \phi~ d \theta~ d \phi~ d r, \\\\I_{y y} &amp;=\int_{0}^{a} \int_{0}^{\pi / 2}\left[(r \sin \phi \cos \theta)^{2}+(r \sin \phi \sin \theta)^{2}\right] \rho r^{2} \sin \phi~ d \theta~ d \phi~ d r, \\\\I_{z z} &amp;=\int_{0}^{a} \int_{0}^{\pi / 2} \int_{0}^{\pi}\left[(r \sin \phi \cos \theta)^{2}+(r \cos \phi)^{2}\right] \rho r^{2} \sin \phi~ d \theta~ d \phi~ d r, \\\\I_{y z} &amp;=\int_{0}^{a} \int_{0}^{\pi / 2} \int_{0}^{\pi} y z \rho r^{2} \sin \phi~ d \theta~ d \phi~ d r \\\\&amp;=\rho \int_{0}^{a} \int_{0}^{\pi / 2} \int_{0}^{\pi}(\cos \phi)(\sin \phi \sin \theta) r^{4} \sin \phi~ d \theta~ d \phi~ d r .\end{aligned}\)</span></p>
+ <p class="blog">
+The results are</p>
+ <p style="text-align: center"><span class="tex-text">\( I_{x x}=I_{y y}=I_{z z}=\frac{2 \pi}{15} \rho a^{5}, \quad I_{y z}=\frac{2}{15} \rho a^{5} .\)</span></p>
+ <p style="text-align: left">To express the inertia properties in terms of the mass <span class="tex-text">\(m\)</span>, the density is expressed as the ratio of the mass to the volume of a quarter-sphere</p>
+ <p style="text-align: center"><span class="tex-text">\(\rho=\frac{m}{V}=\frac{m}{\frac{1}{4}\left(\frac{4 \pi a^{3}}{3}\right)}=\frac{3 m}{\pi a^{3}}.\)</span></p>
+ <p style="text-align: left">We substitute for <span class="tex-text">\(\rho\)</span> in each of the inertia properties and recall from Eq. (5.2.6) that the off-diagonal terms of the inertia matrix are the negative of the products of inertia. The result is</p>
+ <p style="text-align: center"><span class="tex-text">\( [I]=\left[\begin{array}{ccc}I_{x x} &amp; -I_{x y} &amp; -I_{x z} \\\\-I_{y x} &amp; I_{y y} &amp; -I_{y z} \\\\-I_{z x} &amp; -I_{z y} &amp; I_{z z}\end{array}\right]. (5.2.6) \)</span></p>
+ <p class="blog">
+&nbsp;</p>
+ <p style="text-align: center"><span class="tex-text">\( [I]=\frac{2}{5} m a^{2}\left[\begin{array}{ccc}1 &amp; 0 &amp; 0 \\\\0 &amp; 1 &amp; -1 / \pi \\\\0 &amp; -1 / \pi &amp; 1\end{array}\right]. \)</span></p>
+ <p style="text-align: left">A shell is a body whose mass is concentrated at its surface. There are two procedures for obtaining the inertia properties of the quarter-spherical shell. The general one specializes the differential element of mass. Let <span class="tex-text">\(\sigma\)</span> be the mass per unit surface area. A differential element of surface area in spherical coordinates is <span class="tex-text">\(d S=(a d \phi)(a \sin \phi d \theta) .\)</span> The surface is defined by <span class="tex-text">\(0 \leq \phi \leq \pi / 2,0 \leq \theta \leq \pi .\)</span> We modify the integrals for the quarter-sphere, with <span class="tex-text">\(r=a\)</span> for points on the surface and <span class="tex-text">\(d m=\sigma d S\)</span>, which leads to</p>
+ <p style="text-align: center"><span class="tex-text">\(\begin{array}{l}I_{x x}=\int_{0}^{\pi / 2} \int_{0}^{\pi}\left[(a \cos \phi)^{2}+(a \sin \phi \sin \theta)^{2}\right] \sigma a^{2} \sin \phi~ d \theta~ d \phi=\frac{2}{3} \pi \sigma a^{4}, \\\\I_{y y}=\int_{0}^{\pi / 2} \int_{0}^{\pi}\left[(a \sin \phi \cos \theta)^{2}+(a \sin \phi \sin \theta)^{2}\right] \sigma a^{2} \sin \phi~ d \theta~ d \phi=\frac{2}{3} \pi \sigma a^{4}, \\\\I_{z z}=\int_{0}^{\pi / 2} \int_{0}^{\pi}\left[(a \sin \phi \cos \theta)^{2}+(a \cos \phi)^{2}\right] \sigma a^{2} \sin \phi~ d \theta~ d \phi=\frac{2}{3} \pi \sigma a^{4}, \\\\I_{y z}=\int_{0}^{\pi / 2} \int_{0}^{\pi}(a \cos \phi)(a \sin \phi \sin \theta) \sigma a^{3} \sin \phi~ d \theta~ d \phi=\frac{2}{3} \sigma a^{4} .\end{array} \)</span></p>
+ <p style="text-align: left">The surface area of a sphere is <span class="tex-text">\(4 \pi a^{2}\)</span>, so the mass per unit surface area is related to the mass of the quarter-spherical shell by</p>
+ <p style="text-align: center"><span class="tex-text">\(\large\sigma=\frac{m_{\text {shell }}}{\frac{1}{4}\left(4 \pi a^{2}\right)}.\)</span></p>
+ <p class="blog">
+Substitution of this expression into the inertia values leads to</p>
+ <p style="text-align: center"><span class="tex-text">\( [I]=\frac{2}{3} m_{\text {shell }} a^{2}\left[\begin{array}{ccc}1 &amp; 0 &amp; 0 \\\\0 &amp; 1 &amp; -1 / \pi \\\\0 &amp; -1 / \pi &amp; 1 \end{array}\right].\)</span></p>
+ <p style="text-align: left">An alternative is to derive the properties of the shell from those of the full body. We may obtain the shell by removing from the quarter-sphere a concentric quarter-sphere whose radius is <span class="tex-text">\(a-h\)</span>, where <span class="tex-text">\(h\)</span> is the thickness of the shell. Because the origins of <span class="tex-text">\(x y z\)</span> for both the original and removed bodies coincide, the inertia properties of the shell are the difference of the values for the two full bodies. We form the differences by using the original forms, which featured the density, so that</p>
+ <p style="text-align: center"><span class="tex-text">\(\begin{array}{l} I_{x x}=I_{y y}=I_{z z}=\frac{2}{15} \pi \rho a^{5}-\frac{2}{15} \pi \rho(a-h)^{5}=\frac{2}{15} \pi \rho\left(5 a^{4} h+\cdots\right), \\\\ I_{y z}=\frac{2}{15} \rho a^{5}-\frac{2}{15} \rho(a-h)^{5}=\frac{2}{15} \rho\left(5 a^{4} h+\cdots\right) \end{array}\)</span></p>
+ <p style="text-align: left">Higher powers of <span class="tex-text">\(h\)</span> are omitted because the definition of a shell is that its thickness is very small compared with the overall dimensions. The density is the ratio of the shell&#8217;s mass to its volume:</p>
+ <p style="text-align: center"><span class="tex-text">\(\Large\rho=\frac{m_{\text {shell }}}{V}=\frac{m_{\text {shell }}}{\frac{1}{4}\left[\frac{4 \pi a^{3}}{3}-\frac{4 \pi(a-h)^{3}}{3}\right]}=\frac{m_{\text {shell }}}{\pi\left(a^{2} h+\cdots\right)}.\)</span></p>
+ <p style="text-align: left">Substitution of this description of ρ into the last set of expressions for the inertia properties would yield the same results as those obtained by integration.</p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="../tos.html">terms</a>
+                <a href="../privacy.html">privacy</a>
+                <a href="../contact-us.html">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="../assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>

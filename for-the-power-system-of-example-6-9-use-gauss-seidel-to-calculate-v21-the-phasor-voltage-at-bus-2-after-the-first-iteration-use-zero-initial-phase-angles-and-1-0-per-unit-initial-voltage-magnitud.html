@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/for-the-power-system-of-example-6-9-use-gauss-seidel-to-calculate-v21-the-phasor-voltage-at-bus-2-after-the-first-iteration-use-zero-initial-phase-angles-and-1-0-per-unit-initial-voltage-magnitud" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>For the power system of Example 6.9, use Gauss-Seidel to calculate V2(1), the phasor voltage at bus 2 after the first iteration. Use zero initial phase angles and 1.0 per-unit initial voltage magnitudes (except at bus 3, where V3 = 1.05) to start the iteration procedure. [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="For the power system of Example 6.9, use Gauss-Seidel to calculate V2(1), the phasor voltage at bus 2 after the first iteration. Use zero initial phase angles and 1.0 per-unit initial voltage magnitudes (except at bus 3, where V3 = 1.05) to start the iteration procedure.[solved!] | Vlavar Engineering" />
+<meta name="description" content="Bus 2 is a load bus. Using the input data and bus admittance values from Example 6.9 in (6.5.2), V_{k}left(i+1right)=frac{1}{Y_{kk} }"/>
+<meta property="og:description" content="Bus 2 is a load bus. Using the input data and bus admittance values from Example 6.9 in (6.5.2), V_{k}left(i+1right)=frac{1}{Y_{kk} }" />
+
+
+<meta name="twitter:description" content="Bus 2 is a load bus. Using the input data and bus admittance values from Example 6.9 in (6.5.2), V_{k}left(i+1right)=frac{1}{Y_{kk} }" />
+<meta name="twitter:title" content="For the power system of Example 6.9, use Gauss-Seidel to calculate V2(1), the phasor voltage at bus 2 after the first iteration. Use zero initial phase angles and 1.0 per-unit initial voltage magnitudes (except at bus 3, where V3 = 1.05) to start the iteration procedure.[solved!] | Vlavar Engineering" />
+
+<meta property="article:published_time" content="2022-07-13T15:30:22+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/for-the-power-system-of-example-6-9-use-gauss-seidel-to-calculate-v21-the-phasor-voltage-at-bus-2-after-the-first-iteration-use-zero-initial-phase-angles-and-1-0-per-unit-initial-voltage-magnitud" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="/">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="/">Home</a>
+                    <a id="search">Search</a>
+                    <a href="/tour/1">Tour</a>
+                    <a href="/contact-us">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="/">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="/tour/1">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="/contact-us">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog"><strong>Power flow solution by Gauss-Seidel</strong></p> <p class="blog">For the power system of , use Gauss-Seidel to calculate <span class="tex-text">\(V_{2} \left(1\right) \)</span>, the phasor voltage at bus 2 after the first iteration. Use zero initial phase angles and 1.0 per-unit initial voltage magnitudes (except at bus 3, where <span class="tex-text">\(V_{3}\)</span> = 1.05) to start the iteration procedure.</p>      
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+Bus 2 is a load bus. Using the input data and bus admittance values from  in (6.5.2),</p>
+ <p class="blog">
+<span class="tex-text">\(V_{k}\left(i+1\right)=\frac{1}{Y_{kk} } \left[\frac{P_{k}-jQ_{k} }{V^{\ast }_{k}\left(i\right) }-\sum\limits_{n=1}^{k-1}Y_{kn}V_{n} \left(i+1\right) -\sum\limits_{n=k+1}^{N}Y_{kn} V_{n} \left(i\right) \right]\)</span> (6.5.2)</p>
+ <span class="tex-text">\( V_{2}\left(i\right)=\frac{1}{Y_{22} } \left\{\frac{P_{2} -jQ_{2} }{V^{\ast }_{2}\left(0\right) }-\left[Y_{21}V_{1} \left(1\right)+Y_{23}V_{3}\left(0\right)+Y_{24}V_{4} \left(0\right)+Y_{25} V_{5}\left(0\right) \right] \right\} \)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(=\frac{1}{28.5847\angle -84.624°}\left\{\frac{-8-j\left(-2.8\right) }{1.0\angle 0°}-\left[\left(-1.78552+j19.83932\right)\left(1.0\right)+\left(-0.89276+j9.91964\right) \left(1.0\right) \right] \right\}\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\( =\frac{\left(-8+j2.8\right)-\left(-2.67828+j29.7589\right) }{28.5847\angle 84.624°} \)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(=0.96132\angle -16.543° \)</span> per unit</p>
+ <p class="blog">
+Next, the above value is used in (6.5.2) to recalculate <span class="tex-text">\( V_{2}\left(1\right)\)</span>;</p>
+ <span class="tex-text">\(V_{2}\left(1\right) =\frac{1}{28.5847\angle -84.624°} \left\{\frac{-8+j2.8}{0.96132\angle 16.543°}-\left[-2.67828+j29.75829\right] \right\} \)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(=\frac{-4.4698-j24.5973}{28.5847\angle -84.624°} =0.87460\angle -15.675°\)</span> per unit</p>
+ <p class="blog">
+Computations are next performed at buses 3, 4, and 5 to complete the first Gauss- Seidel iteration.</p>
+ <p class="blog">
+To see the complete convergence of this case, open PowerWorld Simulator case Example 6_10. By default, PowerWorld Simulator uses the Newton-Raphson method described in the next section since Gauss-Seidel, while being a useful technique for introducing the power flow to students, is now seldom used commercially. However, the free educational version of PowerWorld still allows cases to be solved with the Gauss-Seidel approach by selecting <strong>Tools, Solve, Gauss- Seidel Power Flow</strong>. To avoid getting stuck in an infinite loop if a case does not converge, PowerWorld Simulator places a limit on the maximum number of iterations. Usually for a Gauss-Seidel procedure this number is rather high, perhaps equal to 100 iterations. However, in this example to demonstrate the convergence characteristics of the Gauss-Seidel method, it has been set to a single iteration, allowing the voltages to be viewed after each iteration. To step through the solution one iteration at a time, just repeatedly select <strong>Tools, Solve, Gauss-Seidel Power Flow</strong>.</p>
+ <p class="blog">
+A common stopping criterion for the Gauss-Seidel is to use the scaled differences in the voltages from one iteration to the next (6.2.2). When the voltage differences for each bus are below a specified convergence tolerance ε, the problem is considered solved. An alternative approach, implemented in PowerWorld Simulator, is to examine the real and reactive mismatch equations, defined as the difference between the right- and left-hand sides of (6.4.10) and (6.4.11). PowerWorld Simulator continues iterating until all the bus mismatches are below an MVA (or kVA) tolerance. When single-stepping through the solution, the bus mismatches can be viewed after each iteration on the <strong>Case Information, Mismatches </strong>display. The solution mismatch tolerance can be changed on the Power Flow Solution page of the PowerWorld Simulator Options dialog (select <strong>Tools, Simulator Options</strong>, then select the <strong>Power Flow Solution</strong> category to view this dialog); the maximum number of iterations can also be changed from this page. A typical convergence tolerance is about 0.1 MVA.</p>
+ <p class="blog">
+<span class="tex-text">\(\left|\frac{x_{k} \left(i+1\right)-x_{k}\left(i\right) }{x_{k}\left(i\right) } \right| \lt \varepsilon \)</span> for all k 5 1, 2, …, N (6.2.2)</p>
+ <p class="blog">
+<span class="tex-text">\(P_{k} =V_{k} \sum\limits_{n=1}^{N}Y_{kn}V_{n} \cos \left(\delta _{k}-\delta _{n} -\theta _{kn} \right) \)</span> (6.4.10)</p>
+ <p class="blog">
+<span class="tex-text">\(Q_{k} =V_{k} \sum\limits_{n=1}^{N}Y_{kn}V_{n}\sin \left(\delta _{k}-\delta _{n} -\theta _{kn} \right)\)</span> k 5 1, 2, Á , N (6.4.11)</p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="/tos">terms</a>
+                <a href="/privacy">privacy</a>
+                <a href="/contact-us">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="/assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>
