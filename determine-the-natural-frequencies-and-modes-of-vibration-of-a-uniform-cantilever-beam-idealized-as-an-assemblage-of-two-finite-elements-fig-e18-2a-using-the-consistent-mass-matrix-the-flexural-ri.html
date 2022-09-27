@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="../assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="../assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="../assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="../assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/determine-the-natural-frequencies-and-modes-of-vibration-of-a-uniform-cantilever-beam-idealized-as-an-assemblage-of-two-finite-elements-fig-e18-2a-using-the-consistent-mass-matrix-the-flexural-ri" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Determine the natural frequencies and modes of vibration of a uniform cantilever beam, idealized as an assemblage of two finite elements (Fig. E18.2a) using the consistent mass matrix. The flexural rigidity is E I and mass per unit length is m. [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Determine the natural frequencies and modes of vibration of a uniform cantilever beam, idealized as an assemblage of two finite elements (Fig. E18.2a) using the consistent mass matrix. The flexural rigidity is E I and mass per unit length is m.[solved!] | Vlavar Engineering" />
+<meta name="description" content="1. Identify the assemblage and element DOFs. The six DOFs for the finite element assemblage are shown in Fig. E18.2b, and the two finite elements and their"/>
+<meta property="og:description" content="1. Identify the assemblage and element DOFs. The six DOFs for the finite element assemblage are shown in Fig. E18.2b, and the two finite elements and their" />
+
+<meta property="og:updated_time" content="2022-03-09T03:07:12+04:00" />
+<meta name="twitter:description" content="1. Identify the assemblage and element DOFs. The six DOFs for the finite element assemblage are shown in Fig. E18.2b, and the two finite elements and their" />
+<meta name="twitter:title" content="Determine the natural frequencies and modes of vibration of a uniform cantilever beam, idealized as an assemblage of two finite elements (Fig. E18.2a) using the consistent mass matrix. The flexural rigidity is E I and mass per unit length is m.[solved!] | Vlavar Engineering" />
+
+<meta property="article:published_time" content="2022-03-07T22:39:16+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/determine-the-natural-frequencies-and-modes-of-vibration-of-a-uniform-cantilever-beam-idealized-as-an-assemblage-of-two-finite-elements-fig-e18-2a-using-the-consistent-mass-matrix-the-flexural-ri" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="../index.html">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="../index.html">Home</a>
+                    <a id="search">Search</a>
+                    <a href="../tour/1.html">Tour</a>
+                    <a href="../contact-us.html">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="../index.html">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="../tour/1.html">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="../contact-us.html">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Determine the natural frequencies and modes of vibration of a uniform cantilever beam, idealized as an assemblage of two finite elements (Fig. E18.2a) using the consistent mass matrix. The flexural rigidity is E I and mass per unit length is m.</p>      
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+1. Identify the assemblage and element DOFs. The six DOFs for the finite element assemblage are shown in Fig. E18.2b, and the two finite elements and their local DOFs in Fig. E18.2c.</p>
+ <p class="blog">
+2. Form the element stiffness matrices. Replacing L in Eq. (18.7.2) by L/2, the length of each finite element in Fig. E18.2a, gives the stiffness matrices k1 and k2 for the two finite elements in their local DOFs. Since both local element DOFs and assemblage DOFs are de- fined along the same set of Cartesian coordinates, no transformation of coordinates is required.</p>
+ <p class="blog">
+Therefore,<span class="tex-text">\( \mathbf{k}_{1} = \mathbf{\bar {k}}_{1}\)</span> and <span class="tex-text">\( \mathbf{k}_{2} = \mathbf{\bar {k}}_{2}\)</span> ; thus</p>
+ <span class="tex-text">\(\mathbf{k}_{1} = \frac{8EI}{L^{3}} \begin{bmatrix} (5) &amp; (6) &amp; (2) &amp; (4) &amp; \\ 12 &amp; 3L &amp;-12 &amp; 3L &amp; (5) \\ 3L &amp; L^{2} &amp; -3L &amp; L^{2}/2 &amp; (6) \\ -12&amp; -3L &amp; 12 &amp; -3L &amp;(2) \\ 3L &amp; L^{2}/2 &amp; -3L &amp; L^{2} &amp; (4) \end{bmatrix}\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\mathbf{k}_{2} = \frac{8EI}{L^{3}} \begin{bmatrix} (2) &amp; (4) &amp; (1) &amp; (3) &amp; \\ 12 &amp; 3L &amp;-12 &amp; 3L &amp; (2) \\ 3L &amp; L^{2} &amp; -3L &amp; L^{2}/2 &amp; (4) \\ -12&amp; -3L &amp; 12 &amp; -3L &amp;(1) \\ 3L &amp; L^{2}/2 &amp; -3L &amp; L^{2} &amp; (3) \end{bmatrix}\)</span> <p class="blog">
+The numbers in parentheses alongside rows and columns of <span class="tex-text">\(k_{e}\)</span> refer to the assemblage DOFs that correspond to the element DOFs. This information enables <span class="tex-text">\(k_{e}\)</span> to be assembled.</p>
+ <p class="blog">
+3. Transform the element stiffness matrices to assemblage DOFs. This step is not required for solving this problem but is included to assist in better understanding of the procedure. The element stiffness matrix with reference to the nodal displacements of the finite element assemblage is given by</p>
+ <p class="blog">
+<span class="tex-text">\(\mathbf{\hat {k}}_{e} = \mathbf{a}_{e}^{T} \mathbf{k}_{e} \mathbf{a}_{e}\)</span> (a)</p>
+ <p class="blog">
+The nodal displacements of elements (1) and (2) are related to the assemblage displacements by</p>
+ <p class="blog">
+<span class="tex-text">\((u_{1})_{1} = u_{5}, (u_{2})_{1} = u_{6} , (u_{3})_{1} = u_{2} , (u_{4})_{1} = u_{4}\)</span><br /> <span class="tex-text">\((u _{1})_{2} = u_{2}, (u_{2}) _{2} = u_{4}, (u_{3}) _{2} = u_{1} , (u_{4}) _{2} = u_{3}\)</span></p>
+ <p class="blog">
+These relationships for the two elements can be expressed as</p>
+ <p class="blog">
+<span class="tex-text">\(\mathbf{u} _{1} = \mathbf{a}_{1} \mathbf{u}\)</span><br /> <span class="tex-text">\(\mathbf{u} _{2} = \mathbf{a}_{2} \mathbf{u}\)</span> (b)</p>
+ <p class="blog">
+where the transformation matrices are</p>
+ <span class="tex-text">\(\mathbf{a}_{1} = \begin{bmatrix} 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \end{bmatrix}\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\mathbf{a}_{2} = \begin{bmatrix} 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \end{bmatrix}\)</span> <p class="blog">
+Observe that <span class="tex-text">\(a_{ij} = 1\)</span> indicates that the element DOF i corresponds to (and becomes renumbered as) the assemblage DOF j. The same information is available through the numbers in parentheses alongside rows and columns of<span class="tex-text">\( k_{1}\)</span> and <span class="tex-text">\(k_{2}\)</span>. Thus the matrices a1 and a2 simply locate the elements of <span class="tex-text">\(k_{1}\)</span> and <span class="tex-text">\(k_{2}\)</span> in the stiffness matrix for the assemblage. This implies that it is not necessary to carry out the transformation of Eq. (a), because <span class="tex-text">\(a_{1}\)</span> and <span class="tex-text">\(a_{2}\)</span> consist of only ones and zeros.</p>
+ <p class="blog">
+4. Assemble the element stiffness matrices. The stiffness matrix k for the finite element system is determined by assembling k1 and k2 by locating the elements of k1 and k2 in k according to a1 and a2, respectively.</p>
+ <span class="tex-text">\(\mathbf{k} = A _{i} ^{2} = \mathbf{k} _{i}\)</span> <span class="tex-text">\(= \frac{8EI}{L^{3}}\begin{bmatrix} 12 &amp; -12 &amp; -3L &amp; -3L\mid &amp; 0 &amp; 0\\ -12 &amp; 24 &amp; 3L &amp; 0 \mid &amp; -12 &amp; -3L \\ -3L &amp; 3L &amp; L^{2} &amp; L^{2}/2 \mid &amp; 0 &amp; 0 \\ -3L &amp; 0 &amp; L^{2}/2 &amp; 2L^{2} \mid &amp; 3L &amp; L^{2}/2 \\ 0 &amp; -12 &amp; 0 &amp; 3L \mid &amp; 12 &amp; 3L \\ 0 &amp; -3L &amp; 0 &amp; L^{2}/2 \mid &amp; 3L &amp; L^{2} \end{bmatrix} \)</span> <p class="blog">
+support DOFs support DOFs</p>
+ <p class="blog">
+5. Form the element mass matrices. Replacing L in Eq. (18.8.2) by L/2 gives the element mass matrices m1 and m2 in their local DOF; and as for the stiffness matrices, <span class="tex-text">\(\mathbf{m}_{1} = \mathbf{\bar{m}}_{1}\)</span> and <span class="tex-text">\(\mathbf{m}_{2}= \mathbf{\bar{m}}_{2}\)</span>. Thus</p>
+ <span class="tex-text">\(\mathbf{m}_{1} = \frac{ml}{840} \begin{bmatrix} (5) &amp; (6) &amp; (2) &amp; (4) &amp; \\ 156 &amp; 11 L &amp; 54 &amp; -6.5L &amp; (5) \\ 11 L &amp; L^{2} &amp; 6.5L &amp; -0.75 L^{2} &amp; (6) \\ 54 &amp; 6.5L &amp; 156 &amp; -11L &amp;(2) \\ -6.5L &amp; -0.75L^{2} &amp; -11 L &amp; L^{2} &amp; (4) \end{bmatrix}\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\mathbf{m}_{2} = \frac{ml}{840} \begin{bmatrix} (2) &amp; (4) &amp; (1) &amp; (3) &amp; \\ 156 &amp; 11 L &amp; 54 &amp; -6.5L &amp; (2) \\ 11 L &amp; L^{2} &amp; 6.5L &amp; -0.75 L^{2} &amp; (4) \\ 54 &amp; 6.5L &amp; 156 &amp; -11L &amp;(1) \\ -6.5L &amp; -0.75L^{2} &amp; -11 L &amp; L^{2} &amp; (3) \end{bmatrix}\)</span> <p class="blog">
+6 . Assemble the element mass matrices. The mass matrix for the finite element system is determined by assembling <span class="tex-text">\(\mathbf{m}_{1}\)</span>and <span class="tex-text">\(\mathbf{m}_{2} \)</span>in a manner analogous to the stiffness matrix assembly:</p>
+ <span class="tex-text">\(\mathbf{m} = A _{i} ^{2} = \mathbf{m} _{i}\)</span> <p class="blog">
+<span class="tex-text">\(= \frac{ml}{840} \begin{bmatrix} 156 &amp; 54 &amp; -11L &amp; 6.5 L | &amp; 0 &amp; 0\\ 54 &amp; 312 &amp; 6.5 L &amp; 0 | &amp; 54 &amp; 6.5L \\ -11L &amp; -6.5 L &amp; L^{2} &amp; -0.75 L^{2} | &amp; 0 &amp; 0 \\ 6.5 L &amp; 0 &amp; -0.75 L^{2} &amp; 2L^{2} | &amp; -6.5 L &amp; -0.75 L^{2} \\ 0 &amp; 54 &amp; 0 &amp; -6.5 L | &amp; 156 &amp; 11L \\ 0 &amp; 6.5 L &amp; 0 &amp; -0.75 L^{2} | &amp; 11 L &amp; L^{2} \end{bmatrix}\)</span><br /> support DOFs support DOFs</p>
+ <p class="blog">
+7. Formulate the equations of motion. Before writing the equation of motion, the support conditions must be imposed. For the cantilever beam of Fig. E18.2a, <span class="tex-text">\(u_{5} = u_{6} = 0\)</span>. Thus the fifth and sixth rows and columns are deleted from the matrices m and k to obtain</p>
+ <p class="blog">
+<span class="tex-text">\(\mathbf{m \ddot {u}} + \mathbf{ku} = \mathbf{0}\)</span> (c)<br /> or</p>
+ <span class="tex-text">\(\frac{ml}{840} \begin{bmatrix} 156 &amp; 54 &amp; -11L &amp; 6.5 L \\ &amp; 312 &amp; &#8211; 6.5 L &amp; 0 \\ (sym) &amp; &amp; L^{2} &amp; -0.75 L\\ &amp; &amp; &amp; L^{2} \end{bmatrix} \begin{bmatrix} \ddot {u}_{1} \\ \ddot {u}_{2} \\ \ddot {u}_{3} \\ \ddot {u}_{4} \end{bmatrix}\)</span> <p class="blog">
+<span class="tex-text">\(+ \frac{8EI}{L^{3}} \begin{bmatrix} 12 &amp; -12 &amp; -3L &amp; -3L \\ &amp; 24 &amp; 3 L &amp; 0 \\ (sym) &amp; &amp; L^{2} &amp; 0.5 L ^{2} \\ &amp; &amp; &amp; 2L^{2} \end{bmatrix} \begin{bmatrix} u_{1} \\ u_{2} \\ u_{3} \\ u_{4} \end{bmatrix} = \begin{bmatrix} 0 \\0 \\ 0 \\ 0 \end{bmatrix}\)</span> (d)</p>
+ <p class="blog">
+Note that the stiffness matrix in Eq. (d) is the same as the one obtained by classical methods</p>
+ <p class="blog">
+8. Solve the eigenvalue problem. The natural frequencies are determined by solving <span class="tex-text">\(\mathbf{k}\phi = \omega _{2}\mathbf{m} \phi :\)</span></p>
+ <span class="tex-text">\(\omega _{1} = 3.51772 \sqrt { \frac{EI}{mL^{4}}}\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\omega _{2} = 22.2215 \sqrt { \frac{EI}{mL^{4}}}\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\omega _{3} =75.1571 \sqrt { \frac{EI}{mL^{4}}}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(\omega _{4}= 218.138 \sqrt { \frac{EI}{mL^{4}}}\)</span> (e)</p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="../tos.html">terms</a>
+                <a href="../privacy.html">privacy</a>
+                <a href="../contact-us.html">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="../assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>
