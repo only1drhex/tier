@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/use-pspice-to-provide-a-graphical-display-of-voltage-vab-and-current-i-as-rx-is-varied-from-0-to-50-k%CF%89-in-the-circuit-of-figure-7-41" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Use PSpice to provide a graphical display of voltage Vab and current I as Rx is varied from 0 to 50 kΩ in the circuit of Figure 7–41. [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Use PSpice to provide a graphical display of voltage Vab and current I as Rx is varied from 0 to 50 kΩ in the circuit of Figure 7–41.[solved!] | Vlavar Engineering" />
+<meta name="description" content="PSpice uses global parameters to represent numeric values by name. This will permit us to set up an analysis that sweeps a variable (in this case a resistor)"/>
+<meta property="og:description" content="PSpice uses global parameters to represent numeric values by name. This will permit us to set up an analysis that sweeps a variable (in this case a resistor)" />
+<meta property="og:image" content="https://vlavar.com/imagesdb/uploads/2021/09/7.41-4-768x386.png" />
+<meta property="og:updated_time" content="2022-09-27T04:50:38+04:00" />
+<meta name="twitter:description" content="PSpice uses global parameters to represent numeric values by name. This will permit us to set up an analysis that sweeps a variable (in this case a resistor)" />
+<meta name="twitter:title" content="Use PSpice to provide a graphical display of voltage Vab and current I as Rx is varied from 0 to 50 kΩ in the circuit of Figure 7–41.[solved!] | Vlavar Engineering" />
+<meta name="twitter:image" content="https://vlavar.com/imagesdb/uploads/2021/09/7.41-4-768x386.png" />
+<meta property="article:published_time" content="2022-09-23T11:32:34+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/use-pspice-to-provide-a-graphical-display-of-voltage-vab-and-current-i-as-rx-is-varied-from-0-to-50-k%CF%89-in-the-circuit-of-figure-7-41" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="/">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="/">Home</a>
+                    <a id="search">Search</a>
+                    <a href="/tour/1">Tour</a>
+                    <a href="/contact-us">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="/">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="/tour/1">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="/contact-us">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Use PSpice to provide a graphical display of voltage <span class="tex-text">\(V_{ab}\)</span> and current <em>I</em> as <span class="tex-text">\(R_{x}\)</span> is varied from 0 to 50 kΩ in the circuit of Figure 7–41.</p> <div class="image-clearfix"><img class="question-image" src="/imagesdb/uploads/2021/09/7.41-4-768x386.png"></div>    
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+PSpice uses global parameters to represent numeric values by name. This will permit us to set up an analysis that sweeps a variable (in this case a resistor) through a range of values.</p>
+ <ul> <li>Open the CIS Demo software and start a new project. (As in previous examples, it is a good idea to place PSpice projects for this chapter into a new folder, e.g., Ch 7. Remember that this is done in the Location box.) You may wish to name your project Ch 7 PSpice 1. Make sure that the Analog or Mixed A/D wizard is selected. When prompted, opt to Create a blank project.</li> <li>Build the circuit as shown in Figure 7–43. Remember to rotate the components to provide for the correct node assignments. In order to determine whether you have the correct node assignments, place the cursor at the top of resistor R3. You should notice it labelled as R3/1. If it is not, then rotate the component twice. Repeat this process for resistor R4. (This step becomes important when we try to get the trace of the output voltage.) Change all component values (except R4) as required.</li> <li>Double-click on the component value for R4. Enter <strong>{Rx}</strong> in the V<span class="tex-text">\(\underline{a} \)</span>lue text box of the <em>Display Properties</em> for this resistor. The curly braces tell PSpice to evaluate the parameter and use its value.</li> <li>Click on the <em>Place part</em> tool. Select the Special library and click on the <em>PARAM</em> part. Place the PARAM part adjacent to resistor R4.</li> <li>Double-click on <em>PARAMETERS</em>. Click on the <em>New Column</em> button. A dialog box will appear. Enter <strong>Rx</strong> as the name of the new column and assign a value of <strong>50k</strong> as the default value of this resistor. Click on <em>Apply</em>. Since we are adding only one column to this parameter, exit by clicking on Cancel. Highlight the column that you just created, click on the <em>Display</em> button, and activate the <em>Name</em> and <em>Value</em> option in the <em>Display</em> properties. Exit the Property Editor. You should observe the circuit as it appears in Figure 7–43.</li> <li>Click on the <em>New Simulation</em> icon and give the simulation a name such as <strong>Figure 7–43</strong>.</li> <li>In the <em>Simulation Settings</em>, select the <em>Analysis Tab</em>. The <em><span class="tex-text">\(\underline{A} \)</span>nalysis type</em> is DC Sweep. Select <em>Primary Sweep</em> from the <em><span class="tex-text">\(\underline{O} \)</span></em><em>ptions</em> listing. In the Sweep variable box select <em><span class="tex-text">\(\underline{G} \)</span></em><em>lobal Parameter</em>. Type <strong>Rx</strong> in the <em><span class="tex-text">\(\underline{P} \)</span></em><em>arameter name</em> text box. Select the Sweep type to be linear and set the limits as follows:</li> </ul> <p class="blog">
+Sta<span class="tex-text">\(\underline{r} \)</span>t value: <strong>100</strong><br /> End v<span class="tex-text">\(\underline{a} \)</span>lue: <strong>50k</strong><br /> <span class="tex-text">\(\underline{I} \)</span>ncrement: <strong>100.</strong></p>
+ <p class="blog">
+These settings will change the resistor value from 100 Ω to 50 kΩ in 100-Ω increments. Click <em>OK</em>.</p>
+ <ul> <li>Click on the <em>Run</em> icon. You will see a blank screen with the abscissa (horizontal axis) showing <span class="tex-text">\(R_{x}\)</span> scaled from 0 to 50 kΩ.</li> <li>PSpice is able to plot most circuit variables as a function of <span class="tex-text">\(R_{x}\)</span>. In order to request a plot of <span class="tex-text">\(V_{ab}\)</span>, click on <em><span class="tex-text">\(\underline{A} \)</span>dd Trace</em>. Enter <strong>V(R3:1) – V(R4:1)</strong> in the <em>Trace Expression</em> text box. The voltage <span class="tex-text">\(V_{ab}\)</span> is the voltage between node 1 of <span class="tex-text">\(R_{3}\)</span> and node 1 of <span class="tex-text">\(R_{4}\)</span>. Click <em>OK</em>.</li> <li>Finally, to obtain a plot of the circuit current <em>I</em> (current through the voltage source), we need to first add an extra axis. Click on <em><span class="tex-text">\(\underline{P} \)</span></em><em>lot</em> and then click <em>Add <span class="tex-text">\(\underline{Y} \)</span> Axis</em>. To obtain a plot of the current, click on <em><span class="tex-text">\(\underline{T} \)</span></em><em>race</em> and <em><span class="tex-text">\(\underline{A} \)</span></em><em>dd Trace</em>. Select<strong> I(V1).</strong> The resulting display on the monitor is shown in Figure 7–44.</li> </ul> <p class="blog">
+Notice that the current shown is negative. This is because PSpice sets the reference direction through a voltage source from the positive terminal to the negative terminal. One way of removing the negative sign is to request the current as -I(V1).</p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="/tos">terms</a>
+                <a href="/privacy">privacy</a>
+                <a href="/contact-us">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="/assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>

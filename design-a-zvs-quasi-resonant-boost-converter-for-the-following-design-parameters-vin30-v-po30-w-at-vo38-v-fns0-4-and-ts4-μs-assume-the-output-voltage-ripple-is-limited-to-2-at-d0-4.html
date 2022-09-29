@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/design-a-zvs-quasi-resonant-boost-converter-for-the-following-design-parameters-vin30-v-po30-w-at-vo38-v-fns0-4-and-ts4-%CE%BCs-assume-the-output-voltage-ripple-is-limited-to-2-at-d0-4" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Design a ZVS quasi-resonant boost converter for the following design parameters: Vin=30 V, Po=30 W at Vo=38 V, fns=0.4, and Ts=4 μs. Assume the output voltage ripple is limited to 2% at D=0.4 . [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Design a ZVS quasi-resonant boost converter for the following design parameters: Vin=30 V, Po=30 W at Vo=38 V, fns=0.4, and Ts=4 μs. Assume the output voltage ripple is limited to 2% at D=0.4 .[solved!] | Vlavar Engineering" />
+<meta name="description" content="The voltage gain is  M= {V_{o}}/{V_{in}} =1.3  , and with  f_{ns} =0.4  , we obtain Q=0.2. Using the switching frequency"/>
+<meta property="og:description" content="The voltage gain is  M= {V_{o}}/{V_{in}} =1.3  , and with  f_{ns} =0.4  , we obtain Q=0.2. Using the switching frequency" />
+
+
+<meta name="twitter:description" content="The voltage gain is  M= {V_{o}}/{V_{in}} =1.3  , and with  f_{ns} =0.4  , we obtain Q=0.2. Using the switching frequency" />
+<meta name="twitter:title" content="Design a ZVS quasi-resonant boost converter for the following design parameters: Vin=30 V, Po=30 W at Vo=38 V, fns=0.4, and Ts=4 μs. Assume the output voltage ripple is limited to 2% at D=0.4 .[solved!] | Vlavar Engineering" />
+
+<meta property="article:published_time" content="2022-09-26T19:00:14+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/design-a-zvs-quasi-resonant-boost-converter-for-the-following-design-parameters-vin30-v-po30-w-at-vo38-v-fns0-4-and-ts4-%CE%BCs-assume-the-output-voltage-ripple-is-limited-to-2-at-d0-4" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="/">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="/">Home</a>
+                    <a id="search">Search</a>
+                    <a href="/tour/1">Tour</a>
+                    <a href="/contact-us">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="/">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="/tour/1">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="/contact-us">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Design a ZVS quasi-resonant boost converter for the following design parameters: <span class="tex-text">\(\ V_{in} =30 V, P_{o} =30 W at V_{o} =38 V, f_{ns} =0.4, and T_{s} =4 μs \)</span> . Assume the output voltage ripple is limited to 2% at D=0.4 .</p>      
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+The voltage gain is <span class="tex-text">\(\ M= {V_{o}}/{V_{in}} =1.3 \)</span> , and with <span class="tex-text">\(\ f_{ns} =0.4 \)</span> , we obtain Q=0.2.</p>
+ <p class="blog">
+Using the switching frequency <span class="tex-text">\(\ f_{s} =1/ T_{s} =1/ 4 \mu s 250 kHz and f_{o} =f_{s}/ 0.4 =250/ 0.4 =625 kHz \)</span> , the resonant frequency is obtained from:</p>
+ <p style="text-align: center"><span class="tex-text">\(\ \omega _{o} =\frac{1}{\sqrt{LC} } = \left(2\pi \right) \left(625\right) \times 10^{3} rad / s \)</span></p>
+ <p class="blog">
+The second equation in terms of L and C is obtained from:</p>
+ <p style="text-align: center"><span class="tex-text">\(\ Q= \frac{R_{o}}{Z_{o}} = \frac{R_{o}}{\sqrt{L/ C} } =0.2 \)</span></p>
+ <p class="blog">
+The load resistance is:</p>
+ <p style="text-align: center"><span class="tex-text">\(\ R_{o} =\frac{38^{2} }{30} = 48.13 \Omega \)</span></p>
+ <p class="blog">
+Substituting the above relation for Q, we obtain:</p>
+ <p style="text-align: center"><span class="tex-text">\(\ \sqrt{\frac{L}{C} } = \frac{48.13 }{0.2} = 240 .65 \Omega \)</span></p>
+ <p class="blog">
+Solving the above two equations for C and L, we obtain:</p>
+ <p style="text-align: center"><span class="tex-text">\(\ C=\frac{1}{\left(2\pi \right) \left(625\right) \left(10^{3}\right)\left(240.65\right) } =1.06 nF \)</span></p>
+ <p class="blog">
+To calculate <span class="tex-text">\(\ L_{o} and C_{o} \)</span> , using the voltage ripple to be 2%, we use the following relation:</p>
+ <p style="text-align: center"><span class="tex-text">\(\ \frac{D}{f_{s} R_{o} C_{o}}=0.02 \)</span></p>
+ <p class="blog">
+where:</p>
+ <p style="text-align: center">D= 0.4</p>
+ <p style="text-align: center"><span class="tex-text">\(\ C_{o} = \frac{0.4}{f_{s} R_{o}} \frac{100}{0.2} \)</span></p>
+ <p style="text-align: center"><span class="tex-text">\(\ =\frac{40}{0.2\times 250\times 10^{3} \times 48.13} = 16.6 \mu F \)</span></p>
+ <p class="blog">
+The critical inductor value is given by:</p>
+ <p style="text-align: center"><span class="tex-text">\(\ L_{crit} =\frac{R_{o}}{ 2f_{s}} \left(1-D\right) ^{2} D \)</span></p>
+ <p style="text-align: center"><span class="tex-text">\(\ =\frac{48.13}{2\times 250\times } \left(1-0.4\right) ^{2} \left(0.4\right) \)</span></p>
+ <p class="blog">
+To achieve a limited ripple current, it is recommended that <span class="tex-text">\(\ L_{o} \)</span> be set to be about a 100 times the critical inductor value. So we select <span class="tex-text">\(\ L_{o} =1.4 mH \)</span> .</p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="/tos">terms</a>
+                <a href="/privacy">privacy</a>
+                <a href="/contact-us">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="/assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>

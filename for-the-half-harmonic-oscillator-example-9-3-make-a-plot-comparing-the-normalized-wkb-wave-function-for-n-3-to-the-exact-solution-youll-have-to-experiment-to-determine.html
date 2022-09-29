@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/for-the-half-harmonic-oscillator-example-9-3-make-a-plot-comparing-the-normalized-wkb-wave-function-for-n-3-to-the-exact-solution-youll-have-to-experiment-to-determine" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>For the “half-harmonic oscillator” (Example 9.3), make a plot comparing the normalized WKB wave function for n = 3 to the exact solution. You’ll have to experiment to determine how wide to make the patching region. Note: You can do the integrals of p(x) by hand, but feel free to do them numerically. [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="For the “half-harmonic oscillator” (Example 9.3), make a plot comparing the normalized WKB wave function for n = 3 to the exact solution. You’ll have to experiment to determine how wide to make the patching region. Note: You can do the integrals of p(x) by hand, but feel free to do them numerically.[solved!] | Vlavar Engineering" />
+<meta name="description" content="In the plot below the blue and red curves make up the piecewise WKB solution, and the black dashed line is the exact result. I chose the width of the patching"/>
+<meta property="og:description" content="In the plot below the blue and red curves make up the piecewise WKB solution, and the black dashed line is the exact result. I chose the width of the patching" />
+
+
+<meta name="twitter:description" content="In the plot below the blue and red curves make up the piecewise WKB solution, and the black dashed line is the exact result. I chose the width of the patching" />
+<meta name="twitter:title" content="For the “half-harmonic oscillator” (Example 9.3), make a plot comparing the normalized WKB wave function for n = 3 to the exact solution. You’ll have to experiment to determine how wide to make the patching region. Note: You can do the integrals of p(x) by hand, but feel free to do them numerically.[solved!] | Vlavar Engineering" />
+
+<meta property="article:published_time" content="2022-10-16T05:02:50+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/for-the-half-harmonic-oscillator-example-9-3-make-a-plot-comparing-the-normalized-wkb-wave-function-for-n-3-to-the-exact-solution-youll-have-to-experiment-to-determine" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="/">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="/">Home</a>
+                    <a id="search">Search</a>
+                    <a href="/tour/1">Tour</a>
+                    <a href="/contact-us">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="/">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="/tour/1">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="/contact-us">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">For the “half-harmonic oscillator” (Example 9.3), make a plot comparing the normalized WKB wave function for n = 3 to the exact solution. You’ll have to experiment to determine how wide to make the patching region. Note: You can do the integrals of p(x) by hand, but feel free to do them numerically. You’ll need to do the integral of <span class="tex-text">\( \left|\psi_{W K B}\right|^{2} \)</span> numerically to normalize the wave function.</p>      
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+In the plot below the blue and red curves make up the piecewise WKB solution, and the black dashed line is the exact result. I chose the width of the patching region to be <span class="tex-text">\( 0.3 x_{2} \text {, centered at } x_{2} \)</span>.</p>
+ <p class="blog">
+<span class="tex-text">\( \text { \$Assumptions }=m&gt;0 \text { \&amp;\&amp; } E n&gt;0 \text { \&amp;\&amp; } \omega&gt;0 \)</span>;</p>
+ <p class="blog">
+Analytical Integral</p>
+ <p class="blog">
+<span class="tex-text">\( p\left[x_{-}\right]:=\operatorname{Sqrt}[2 m(E n-V[x])] \)</span>;</p>
+ <p class="blog">
+<span class="tex-text">\( V\left[x_{-}\right]:=\frac{1}{2} m \omega^{2} x^{2} \)</span>;</p>
+ <p class="blog">
+<span class="tex-text">\( x 2=\frac{\sqrt{2} \sqrt{E n}}{\sqrt{m} \omega} \)</span>;</p>
+ <p class="blog">
+Numerical Method</p>
+ <p class="blog">
+n = 3;</p>
+ <p class="blog">
+<span class="tex-text">\( En =\left(2 n -\frac{ 1 }{2}\right) \hbar \omega \)</span>;</p>
+ <p class="blog">
+<span class="tex-text">\( \hbar= m =\omega=1 \)</span>;</p>
+ <p class="blog">
+<span class="tex-text">\( \psi 1\left[ x _{-}\right]:=\frac{2}{\sqrt{ p [ x ]}} \operatorname{Sin}\left[\frac{1}{\hbar} NIn t e g r a t e[p[ xp ],\{ xp , x , x 2\}]+\frac{\pi}{4}\right] \)</span>.</p>
+ <p class="blog">
+<span class="tex-text">\( \psi 3\left[x_{-}\right]:=\frac{1}{\sqrt{A b s[p[x]]}} \operatorname{Exp}\left[-\frac{1}{n} \text { NIntegrate }[A b s[p[x p]],\{x p, x 2, x\}]\right] \)</span>.</p>
+ <p class="blog">
+<span class="tex-text">\( \alpha=\left(\frac{2 m }{\hbar^{2}} V ^{\prime}[ x 2]\right)^{1 / 3} \)</span>;</p>
+ <p class="blog">
+<span class="tex-text">\( \psi 2\left[ x _{-}\right]:=\sqrt{\frac{4 \pi}{\alpha \hbar}} \text { AiryAi }[\alpha( x &#8211; x 2)] \)</span>.</p>
+ <p class="blog">
+<span class="tex-text">\( \left.\psi WKB \left[ x _{-}\right]:=\operatorname{If}[ x &lt;.85 \times 2, \psi][ x ], \quad \operatorname{If}[ x &lt;1.15 \times 2, \psi 2[ x ], \psi 3[ X ]]\right] \)</span>;</p>
+ <p class="blog">
+<span class="tex-text">\( \text { norm }=\frac{1}{\sqrt{\text { NIntegrate }\left[\psi WKB [ x ]^{\wedge} 2,\{ x , 0,2 \times 2\}\right]}} \)</span>;</p>
+ <p class="blog">
+<span class="tex-text">\( \psi \operatorname{exact}\left[n_{-}, x_{-}\right]:=\sqrt{2}\left(\frac{m \omega}{\pi \hbar}\right)^{1 / 4} \frac{1}{\sqrt{2^{n} n !}} \text { HermiteH }\left[n, \sqrt{\frac{m \omega}{\hbar}} x\right] \operatorname{Exp}\left[-\frac{1}{2}\left(\sqrt{\frac{m \omega}{\hbar}} x\right)^{2}\right] \)</span>.</p>
+ <span class="tex-text">\( \text { Show [ } \)</span> <p class="blog">
+<span class="tex-text">\( \text { Plot [norm } \psi 1[ X ],\{ x , 0, .75 \times 2\}, \text { PlotRange } \rightarrow\{\{0,1.5 \times 2\},\{-1,1\}\} \)</span>,</p>
+ <p class="blog">
+<span class="tex-text">\( \text { Ticks } \rightarrow\left\{\left\{\left\{ x 2, &quot; x _{2} &quot;\right\}\right\}, \text { None }\right\}, \text { PlotStyle } \rightarrow \text { Thickness [0.01]] } \)</span>,</p>
+ <p class="blog">
+<span class="tex-text">\( \text { Plot [norm } \psi 3[ x ],\{ x , 1.15 \times 2,1.5 \times 2\}, \text { PlotRange } \rightarrow \text { All } \)</span>,</p>
+ <span class="tex-text">\( \text { PlotStyle } \rightarrow \text { Thickness [0.01]] } \)</span> <p class="blog">
+<span class="tex-text">\( \text { Plot }[\text { norm } \psi 2[x],\{x, .75 \times 2,1,15 \times 2\}, \text { PlotRange } \rightarrow\{\{0,2 \times 2\},\{-2,2\}\} \)</span>,</p>
+ <p class="blog">
+<span class="tex-text">\( \text { PlotStyle } \rightarrow \text { \{ed, Thickness [0.01]\}] } \)</span>,</p>
+ <p class="blog">
+<span class="tex-text">\( \text { Plot }[\psi \operatorname{exact}[2 n-1, x],\{x, 0,1,5 \times 2\}, \text { PlotStyle } \rightarrow\{\text { Black, Dashed }\}]]\)</span>.</p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="/tos">terms</a>
+                <a href="/privacy">privacy</a>
+                <a href="/contact-us">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="/assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>
