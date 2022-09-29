@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="../assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="../assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="../assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="../assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/antenna-control-design-of-controller-and-observer-in-this-case-study-we-use-our-ongoing-antenna-azimuth-position-control-system-to-demonstrate-the-combined-design-of-a-controller-and-an-observer-we" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Antenna Control: Design of Controller and Observer In this case study, we use our ongoing antenna azimuth position control system to demonstrate the combined design of a controller and an observer.We will assume that the states are not available and must be estimated from the output. The block [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Antenna Control: Design of Controller and Observer In this case study, we use our ongoing antenna azimuth position control system to demonstrate the combined design of a controller and an observer.We will assume that the states are not available and must be estimated from the output. The block[solved!] | Vlavar Engineering" />
+<meta name="description" content="Controller Design: We first design the controller by finding the desired characteristic equation. A 10% overshoot and a settling time of 1 second yield ζ ="/>
+<meta property="og:description" content="Controller Design: We first design the controller by finding the desired characteristic equation. A 10% overshoot and a settling time of 1 second yield ζ =" />
+<meta property="og:image" content="https://vlavar.com/imagesdb/uploads/2021/12/figure-12.22-768x150.png" />
+<meta property="og:updated_time" content="2022-12-20T21:13:28+04:00" />
+<meta name="twitter:description" content="Controller Design: We first design the controller by finding the desired characteristic equation. A 10% overshoot and a settling time of 1 second yield ζ =" />
+<meta name="twitter:title" content="Antenna Control: Design of Controller and Observer In this case study, we use our ongoing antenna azimuth position control system to demonstrate the combined design of a controller and an observer.We will assume that the states are not available and must be estimated from the output. The block[solved!] | Vlavar Engineering" />
+<meta name="twitter:image" content="https://vlavar.com/imagesdb/uploads/2021/12/figure-12.22-768x150.png" />
+<meta property="article:published_time" content="2022-12-19T18:03:09+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/antenna-control-design-of-controller-and-observer-in-this-case-study-we-use-our-ongoing-antenna-azimuth-position-control-system-to-demonstrate-the-combined-design-of-a-controller-and-an-observer-we" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="../index.html">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="../index.html">Home</a>
+                    <a id="search">Search</a>
+                    <a href="../tour/1.html">Tour</a>
+                    <a href="../contact-us.html">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="../index.html">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="../tour/1.html">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="../contact-us.html">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Antenna Control: Design of Controller and Observer In this case study, we use our ongoing antenna azimuth position control system to demonstrate the combined design of a controller and an observer.We will assume that the states are not available and must be estimated from the output. The block diagram of the original system is shown on the front endpapers, Configuration 1. Arbitrarily setting the preamplifier gain to 200 and removing the existing feedback, the forward transfer function is simplified to that shown in Figure 12.22.</p> <p class="blog">The case study will specify a transient response for the system and a faster transient response for the observer. The final design configuration will consist of the plant, the observer, and the controller, as shown conceptually in Figure 12.23. The design of the observer and the controller will be separate.</p> <p class="blog">PROBLEM: Using the simplified block diagram of the plant for the antenna azimuth position control system shown in Figure 12.22, design a controller to yield a 10% overshoot and a settling time of 1 second. Place the third pole 10 times as far from the imaginary axis as the second-order dominant pair. Assume that the state variables of the plant are not accessible and design an observer to estimate the states. The desired transient response for the observer is a 10% overshoot and a natural frequency 10 times as great as the system response above. As in the case of the controller, place the third pole 10 times as far from the imaginary axis as the observer’s dominant second-order pair.</p> <div class="image-clearfix"><img class="question-image" src="../imagesdb/uploads/2021/12/figure-12.22-768x150.png"></div><div class="image-clearfix"><img class="question-image" src="../imagesdb/uploads/2021/12/figure-12.23.png"></div>    
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+Controller Design: We first design the controller by finding the desired<br /> characteristic equation. A 10% overshoot and a settling time of 1 second yield ζ = 0.591 and<span class="tex-text">\(\omega _{n} =6.77\)</span>. Thus, the characteristic equation for the dominant poles is <span class="tex-text">\(s^{2} +8s+45.8=0 \)</span>, where the dominant poles are located at -4± j 5.46. The third pole will be 10 times as far from the imaginary axis, or at -40. Hence, the desired characteristic equation for the closed-loop system is</p>
+ <span class="tex-text">\((s^{2}+8s+45.8 )(s+40)=s^{3}+48s^{2}+365.8s+1832 =0 \)</span> <p class="blog">
+Next we find the actual characteristic equation of the closed-loop system. The first step is to model the closed-loop system in state space and then find its characteristic equation. From Figure 12.22, the transfer function of the plant is</p>
+ <span class="tex-text">\(G(s)=\frac{1325}{s(s+1.71)}=\frac{1325}{s(s^{2}+101.71s+171)} \)</span> <p class="blog">
+Using phase variables, this transfer function is converted to the signal-flow graph shown in Figure 12.24, and the state equations are written as follows:</p>
+ <span class="tex-text">\(\dot{x} =\left[\begin{matrix} 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ 0 &amp; -171 &amp; -101.71 \end{matrix} \right] x+\left[\begin{matrix} 0 \\ 0 \\ 1 \end{matrix} \right] u=Ax+Bu\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(y=\left[\begin{matrix} 1325 &amp; 0 &amp; 0\end{matrix} \right] x=Cx \)</span> <p class="blog">
+We now pause in our design to evaluate the controllability of the system. The controllability matrix, <span class="tex-text">\( C_{M} \)</span>, is</p>
+ <span class="tex-text">\( C_{M}=\left[\begin{matrix} B &amp; AB &amp; A^{2}B \end{matrix} \right] \left[\begin{matrix} 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; -101.71 \\ 1 &amp; -101.71 &amp; 10,173.92 \end{matrix} \right] \)</span> <p class="blog">
+The determinant of <span class="tex-text">\( C_{M} \)</span> is -1; thus, the system is controllable.</p>
+ <p class="blog">
+Continuing with the design of the controller, we show the controller’s configuration with the feedback from all state variables in Figure 12.25. We now find the characteristic equation of the system of Figure 12.25. From Eq. (12.7)</p>
+ <span class="tex-text">\(K=\left[\begin{matrix} k_{1} &amp; k_{2} &amp; &#8230; &amp; k_{n}\end{matrix} \right] \)</span> <p class="blog">
+and Eq. (12.131a),</p>
+ <span class="tex-text">\(\dot{x} =\left[\begin{matrix} 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ 0 &amp; -171 &amp; -101.71 \end{matrix} \right] x+\left[\begin{matrix} 0 \\ 0 \\ 1 \end{matrix} \right] u=Ax+Bu\)</span> <p class="blog">
+the system matrix, <span class="tex-text">\(A- BK\)</span>, is</p>
+ <span class="tex-text">\(A- BK=\left[\begin{matrix} 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ -k_{1} &amp; -(171+k_{2}) &amp; -(101.71+k_{3}) \end{matrix} \right] \)</span> <p class="blog">
+Thus, the closed-loop system’s characteristic equation is</p>
+ <span class="tex-text">\( \det \left[sI- (A- BK)\right] =s^{3}+(101.71+k_{3})s^{2}+(171+k_{2})s+k_{1}=0 \)</span> <p class="blog">
+Matching the coefficients of Eq. (12.129)</p>
+ <span class="tex-text">\((s^{2}+8s+45.8 )(s+40)=s^{3}+48s^{2}+365.8s+1832 =0 \)</span> <p class="blog">
+with those of Eq. (12.134),</p>
+ <span class="tex-text">\( \det \left[sI- (A- BK)\right] =s^{3}+(101.71+k_{3})s^{2}+(171+k_{2})s+k_{1}=0 \)</span> <p class="blog">
+we evaluate the <span class="tex-text">\(k_{i}\)</span>’s as follows:</p>
+ <span class="tex-text">\( k_{1}=1832 \)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\( k_{2}=194.8 \)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\( k_{3}=-53.71 \)</span> <p class="blog">
+Observer Design: Before designing the observer, we test the system for observability. Using the A and C matrices from Eqs. (12.131),</p>
+ <span class="tex-text">\(\dot{x} =\left[\begin{matrix} 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ 0 &amp; -171 &amp; -101.71 \end{matrix} \right] x+\left[\begin{matrix} 0 \\ 0 \\ 1 \end{matrix} \right] u=Ax+Bu\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(y=\left[\begin{matrix} 1325 &amp; 0 &amp; 0\end{matrix} \right] x=Cx \)</span> <p class="blog">
+the observability matrix, <span class="tex-text">\( O_{M} \)</span>, is</p>
+ <span class="tex-text">\(O_{M}=\left[\begin{matrix} C \\ CA \\ CA^{2} \end{matrix} \right] =\left[\begin{matrix} 1325 &amp; 0 &amp; 0 \\ 0 &amp; 1325 &amp; 0 \\ 0 &amp; 0 &amp; 1325 \end{matrix} \right] \)</span> <p class="blog">
+The determinant of <span class="tex-text">\( O_{M} \)</span> is <span class="tex-text">\(1325^{3}\)</span>. Thus, <span class="tex-text">\( O_{M} \)</span>is of rank 3, and the system is observable.<br /> We now proceed to design the observer. Since the order of the system is not high, we will design the observer directly without first converting to observer canonical form. From Eq. (12.64a)</p>
+ <span class="tex-text">\( \dot{e} _{x}=(A- LC)e_{x} \)</span> <p class="blog">
+we need first to find A &#8211; LC. A and C from Eqs. (12.131) along with</p>
+ <span class="tex-text">\( L=\left[\begin{matrix} l_{1} \\ l_{2} \\ l_{3} \end{matrix} \right] \)</span> <p class="blog">
+are used to evaluate A &#8211; LC as follows:</p>
+ <span class="tex-text">\( A- LC=\left[\begin{matrix} -1325l_{1} &amp; 1 &amp; 0 \\ -1325l_{2} &amp; 0 &amp; 1 \\ -1325l_{3} &amp; -171 &amp; -101.71 \end{matrix} \right] \)</span> <p class="blog">
+The characteristic equation for the observer is now evaluated as</p>
+ <span class="tex-text">\(\det \left[\lambda I- (A- LC)\right] =\lambda ^{3}+(1325l_{1}+101.71)\lambda ^{2} \)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(+(134,800l_{1}+1325l_{2}+171)\lambda\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(+(226,600l_{1}+134,800l_{2}+1325l_{3})\)</span> <p class="blog">
+=0</p>
+ <p class="blog">
+From the problem statement, the poles of the observer are to be placed to yield a 10% overshoot and a natural frequency 10 times that of the system’s dominant pair of poles. Thus, the observer’s dominant poles yield <span class="tex-text">\(\left[s^{2}+(2\times 0.591\times 67.7)s+67.7^{2}\right]=(s^{2}+80s+4583)\)</span>. The real part of the roots of this polynomial is -40. The third pole is then placed 10 times farther from the imaginary axis at -400. The composite characteristic equation for the observer is</p>
+ <span class="tex-text">\((s^{2}+80s+4583)(s+400)=s^{3}+480s^{2}+36,580s +1,833,000=0\)</span> <p class="blog">
+Matching coefficients from Eqs. (12.139)</p>
+ <span class="tex-text">\(\det \left[\lambda I- (A- LC)\right] =\lambda ^{3}+(1325l_{1}+101.71)\lambda ^{2} \)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(+(134,800l_{1}+1325l_{2}+171)\lambda\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(+(226,600l_{1}+134,800l_{2}+1325l_{3})\)</span> <p class="blog">
+=0</p>
+ <p class="blog">
+and (12.140),</p>
+ <span class="tex-text">\((s^{2}+80s+4583)(s+400)=s^{3}+480s^{2}+36,580s +1,833,000=0\)</span> <p class="blog">
+we solve for the observer gains:</p>
+ <span class="tex-text">\( l_{1}=0.286 \)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\( l_{2}=-1.57 \)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\( l_{3}=1494 \)</span> <p class="blog">
+Figure 12.26, which follows the general configuration of Figure 12.23, shows the completed design, including the controller and the observer.<br /> The results of the design are shown in Figure 12.27. Figure 12.27(a) shows the impulse response of the closed-loop system without any difference between the plant and its modeling as an observer. The undershoot and settling time approximately meet the requirements set forth in the problem statement of 10% and 1 second, respectively. In<br /> Figure 12.27(b), we see the response designed into the observer. An initial condition of 0.006 was given to <span class="tex-text">\( x_{1}\)</span> in the plant to make the modeling of the plant and observer different. Notice that the observer’s response follows the plant’s response by the time 0.06 second is reached.</p>
+ <p class="blog">
+CHALLENGE: You are now given a case study to test your knowledge of this chapter’s objectives: You are given the antenna azimuth position control system shown on the front endpapers, Configuration 3. If the preamplifier gain K = 20, do the following:</p>
+ <p class="blog">
+a. Design a controller to yield 15% overshoot and a settling time of 2 seconds. Place the third pole 10 times as far from the imaginary axis as the second-order dominant pole pair. Use physical variables as follows: power amplifier output, motor angular velocity, and motor displacement.<br /> b. Redraw the schematic shown on the front endpapers, showing a tachometer that yields rate feedback along with any added gains or attenuators required to implement the state-variable feedback gains.</p>
+ <p class="blog">
+c. Assume that the tachometer is not available to provide rate feedback. Design an observer to estimate the physical variables&#8217; states. The observer will respond with 10% overshoot and a natural frequency 10 times as great as the system response. Place the observer’s third pole 10 times as far from the imaginary axis as the observer’s dominant second-order pole pair.<br /> d. Redraw the schematic on the front endpapers, showing the implementation of the controller and the observer.<br /> e. Repeat Parts a and c using MATLAB.</p>
+ <div class="image-clearfix"> <img class="question-image" src="../imagesdb/uploads/2021/12/figure-12.24.png"></div> <div class="image-clearfix"> <img class="question-image" src="../imagesdb/uploads/2021/12/figure-12.25.png"></div> 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="../tos.html">terms</a>
+                <a href="../privacy.html">privacy</a>
+                <a href="../contact-us.html">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="../assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>

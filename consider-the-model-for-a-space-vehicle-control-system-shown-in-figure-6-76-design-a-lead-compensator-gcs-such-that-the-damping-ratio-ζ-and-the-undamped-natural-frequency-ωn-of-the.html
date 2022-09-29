@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/consider-the-model-for-a-space-vehicle-control-system-shown-in-figure-6-76-design-a-lead-compensator-gcs-such-that-the-damping-ratio-%CE%B6-and-the-undamped-natural-frequency-%CF%89n-of-the" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Consider the model for a space-vehicle control system shown in Figure 6–76. Design a lead compensator Gc(s) such that the damping ratio ζ and the undamped natural frequency ωn of the dominant closed-loop poles are 0.5 and 2 rad/sec, respectively [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Consider the model for a space-vehicle control system shown in Figure 6–76. Design a lead compensator Gc(s) such that the damping ratio ζ and the undamped natural frequency ωn of the dominant closed-loop poles are 0.5 and 2 rad/sec, respectively[solved!] | Vlavar Engineering" />
+<meta name="description" content="First Attempt: Assume the lead compensator G_{c}(s) to be &nbsp; G_{c}(s)=K_{c}left(frac{s+frac{1}{T}}{s+frac{1}{alpha T}}right)"/>
+<meta property="og:description" content="First Attempt: Assume the lead compensator G_{c}(s) to be &nbsp; G_{c}(s)=K_{c}left(frac{s+frac{1}{T}}{s+frac{1}{alpha T}}right)" />
+<meta property="og:image" content="https://vlavar.com/imagesdb/uploads/2022/01/6.76-768x212.jpg" />
+
+<meta name="twitter:description" content="First Attempt: Assume the lead compensator G_{c}(s) to be &nbsp; G_{c}(s)=K_{c}left(frac{s+frac{1}{T}}{s+frac{1}{alpha T}}right)" />
+<meta name="twitter:title" content="Consider the model for a space-vehicle control system shown in Figure 6–76. Design a lead compensator Gc(s) such that the damping ratio ζ and the undamped natural frequency ωn of the dominant closed-loop poles are 0.5 and 2 rad/sec, respectively[solved!] | Vlavar Engineering" />
+<meta name="twitter:image" content="https://vlavar.com/imagesdb/uploads/2022/01/6.76-768x212.jpg" />
+<meta property="article:published_time" content="2022-01-10T12:58:24+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/consider-the-model-for-a-space-vehicle-control-system-shown-in-figure-6-76-design-a-lead-compensator-gcs-such-that-the-damping-ratio-%CE%B6-and-the-undamped-natural-frequency-%CF%89n-of-the" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="/">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="/">Home</a>
+                    <a id="search">Search</a>
+                    <a href="/tour/1">Tour</a>
+                    <a href="/contact-us">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="/">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="/tour/1">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="/contact-us">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Consider the model for a space-vehicle control system shown in Figure 6–76. Design a lead compensator <span class="tex-text">\(G_c(s)\)</span> such that the damping ratio <span class="tex-text">\(ζ\)</span> and the undamped natural frequency <span class="tex-text">\(ω_n\)</span> of the dominant closed-loop poles are 0.5 and 2 rad/sec, respectively</p> <div class="image-clearfix"><img class="question-image" src="/imagesdb/uploads/2022/01/6.76-768x212.jpg"></div>    
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+First Attempt: Assume the lead compensator <span class="tex-text">\(G_{c}(s)\)</span> to be</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(G_{c}(s)=K_{c}\left(\frac{s+\frac{1}{T}}{s+\frac{1}{\alpha T}}\right) \quad(0&lt;\alpha&lt;1)\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+From the given specifications, <span class="tex-text">\(\zeta=0.5\)</span> and <span class="tex-text">\(\omega_{n}=2 \mathrm{rad} / \mathrm{sec}\)</span>, the dominant closed-loop poles must be located at</p>
+ <span class="tex-text">\(s=-1 \pm j \sqrt{3}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+We first calculate the angle deficiency at this closed-loop pole.</p>
+ <span class="tex-text">\(\begin{aligned}\text { Angle deficiency } &amp;=-120^{\circ}-120^{\circ}-10.8934^{\circ}+180^{\circ} \\\quad\\&amp;=-70.8934^{\circ}\end{aligned}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+This angle deficiency must be compensated by the lead compensator. There are many ways to determine the locations of the pole and zero of the lead network. Let us choose the zero of the compensator at <span class="tex-text">\(s=-1\)</span>. Then, referring to Figure 6-77, we have the following equation:</p>
+ <span class="tex-text">\(\frac{1.73205}{x-1}=\tan \left(90^{\circ}-70.8934^{\circ}\right)=0.34641\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+or</p>
+ <span class="tex-text">\(x=1+\frac{1.73205}{0.34641}=6\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Hence,</p>
+ <span class="tex-text">\(G_{c}(s)=K_{c} \frac{s+1}{s+6}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+The value of <span class="tex-text">\(K_{c}\)</span> can be determined from the magnitude condition</p>
+ <span class="tex-text">\(K_{c}\left|\frac{s+1}{s+6} \frac{1}{s^{2}} \frac{1}{0.1 s+1}\right|_{s=-1+j \sqrt{3}}=1\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+as follows:</p>
+ <span class="tex-text">\(K_{c}=\left|\frac{(s+6) s^{2}(0.1 s+1)}{s+1}\right|_{s=-1+j \sqrt{3}}=11.2000\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Thus</p>
+ <span class="tex-text">\(G_{c}(s)=11.2 \frac{s+1}{s+6}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Since the open-loop transfer function becomes</p>
+ <span class="tex-text">\(\begin{aligned}G_{c}(s) G(s) H(s) &amp;=11.2 \frac{s+1}{(s+6) s^{2}(0.1 s+1)} \\\quad\\&amp;=\frac{11.2(s+1)}{0.1 s^{4}+1.6 s^{3}+6 s^{2}}\end{aligned}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+a root-locus plot of the compensated system can be obtained easily with MATLAB by entering num and den and using rlocus command. The result is shown in Figure 6–78.</p>
+ <p class="blog">
+The closed-loop transfer function for the compensated system becomes</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\frac{C(s)}{R(s)}=\frac{11.2(s+1)(0.1 s+1)}{(s+6) s^{2}(0.1 s+1)+11.2(s+1)}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Figure 6-79 shows the unit-step response curve. Even though the damping ratio of the dominant closed-loop poles is 0.5, the amount of overshoot is very much higher than expected. A closer look at the root-locus plot reveals that the presence of the zero at <span class="tex-text">\(s=-1\)</span> is increasing the amount of the maximum overshoot. [In general, if a closed-loop zero or zeros (compensator zero or zeros) lie to the right of the dominant pair of the complex poles, then the dominant poles are no longer dominant.] If large maximum overshoot cannot be tolerated, the compensator zero(s) should be shifted sufficiently to the left.</p>
+ <p class="blog">
+In the current design, it is desirable to modify the compensator and make the maximum overshoot smaller. This can be done by modifying the lead compensator, as presented in the following second attempt.</p>
+ <p class="blog">
+Second Attempt: To modify the shape of the root loci, we may use two lead networks, each contributing half the necessary lead angle, which is <span class="tex-text">\(70.8934^{\circ} / 2=35.4467^{\circ}\)</span>. Let us choose the location of the zeros at <span class="tex-text">\(s=-3\)</span>. (This is an arbitrary choice. Other choices such as <span class="tex-text">\(s=-2.5\)</span> and <span class="tex-text">\(s=-4\)</span> may be made.)</p>
+ <p class="blog">
+Once we choose two zeros at <span class="tex-text">\(s=-3\)</span>, the necessary location of the poles can be determined as shown in Figure 6-80, or</p>
+ <span class="tex-text">\(\begin{aligned}\frac{1.73205}{y-1} &amp;=\tan \left(40.89334^{\circ}-35.4467^{\circ}\right) \\\quad\\&amp;=\tan 5.4466^{\circ}=0.09535\end{aligned}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+which yields</p>
+ <span class="tex-text">\(y=1+\frac{1.73205}{0.09535}=19.1652\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Hence, the lead compensator will have the following transfer function:</p>
+ <span class="tex-text">\(G_{c}(s)=K_{c}\left(\frac{s+3}{s+19.1652}\right)^{2}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+The value of <span class="tex-text">\(K_{c}\)</span> can be determined from the magnitude condition as follows:</p>
+ <span class="tex-text">\(\left|K_{c}\left(\frac{s+3}{s+19.1652}\right)^{2} \frac{1}{s^{2}} \frac{1}{0.1 s+1}\right|_{s=-1+j \sqrt{3}}=1\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+or</p>
+ <span class="tex-text">\(K_{c}=174.3864\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Then the lead compensator just designed is</p>
+ <span class="tex-text">\(G_{c}(s)=174.3864\left(\frac{s+3}{s+19.1652}\right)^{2}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Then the open-loop transfer function becomes</p>
+ <span class="tex-text">\(G_{c}(s) G(s) H(s)=174.3864\left(\frac{s+3}{s+19.1652}\right)^{2} \frac{1}{s^{2}} \frac{1}{0.1 s+1}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+A root-locus plot for the compensated system is shown in Figure 6-81(a). Notice that there is no closed-loop zero near the origin. An expanded view of the root-locus plot near the origin is shown in Figure 6-81(b).<br /> The closed-loop transfer function becomes</p>
+ <span class="tex-text">\(\frac{C(s)}{R(s)}=\frac{174.3864(s+3)^{2}(0.1 s+1)}{(s+19.1652)^{2} s^{2}(0.1 s+1)+174.3864(s+3)^{2}}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+The closed-loop poles are found as follows:</p>
+ <span class="tex-text">\(\begin{aligned}&amp;s=-1 \pm j 1.73205 \\\quad\\&amp;s=-9.1847 \pm j 7.4814 \\\quad\\&amp;s=-27.9606\end{aligned}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Figures 6–82(a) and (b) show the unit-step response and unit-ramp response of the compensated system. The unit-step response curve is reasonable and the unit-ramp response looks acceptable.<br /> Notice that in the unit-ramp response the output leads the input by a small amount. This is because the system has a feedback transfer function <span class="tex-text">\(1/(0.1s+1)\)</span>. If the feedback signal versus <span class="tex-text">\(t\)</span> is plotted, together with the unit-ramp input, the former will not lead the input ramp at steady state. See Figure 6–82(c).</p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="/tos">terms</a>
+                <a href="/privacy">privacy</a>
+                <a href="/contact-us">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="/assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>

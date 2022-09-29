@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="../assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="../assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="../assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="../assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/controller-design-by-transformation-problem-design-a-state-variable-feedback-controller-to-yield-a-20-8-overshoot-and-a-settling-time-of-4-seconds-for-a-plant-gs-s4-s1s2s5-that-is-re" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Controller Design by Transformation PROBLEM: Design a state-variable feedback controller to yield a 20.8% overshoot and a settling time of 4 seconds for a plant, G(s) = (s+4)/(s+1)(s+2)(s+5) that is represented in cascade form as shown in Figure 12.9. [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Controller Design by Transformation PROBLEM: Design a state-variable feedback controller to yield a 20.8% overshoot and a settling time of 4 seconds for a plant, G(s) = (s+4)/(s+1)(s+2)(s+5) that is represented in cascade form as shown in Figure 12.9.[solved!] | Vlavar Engineering" />
+<meta name="description" content="First find the state equations and the controllability matrix. The state equations written from Figure 12.9 are dot{z}=A_{z}z+B_{z}u"/>
+<meta property="og:description" content="First find the state equations and the controllability matrix. The state equations written from Figure 12.9 are dot{z}=A_{z}z+B_{z}u" />
+<meta property="og:image" content="https://vlavar.com/imagesdb/uploads/2021/12/figure-12.9-768x153.png" />
+<meta property="og:updated_time" content="2022-12-18T16:23:52+04:00" />
+<meta name="twitter:description" content="First find the state equations and the controllability matrix. The state equations written from Figure 12.9 are dot{z}=A_{z}z+B_{z}u" />
+<meta name="twitter:title" content="Controller Design by Transformation PROBLEM: Design a state-variable feedback controller to yield a 20.8% overshoot and a settling time of 4 seconds for a plant, G(s) = (s+4)/(s+1)(s+2)(s+5) that is represented in cascade form as shown in Figure 12.9.[solved!] | Vlavar Engineering" />
+<meta name="twitter:image" content="https://vlavar.com/imagesdb/uploads/2021/12/figure-12.9-768x153.png" />
+<meta property="article:published_time" content="2022-12-14T18:06:41+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/controller-design-by-transformation-problem-design-a-state-variable-feedback-controller-to-yield-a-20-8-overshoot-and-a-settling-time-of-4-seconds-for-a-plant-gs-s4-s1s2s5-that-is-re" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="../index.html">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="../index.html">Home</a>
+                    <a id="search">Search</a>
+                    <a href="../tour/1.html">Tour</a>
+                    <a href="../contact-us.html">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="../index.html">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="../tour/1.html">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="../contact-us.html">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Controller Design by Transformation</p> <p class="blog">PROBLEM: Design a state-variable feedback controller to yield a 20.8% overshoot and a settling time of 4 seconds for a plant,</p> <span class="tex-text">\(G(s)=\frac{(s+4)}{(s+1)(s+2)(s+5)}\)</span> <p class="blog">that is represented in cascade form as shown in Figure 12.9.</p> <div class="image-clearfix"><img class="question-image" src="../imagesdb/uploads/2021/12/figure-12.9-768x153.png"></div>    
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+First find the state equations and the controllability matrix. The state<br /> equations written from Figure 12.9 are</p>
+ <span class="tex-text">\(\dot{z}=A_{z}z+B_{z}u =\left[\begin{matrix} -5 &amp; 1 &amp; 0 \\ 0 &amp; -2 &amp; 1 \\ 0 &amp; 0 &amp; -1 \end{matrix} \right] z+\left[\begin{matrix} 0 \\ 0 \\ 1 \end{matrix} \right]u\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(y=C_{z}z=\left[\begin{matrix} -1 &amp; 1 &amp; 0\end{matrix} \right]z \)</span> <p class="blog">
+from which the controllability matrix is evaluated as</p>
+ <span class="tex-text">\(C_{Mz}=\left[\begin{matrix} B_{z} &amp; A_{z}B_{z} &amp; A^{2}_{z}B_{z} \end{matrix} \right] =\left[\begin{matrix} 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; -3 \\ 1 &amp; -1 &amp; 1 \end{matrix} \right]\)</span> <p class="blog">
+Since the determinant of <span class="tex-text">\(C_{Mz}\)</span> is -1, the system is controllable.</p>
+ <p class="blog">
+We now convert the system to phase variables by first finding the characteristic equation and using this equation to write the phase-variable form. The characteristic equation, <span class="tex-text">\(\det (sI-A_{z} )\)</span>, is</p>
+ <span class="tex-text">\(\det (sI-A_{z} )=s^{3}+8s^{2}+17s+10=0\)</span> <p class="blog">
+Using the coefficients of Eq. (12.46)</p>
+ <span class="tex-text">\(\det (sI-A_{z} )=s^{3}+8s^{2}+17s+10=0\)</span> <p class="blog">
+and our knowledge of the phase-variable form, we write the phase-variable representation of the system as</p>
+ <span class="tex-text">\(\dot{x}=A_{x}x+B_{x}u=\left[\begin{matrix} 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ -10 &amp; -17 &amp; -8 \end{matrix} \right] x+\left[\begin{matrix} 0 \\ 0 \\ 1 \end{matrix} \right] u\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(y=\left[\begin{matrix} 4 &amp; 1 &amp; 0\end{matrix} \right]x\)</span> <p class="blog">
+The output equation was written using the coefficients of the numerator of Eq. (12.43),</p>
+ <span class="tex-text">\(G(s)=\frac{(s+4)}{(s+1)(s+2)(s+5)}\)</span> <p class="blog">
+since the transfer function must be the same for the two representations. The controllability matrix, <span class="tex-text">\(C_{Mx′}\)</span> for the phase-variable system is</p>
+ <span class="tex-text">\(C_{Mx} =\left[\begin{matrix} B_{x} &amp; A_{x}B_{x} &amp; A^{2}_{x}B_{x} \end{matrix} \right] =\left[\begin{matrix} 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; -8 \\ 1 &amp; -8 &amp; 47 \end{matrix} \right]\)</span> <p class="blog">
+Using Eq. (12.39), <span class="tex-text">\(P=C_{Mz} C_{Mz}^{-1}\)</span> we can now calculate the transformation matrix between the two systems as</p>
+ <span class="tex-text">\(P=C_{Mz} C_{Mz}^{-1} =\left[\begin{matrix} 1 &amp; 0 &amp; 0 \\ 5 &amp; 1 &amp; 0 \\ 10 &amp; 7 &amp; 1 \end{matrix} \right]\)</span> <p class="blog">
+We now design the controller using the phase-variable representation and then use Eq. (12.49)</p>
+ <span class="tex-text">\(P=C_{Mz} C_{Mz}^{-1} =\left[\begin{matrix} 1 &amp; 0 &amp; 0 \\ 5 &amp; 1 &amp; 0 \\ 10 &amp; 7 &amp; 1 \end{matrix} \right]\)</span> <p class="blog">
+to transform the design back to the original representation. For a 20.8%<br /> overshoot and a settling time of 4 seconds, a factor of the characteristic equation of the designed closed-loop system is <span class="tex-text">\(s^{2}+2s+5 \)</span> Since the closed-loop zero will be at s = -4, we choose the third closed-loop pole to cancel the closed-loop zero. Hence, the total<br /> characteristic equation of the desired closed-loop system is</p>
+ <span class="tex-text">\(D(s)=(s+4)(s^{2}+2s+5 )= s^{3}+6s^{2}+13s+20=0\)</span> <p class="blog">
+The state equations for the phase-variable form with state-variable feedback are</p>
+ <span class="tex-text">\(\dot{x}=(A_{x}-B_{x}K_{x})x=\left[\begin{matrix} 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ -(10+k_{1_{x} } ) &amp; -(17+k_{2_{x} } ) &amp; -(8+k_{3_{x} } ) \end{matrix} \right] x\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(y=\left[\begin{matrix} 4 &amp; 1 &amp; 0\end{matrix} \right]x\)</span> <p class="blog">
+The characteristic equation for Eqs. (12.51) is</p>
+ <span class="tex-text">\(\det (sI-(A_{x}-B_{x}K_{x}))=s^{3}+(8+k_{3_{x}})s^{2}+(17+k_{2_{x}})s+(10+k_{1_{x}})\)</span> <p class="blog">
+=0</p>
+ <p class="blog">
+Comparing Eq. (12.50)</p>
+ <span class="tex-text">\(D(s)=(s+4)(s^{2}+2s+5 )= s^{3}+6s^{2}+13s+20=0\)</span> <p class="blog">
+with (12.52),</p>
+ <span class="tex-text">\(\det (sI-(A_{x}-B_{x}K_{x}))=s^{3}+(8+k_{3_{x}})s^{2}+(17+k_{2_{x}})s+(10+k_{1_{x}})\)</span> <p class="blog">
+=0</p>
+ <p class="blog">
+we see that</p>
+ <span class="tex-text">\(K_{x} =\left[\begin{matrix} k_{1_{x}} &amp; k_{2_{x}} &amp; k_{3_{x}}\end{matrix} \right] = \left[\begin{matrix} 10 &amp; -4 &amp; -2\end{matrix} \right]\)</span> <p class="blog">
+Using Eqs. (12.42)</p>
+ <span class="tex-text">\(K_{z} =K_{x} P^{-1}\)</span> <p class="blog">
+and (12.49),</p>
+ <span class="tex-text">\(P=C_{Mz} C_{Mz}^{-1} =\left[\begin{matrix} 1 &amp; 0 &amp; 0 \\ 5 &amp; 1 &amp; 0 \\ 10 &amp; 7 &amp; 1 \end{matrix} \right]\)</span> <p class="blog">
+we can transform the controller back to the original system as</p>
+ <span class="tex-text">\(K_{z} =K_{x} P^{-1} =\left[\begin{matrix} -20 &amp; 10 &amp; -2\end{matrix} \right]\)</span> <p class="blog">
+The final closed-loop system with state-variable feedback is shown in Figure 12.10, with the input applied as shown.</p>
+ <p class="blog">
+Let us now verify our design. The state equations for the designed system shown in Figure 12.10 with input r are</p>
+ <span class="tex-text">\(\dot{z}=(A_{z}-B_{z}K_{z})z+B_{z}r=\left[\begin{matrix} -5 &amp; 1 &amp; 0 \\ 0 &amp; -2 &amp; 1 \\ 20 &amp; -10 &amp; 1 \end{matrix} \right]z+\left[\begin{matrix} 0 \\ 0 \\ 1 \end{matrix} \right] r\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(y=C_{z}z=\left[\begin{matrix} -1 &amp; 1 &amp; 0\end{matrix} \right] z\)</span> <p class="blog">
+Using Eq. (3.73)</p>
+ <span class="tex-text">\(T(s)=\frac{Y(s)}{U(s)}=C(sI-A)^{-1}B+D\)</span> <p class="blog">
+to find the closed-loop transfer function, we obtain</p>
+ <span class="tex-text">\(T(s)=\frac{(s+4)}{s^{3}+6s^{2}+13s+20} =\frac{1}{s^{2}+2s+5}\)</span> <p class="blog">
+The requirements for our design have been met.</p>
+ <p class="blog">
+Students who are using MATLAB should now run ch12p3 in Appendix B. You will learn how to use MATLAB to design a controller for a plant<br /> not represented in phase-variable form. You will see that MATLAB does not require transformation to phase-variable form. This exercise solves Example 12.4 using MATLAB.</p>
+ <div class="image-clearfix"> <img class="question-image" src="../imagesdb/uploads/2021/12/figure-12.10-768x257.png"></div> 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="../tos.html">terms</a>
+                <a href="../privacy.html">privacy</a>
+                <a href="../contact-us.html">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="../assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>
