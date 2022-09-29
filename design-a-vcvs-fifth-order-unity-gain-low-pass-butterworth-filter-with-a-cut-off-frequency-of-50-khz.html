@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="../assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="../assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="../assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="../assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/design-a-vcvs-fifth-order-unity-gain-low-pass-butterworth-filter-with-a-cut-off-frequency-of-50-khz" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Design a VCVS fifth-order unity-gain low-pass Butterworth filter with a cut-off frequency of 50 kHz [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Design a VCVS fifth-order unity-gain low-pass Butterworth filter with a cut-off frequency of 50 kHz[solved!] | Vlavar Engineering" />
+<meta name="description" content="The design of each of the three partial filters is considered separately. Partial Filter 1 For this case, f_c = 50 kHz. Select C = 1"/>
+<meta property="og:description" content="The design of each of the three partial filters is considered separately. Partial Filter 1 For this case, f_c = 50 kHz. Select C = 1" />
+
+<meta property="og:updated_time" content="2022-10-24T00:07:43+04:00" />
+<meta name="twitter:description" content="The design of each of the three partial filters is considered separately. Partial Filter 1 For this case, f_c = 50 kHz. Select C = 1" />
+<meta name="twitter:title" content="Design a VCVS fifth-order unity-gain low-pass Butterworth filter with a cut-off frequency of 50 kHz[solved!] | Vlavar Engineering" />
+
+<meta property="article:published_time" content="2022-10-22T12:01:57+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/design-a-vcvs-fifth-order-unity-gain-low-pass-butterworth-filter-with-a-cut-off-frequency-of-50-khz" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="../index.html">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="../index.html">Home</a>
+                    <a id="search">Search</a>
+                    <a href="../tour/1.html">Tour</a>
+                    <a href="../contact-us.html">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="../index.html">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="../tour/1.html">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="../contact-us.html">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Design a VCVS fifth-order unity-gain low-pass Butterworth filter with a cut-off frequency of 50 kHz</p>      
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+The design of each of the three partial filters is considered separately.</p>
+ <p class="blog">
+<strong>Partial Filter 1</strong><br /> For this case, <span class="tex-text">\(f_c = 50 kHz\)</span>. Select <span class="tex-text">\(C = 1 nF\)</span>. From Table 11.1, <span class="tex-text">\(a_1 = 1, b_1 = 0\)</span>. Hence <span class="tex-text">\(R = a_1/ 2πf_cC = 1/2π × 50 × 10^3 × 10^{-9} = 3.2 k\)</span>.</p>
+ <p class="blog">
+<strong>Partial Filter 2</strong></p>
+ <p class="blog">
+For this case, <span class="tex-text">\(f_c = 50 kHz\)</span>. Select <span class="tex-text">\(C_1 = 820 pF\)</span>. From Table 11.1, <span class="tex-text">\(a_2 = 1.6180, b_2 = 1\)</span>. Then <span class="tex-text">\(C_2 ≥ 4b_2C_1/a_2^2 = 4 × 1 × 820 × 10^{-12}/(1.618)^2 = 1.26 nF\)</span>. Select <span class="tex-text">\(C_2 = 1.5 nF\)</span>. Hence <span class="tex-text">\(R_1=\frac{1.618+\sqrt{(1.618)^2-(4\times 1\times 0.820\times 10^{-9}/1.5\times 10^{-9})} }{4\pi \times 50\times 10^3\times 0.820\times 10^{-9}} =4.4 k\)</span> and <span class="tex-text">\(R_2=\frac{1.618-\sqrt{(1.618)^2-(4\times 1\times 0.820\times 10^{-9}/1.5\times 10^{-9})} }{4\pi \times 50\times 10^3\times 0.820\times 10^{-9}} =1.9 k\)</span>. Finally, for minimum offset, <span class="tex-text">\(R_{os} = 4.4 k + 1.9 k = 6.3 k\)</span>.</p>
+ <p class="blog">
+<strong>Partial Filter 3</strong></p>
+ <p class="blog">
+For this case, <span class="tex-text">\(f_c = 50 kHz\)</span>. Select <span class="tex-text">\(C_1 = 330 pF\)</span>. From Table 11.1, <span class="tex-text">\(a_3 = 0.6180, b_3 = 1\)</span>. Then <span class="tex-text">\(C_2 ≥ 4b_3C_1/a_3^2 = 4 × 1 × 330 × 10^{-12}/ (0.6180)^2 = 3.5 nF\)</span>. Select <span class="tex-text">\(C_2 = 4.7 nF\)</span>. Hence <span class="tex-text">\(R_1=\frac{0.618+\sqrt{(0.618)^2-(4\times 1\times 0.330\times 10^{-9}/4.7\times 10^{-9})} }{4\pi \times 50\times 10^3\times 0.330\times 10^{-9}} =4.5k\)</span> and <span class="tex-text">\(R_2=\frac{0.618-\sqrt{(0.618)^2-(4\times 1\times 0.330\times 10^{-9}/4.7\times 10^{-9})} }{4\pi \times 50\times 10^3\times 0.330\times 10^{-9}} =1.5k\)</span>.</p>
+ <div class="table-overflow"><table  style="border-collapse: collapse;width: 384pt" border="0" width="512" cellspacing="0" cellpadding="0"> <tbody> <tr style="height: 15.0pt"> <td style="height: 15.0pt;width: 48pt" width="64" height="20">n</td> <td style="width: 48pt" align="right" width="64">1</td> <td style="width: 48pt" width="64"><span class="tex-text">\(a_i(Bu)\)</span></td> <td style="width: 48pt" width="64"><span class="tex-text">\(b_i(Bu)\)</span></td> <td style="width: 48pt" width="64"><span class="tex-text">\(a_i(Be)\)</span></td> <td style="width: 48pt" width="64"><span class="tex-text">\(b_i(Be)\)</span></td> <td style="width: 48pt" width="64"><span class="tex-text">\(a_i(.5 dB)\)</span></td> <td style="width: 48pt" width="64"><span class="tex-text">\(b_i(.5 dB)\)</span></td> </tr> <tr style="height: 15.0pt"> <td style="height: 15.0pt" align="right" height="20">1</td> <td align="right">1</td> <td align="right">1.0000</td> <td align="right">0.0000</td> <td align="right">1.000</td> <td align="right">0.0000</td> <td align="right">1.0000</td> <td align="right">0.0000</td> </tr> <tr style="height: 15.0pt"> <td style="height: 15.0pt" align="right" height="20">2</td> <td align="right">1</td> <td align="right">1.4142</td> <td align="right">1.0000</td> <td align="right">1.3617</td> <td align="right">0.618</td> <td align="right">1.3614</td> <td align="right">1.3827</td> </tr> <tr style="height: 30.0pt"> <td style="height: 30.0pt" align="right" height="40">3</td> <td class="xl65" style="width: 48pt" width="64">1<br /> 2</td> <td class="xl65" style="width: 48pt" width="64">1.0000<br /> 1.0000</td> <td class="xl65" style="width: 48pt" width="64">0.0000<br /> 1.0000</td> <td class="xl65" style="width: 48pt" width="64">0.7560<br /> 0.9996</td> <td class="xl65" style="width: 48pt" width="64">0.0000<br /> 0.4772</td> <td class="xl65" style="width: 48pt" width="64">1.8636<br /> 0.0640</td> <td class="xl65" style="width: 48pt" width="64">0.0000<br /> 1.1931</td> </tr> <tr style="height: 30.0pt"> <td style="height: 30.0pt" align="right" height="40">4</td> <td class="xl65" style="width: 48pt" width="64">1<br /> 2</td> <td class="xl65" style="width: 48pt" width="64">1.8478<br /> 0.7654</td> <td class="xl65" style="width: 48pt" width="64">1.0000<br /> 1.0000</td> <td class="xl65" style="width: 48pt" width="64">1.3397<br /> 0.7743</td> <td class="xl65" style="width: 48pt" width="64">0.4889<br /> 0.3890</td> <td class="xl65" style="width: 48pt" width="64">2.6282<br /> 0.3648</td> <td class="xl65" style="width: 48pt" width="64">3.4341<br /> 1.1509</td> </tr> <tr style="height: 45.0pt"> <td style="height: 45.0pt" align="right" height="60">5</td> <td class="xl65" style="width: 48pt" width="64">1<br /> 2<br /> 3</td> <td class="xl65" style="width: 48pt" width="64">1.0000<br /> 1.6180<br /> 0.6180</td> <td class="xl65" style="width: 48pt" width="64">0.0000<br /> 1.0000<br /> 1.0000</td> <td class="xl65" style="width: 48pt" width="64">0.6656<br /> 1.1402<br /> 0.6216</td> <td class="xl65" style="width: 48pt" width="64">0.0000<br /> 0.4128<br /> 0.3245</td> <td class="xl65" style="width: 48pt" width="64">2.9235<br /> 1.3025<br /> 0.2290</td> <td class="xl65" style="width: 48pt" width="64">0.0000<br /> 2.3534<br /> 1.0833</td> </tr> <tr style="height: 45.0pt"> <td style="height: 45.0pt" align="right" height="60">6</td> <td class="xl65" style="width: 48pt" width="64">1<br /> 2<br /> 3</td> <td class="xl65" style="width: 48pt" width="64">1.9319<br /> 1.4142<br /> 0.5176</td> <td class="xl65" style="width: 48pt" width="64">1.0000<br /> 1.0000<br /> 1.0000</td> <td class="xl65" style="width: 48pt" width="64">1.2217<br /> 0.9686<br /> 0.5131</td> <td class="xl65" style="width: 48pt" width="64">0.3887<br /> 0.3505<br /> 0.2756</td> <td class="xl65" style="width: 48pt" width="64">3.8645<br /> 0.7528<br /> 0.1589</td> <td class="xl65" style="width: 48pt" width="64">6.9797<br /> 1.8573<br /> 1.0711</td> </tr> <tr style="height: 60.0pt"> <td style="height: 60.0pt" align="right" height="80">7</td> <td class="xl65" style="width: 48pt" width="64">1<br /> 2<br /> 3<br /> 4</td> <td class="xl65" style="width: 48pt" width="64">1.0000<br /> 1.8019<br /> 1.2470<br /> 0.4450</td> <td class="xl65" style="width: 48pt" width="64">0.0000<br /> 1.0000<br /> 1.0000<br /> 1.0000</td> <td class="xl65" style="width: 48pt" width="64">0.5937<br /> 1.0944<br /> 0.8304<br /> 0.4332</td> <td class="xl65" style="width: 48pt" width="64">0.000<br /> 0.3395<br /> 0.3011<br /> 0.2381</td> <td class="xl65" style="width: 48pt" width="64">4.0211<br /> 1.8729<br /> 0.4861<br /> 0.1156</td> <td class="xl65" style="width: 48pt" width="64">0.0000<br /> 4.1795<br /> 1.5676<br /> 1.0443</td> </tr> <tr style="height: 60.0pt"> <td style="height: 60.0pt" align="right" height="80">8</td> <td class="xl65" style="width: 48pt" width="64">1<br /> 2<br /> 3<br /> 4</td> <td class="xl65" style="width: 48pt" width="64">1.9616<br /> 1.6629<br /> 1.1111<br /> 0.3902</td> <td class="xl65" style="width: 48pt" width="64">1.0000<br /> 1.0000<br /> 1.0000<br /> 1.0000</td> <td class="xl65" style="width: 48pt" width="64">1.1112<br /> 0.9754<br /> 0.7202<br /> 0.3728</td> <td class="xl65" style="width: 48pt" width="64">0.3162<br /> 0.2979<br /> 0.2621<br /> 0.2087</td> <td class="xl65" style="width: 48pt" width="64">5.1117<br /> 1.0639<br /> 0.3439<br /> 0.0885</td> <td class="xl65" style="width: 48pt" width="64">11.9607<br /> 2.9365<br /> 1.4206<br /> 1.0407</td> </tr> <tr style="height: 75.0pt"> <td style="height: 75.0pt" align="right" height="100">9</td> <td class="xl65" style="width: 48pt" width="64">1<br /> 2<br /> 3<br /> 4<br /> 5</td> <td class="xl65" style="width: 48pt" width="64">1.0000<br /> 1.8794<br /> 1.5321<br /> 1.0000<br /> 0.3473</td> <td class="xl65" style="width: 48pt" width="64">0.0000<br /> 1.0000<br /> 1.0000<br /> 1.0000<br /> 1.0000</td> <td class="xl65" style="width: 48pt" width="64">0.5386<br /> 1.0244<br /> 0.8710<br /> 0.6320<br /> 0.3257</td> <td class="xl65" style="width: 48pt" width="64">0.0000<br /> 0.2834<br /> 0.2636<br /> 0.2311<br /> 0.1854</td> <td class="xl65" style="width: 48pt" width="64">5.1318<br /> 2.4283<br /> 0.6839<br /> 0.2559<br /> 0.0695q</td> <td class="xl65" style="width: 48pt" width="64">0.0000<br /> 6.6307<br /> 2.2908<br /> 1.3133<br /> 1.0272</td> </tr> <tr style="height: 75.0pt"> <td style="height: 75.0pt" align="right" height="100">10</td> <td class="xl65" style="width: 48pt" width="64">1<br /> 2<br /> 3<br /> 4<br /> 5</td> <td class="xl65" style="width: 48pt" width="64">1.9754<br /> 1.7820<br /> 1.4142<br /> 0.9080<br /> 0.3129</td> <td class="xl65" style="width: 48pt" width="64">1.0000<br /> 1.0000<br /> 1.0000<br /> 1.0000<br /> 1.0000</td> <td class="xl65" style="width: 48pt" width="64">1.0215<br /> 0.9393<br /> 0.7815<br /> 0.5604<br /> 0.2883</td> <td class="xl65" style="width: 48pt" width="64">0.2650<br /> 0.2549<br /> 0.2351<br /> 0.2059<br /> 0.1665</td> <td class="xl65" style="width: 48pt" width="64">6.3648<br /> 1.3582<br /> 0.4822<br /> 0.1994<br /> 0.0563</td> <td class="xl65" style="width: 48pt" width="64">18.3695<br /> 4.3453<br /> 1.9440<br /> 1.2520<br /> 1.0263</td> </tr> </tbody> </table></div> <p class="blog">
+Finally, for minimum offset, <span class="tex-text">\(R_{os} = 4.5 k + 1.5 k = 6 k\)</span>.<br /> The completed filter is shown in Fig. 11.24.</p>
+ <div class="image-clearfix"> <img class="question-image" src="../imagesdb/uploads/2021/10/11.24-768x230.jpg"></div> 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="../tos.html">terms</a>
+                <a href="../privacy.html">privacy</a>
+                <a href="../contact-us.html">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="../assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>

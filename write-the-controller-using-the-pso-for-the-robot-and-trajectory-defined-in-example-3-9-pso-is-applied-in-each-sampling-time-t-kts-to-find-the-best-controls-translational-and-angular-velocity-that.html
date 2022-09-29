@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/write-the-controller-using-the-pso-for-the-robot-and-trajectory-defined-in-example-3-9-pso-is-applied-in-each-sampling-time-t-kts-to-find-the-best-controls-translational-and-angular-velocity-that" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Write the controller using the PSO for the robot and trajectory defined in Example 3.9. PSO is applied in each sampling time t = kTs to find the best controls (translational and angular velocity) that would drive the robot as close as possible to the current reference position xref(t), yref(t). [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Write the controller using the PSO for the robot and trajectory defined in Example 3.9. PSO is applied in each sampling time t = kTs to find the best controls (translational and angular velocity) that would drive the robot as close as possible to the current reference position xref(t), yref(t).[solved!] | Vlavar Engineering" />
+<meta name="description" content="Solution The control law includes feedforward action and feedback action similarly as in Example 3.9. Feedforward action is obtained from a known trajectory"/>
+<meta property="og:description" content="Solution The control law includes feedforward action and feedback action similarly as in Example 3.9. Feedforward action is obtained from a known trajectory" />
+
+<meta property="og:updated_time" content="2022-11-16T18:20:50+04:00" />
+<meta name="twitter:description" content="Solution The control law includes feedforward action and feedback action similarly as in Example 3.9. Feedforward action is obtained from a known trajectory" />
+<meta name="twitter:title" content="Write the controller using the PSO for the robot and trajectory defined in Example 3.9. PSO is applied in each sampling time t = kTs to find the best controls (translational and angular velocity) that would drive the robot as close as possible to the current reference position xref(t), yref(t).[solved!] | Vlavar Engineering" />
+
+<meta property="article:published_time" content="2022-11-16T18:14:36+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/write-the-controller-using-the-pso-for-the-robot-and-trajectory-defined-in-example-3-9-pso-is-applied-in-each-sampling-time-t-kts-to-find-the-best-controls-translational-and-angular-velocity-that" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="/">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="/">Home</a>
+                    <a id="search">Search</a>
+                    <a href="/tour/1">Tour</a>
+                    <a href="/contact-us">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="/">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="/tour/1">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="/contact-us">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Write the controller using the PSO for the robot and trajectory defined in . PSO is applied in each sampling time <span class="tex-text">\(t=k T_{ s }\)</span> to find the best controls (translational and angular velocity) that would drive the robot as close as possible to the current reference position<span class="tex-text">\(x_{ ref }(t)\)</span>, <span class="tex-text">\(y_{ ref }(t)\)</span>. Next, the robot pose prediction is computed considering robot kinematics and the particles’ proposed solution (control action). Optimal control minimizes the cost function consisting of the tracking error <span class="tex-text">\(e(t)=\left[e_{x}(t), e_{\gamma}(t), e_{\varphi}(t)\right]^{T}\)</span> and the feedback control effort <span class="tex-text">\(u_{ fb }=\left[v_{ fb }, \omega_{ fb }\right]^{T}\)</span>. This follows the equation <span class="tex-text">\(J(t)=e(t)^{T} Q e(t)+u_{ fb }^{T} R u_{ fb }\)</span>, where Q and R are diagonal weighting matrices used to tune the controller behavior.</p> <p class="blog">&nbsp;</p>      
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+<strong>Solution</strong></p>
+ <p class="blog">
+The control law includes feedforward action and feedback action similarly<br /> as in . Feedforward action is obtained from a known trajectory while the feedback action is computed using PSO. The tracking error is expressed in robot local coordinates (see Fig. 3.21) because this makes the optimization more efficient due to the closed-loop system being decoupled better. The error in the local x coordinate can simply be compensated by translational velocity, and errors in y and φ can be compensated by the angular velocity. However, this is not the case when using a global tracking error due to nonlinear rotation transformation in Eq. (3.35).</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\left[\begin{array}{c}e_{x}(t) \\e_{y}(t) \\e_{\varphi}(t)\end{array}\right]=\left[\begin{array}{ccc}\cos (\varphi(t)) &amp; \sin (\varphi(t)) &amp; 0 \\-\sin (\varphi(t)) &amp; \cos (\varphi(t)) &amp; 0 \\0 &amp; 0 &amp; 1\end{array}\right]\left(q_{ ref }(t)-q(t)\right)\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+In Listing 3.13 a Matlab script of a possible solution is given. Obtained<br /> simulation results are shown in Figs. 3.32 and 3.33. Similar control results as in  are obtained. However, the computational effort is much higher than in . Results of Example 3.14 are not deterministic because PSO is using randomly distributed particles in optimization to find the best control in each sampling time. Therefore, resulting trajectories of the mobile robot can vary to some extent, especially the initial transition phase, until the robot reaches the reference. However, the obtained results in the majority of simulation runs are at least comparable to the results of other presented deterministic controllers (e.g., from ).</p>
+ <p class="blog">
+<strong>Listing 3.13</strong></p>
+ <p class="blog">
+1 Ts = 0.033; % Sampling time<br /> 2 t = 0:Ts:30; % Simulation time<br /> 3 q = [1.1; 0.8; 0]; % Initial robot pose<br /> 4<br /> 5 % Reference<br /> 6 freq = 2*pi/30;<br /> 7 xRef = 1.1 + 0.7*sin(freq*t); yRef = 0.9 + 0.7*sin(2*freq*t);<br /> 8 dxRef = freq*0.7*cos(freq*t); dyRef = 2*freq*0.7*cos(2*freq*t);<br /> 9 ddxRef =-freq^2*0.7*sin(freq*t); ddyRef =-4*freq^2*0.7*sin(2*freq*t);<br /> 10 qRef = [xRef; yRef; atan2(dyRef, dxRef)]; % Reference trajectory<br /> 11 vRef = sqrt(dxRef.^2+dyRef.^2);<br /> 12 wRef = (dxRef.*ddyRef-dyRef.*ddxRef)./(dxRef.^2+dyRef.^2);<br /> 13 uRef = [vRef; wRef]; % Reference inputs<br /> 14<br /> 15 vMax = 1; wMax = 15; % Velocity constraints<br /> 16<br /> 17 % Swarm initialization<br /> 18 iterations = 20; % Number of iterations<br /> 19 omega = 0.5*0.5; % Inertia<br /> 20 c1 = 0.5*1; % Correction factor<br /> 21 c2 = 0.5*1; % Global correction factor<br /> 22 N = 25; % Swarm size<br /> 23 swarm = zeros([2,N,4]);<br /> 24 uBest = [0; 0];<br /> 25<br /> 26 for k = 1:length(t)-1<br /> 27 % Initial swarm position<br /> 28 swarm(:,:,1) = repmat(uBest, 1, N) + diag([0.1; 3])*randn(2,N);<br /> 29 swarm(:,:,2) = 0; % Initial particle velocity<br /> 30 swarm(1,:,4) = 1000; % Best value so far<br /> 31<br /> 32 for iter = 1:iterations % PSO iteratively find best solution<br /> 33 % Evaluate particles parameters<br /> 34 for i = 1:N<br /> 35 % Compute new predicted pose of the robot using i-th particle<br /> 36 % parameters (input velocities) and compare obtained predicted<br /> 37 % pose to the reference pose.<br /> 38 vwi = swarm(:,i,1);<br /> 39 ui = vwi + uRef(:,k); % Feedback and feedforward<br /> 40 qk = q; % Current robot pose<br /> 41 % Predict robot pose using particle parameters (velocities)<br /> 42 qk = qk + Ts*[cos(qk(3)), 0; sin(qk(3)), 0; 0, 1]*ui;</p>
+ <p class="blog">
+43 qk(3) = wrapToPi(qk(3)); % Correct angle range<br /> 44 e = [cos(qk(3)), sin(qk(3)), 0; &#8230;<br /> 45 -sin(qk(3)), cos(qk(3)), 0; &#8230;<br /> 46 0, 0, 1]*(qRef(:,k+1)-qk); % Error<br /> 47 e(3) = wrapToPi(e(3)); % Correct angle range<br /> 48 Qt = diag([4; 80; 0.1]); Rt = diag([1; 1]*0.0001); % Weights<br /> 49 J = e.’*Qt*e + vwi.’*Rt*vwi; % Cost function<br /> 50 if J&lt;swarm(1,i,4) % if new parameter is better, update:<br /> 51 swarm(:,i,3) = swarm(:,i,1); % param values (v and w)<br /> 52 swarm(1,i,4) = J; % and best criteria value.<br /> 53 end<br /> 54 end<br /> 55 [~, gBest] = min(swarm(1,:,4)); % Global best particle parameters<br /> 56<br /> 57 % Updating parameters by velocity vectors<br /> 58 a = omega*swarm(:,:,2) + &#8230;<br /> 59 c1*rand(2,N).*(swarm(:,:,3) &#8211; swarm(:,:,1)) + &#8230;<br /> 60 c2*rand(2,N).*(repmat(swarm(:,gBest,3), 1, N) &#8211; swarm(:,:,1));<br /> 61 % Max param increment, acceleration: aMax=3 ==&gt; 3*Ts=0.1<br /> 62 a(1,a(1,:)&gt;0.1) = 0.1; a(1,a(1,:)&lt;-0.1) = -0.1;<br /> 63 % Max param increment, angular acceleration: aMax=60 ==&gt; 60*Ts=2<br /> 64 a(2,a(1,:)&gt;2) = 2; a(2,a(1,:)&lt;-2) = -2;<br /> 65<br /> 66 v = swarm(:,:,1) + a; % Update velocity<br /> 67 % Limit velocity to preserve curvature &#8230;<br /> 68 [m, ii] = max([v(1,:)/vMax; v(2,:)/wMax; ones(1,N)]);<br /> 69 i = ii==1; v(1,i) = sign(v(1,i))*vMax;<br /> 70 v(2,i) = v(2,i)./m(i);<br /> 71 i = ii==2; v(2,i) = sign(v(2,i))*wMax;<br /> 72 v(1,i) = v(1,i)./m(i);<br /> 73<br /> 74 swarm(:,:,2) = a; % Updated particle velocities (acceleration)<br /> 75 swarm(:,:,1) = v; % Updated particle positions (velocities)<br /> 76 end<br /> 77<br /> 78 % Take the best particle to get robot command velocities<br /> 79 uBest = swarm(:,gBest,1);<br /> 80 u = uBest + uRef(:,k); % Feedback and feedforward<br /> 81<br /> 82 % Velocity constraints<br /> 83 if abs(u(1))&gt;vMax, u(1) = sign(u(1))*vMax; end<br /> 84 if abs(u(2))&gt;wMax, u(2) = sign(u(2))*wMax; end<br /> 85<br /> 86 % Robot motion simulation<br /> 87 dq = [u(1)*cos(q(3)); u(1)*sin(q(3)); u(2)];<br /> 88 noise = 0.00; % Set to experiment with noise (e.g. 0.001)<br /> 89 q = q + Ts*dq + randn(3,1)*noise; % Euler integration<br /> 90 q(3) = wrapToPi(q(3)); % Map orientation angle to [-pi, pi]<br /> 91 end</p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="/tos">terms</a>
+                <a href="/privacy">privacy</a>
+                <a href="/contact-us">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="/assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>

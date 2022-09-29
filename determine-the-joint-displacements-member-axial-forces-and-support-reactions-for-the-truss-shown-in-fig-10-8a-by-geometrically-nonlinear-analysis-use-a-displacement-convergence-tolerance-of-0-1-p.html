@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/determine-the-joint-displacements-member-axial-forces-and-support-reactions-for-the-truss-shown-in-fig-10-8a-by-geometrically-nonlinear-analysis-use-a-displacement-convergence-tolerance-of-0-1-p" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Determine the joint displacements, member axial forces, and support reactions for the truss shown in Fig. 10.8(a) by geometrically nonlinear analysis. Use a displacement convergence tolerance of 0.1 percent. [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Determine the joint displacements, member axial forces, and support reactions for the truss shown in Fig. 10.8(a) by geometrically nonlinear analysis. Use a displacement convergence tolerance of 0.1 percent.[solved!] | Vlavar Engineering" />
+<meta name="description" content="Analytical Model: See Fig. 10.8(b). The truss has three degrees of freedom, numbered as 1, 2, and 3. The three restrained coordinates of the truss are"/>
+<meta property="og:description" content="Analytical Model: See Fig. 10.8(b). The truss has three degrees of freedom, numbered as 1, 2, and 3. The three restrained coordinates of the truss are" />
+<meta property="og:image" content="https://vlavar.com/imagesdb/uploads/2021/11/aaaa.png" />
+<meta property="og:updated_time" content="2022-11-17T06:32:23+04:00" />
+<meta name="twitter:description" content="Analytical Model: See Fig. 10.8(b). The truss has three degrees of freedom, numbered as 1, 2, and 3. The three restrained coordinates of the truss are" />
+<meta name="twitter:title" content="Determine the joint displacements, member axial forces, and support reactions for the truss shown in Fig. 10.8(a) by geometrically nonlinear analysis. Use a displacement convergence tolerance of 0.1 percent.[solved!] | Vlavar Engineering" />
+<meta name="twitter:image" content="https://vlavar.com/imagesdb/uploads/2021/11/aaaa.png" />
+<meta property="article:published_time" content="2022-11-12T23:18:11+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/determine-the-joint-displacements-member-axial-forces-and-support-reactions-for-the-truss-shown-in-fig-10-8a-by-geometrically-nonlinear-analysis-use-a-displacement-convergence-tolerance-of-0-1-p" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="/">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="/">Home</a>
+                    <a id="search">Search</a>
+                    <a href="/tour/1">Tour</a>
+                    <a href="/contact-us">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="/">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="/tour/1">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="/contact-us">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Determine the joint displacements, member axial forces, and support reactions for the truss shown in Fig. 10.8(a) by geometrically nonlinear analysis. Use a displacement convergence tolerance of 0.1 percent.</p> <div class="image-clearfix"><img class="question-image" src="/imagesdb/uploads/2021/11/aaaa.png"></div>    
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+Analytical Model: See Fig. 10.8(b). The truss has three degrees of freedom, numbered as 1, 2, and 3. The three restrained coordinates of the truss are identified by numbers 4, 5, and 6.</p>
+ <p class="blog">
+<em>Linear Analysis: </em> We begin by performing the conventional linear analysis of the truss subjected to the specified joint loads,</p>
+ <p class="blog">
+<span class="tex-text">\(P=\left[\begin{matrix} 0 \\ -2,000 \\ 0 \end{matrix} \right]\)</span> kN (1)</p>
+ <p class="blog">
+The member global stiffness matrices can be evaluated by using either Eq. (3.73)<span class="tex-text">\(K=\frac{EA}{L}\left[\begin{matrix} cos^{2}\theta &amp; \cos \theta \sin \theta &amp; -\cos^{2}\theta &amp;-cos\theta sin\theta \\ \cos\theta \sin\theta &amp; \sin^{2}\theta &amp; -\cos\theta sin\theta &amp;-sin^{2}\theta \\ -cos^{2}\theta &amp; -cos\theta \sin\theta &amp; \cos^{2}\theta &amp;\cos \theta \sin \theta \\-\cos\theta \sin\theta &amp; -\sin^{2}\theta &amp; \cos\theta \sin\theta &amp; \sin^{2}\theta \end{matrix} \right]\)</span>, or Eq. (10.31)<span class="tex-text">\(K_{t}=\frac{EA}{L}\left[\begin{matrix} c^{2}_{X} &amp; c_{X}c_{Y} &amp; -c^{2}_{X} &amp; -c_{X}c_{Y} \\ c_{X}c_{Y} &amp; c^{2}_{Y} &amp; -c_{X}c_{Y} &amp; -c^{2}_{Y} \\ -c^{2}_{X} &amp; -c_{X}c_{Y} &amp; c^{2}_{X} &amp; c_{X}c_{Y} \\ -c_{X}c_{Y} &amp; -c^{2}_{Y} &amp; c_{X}c_{Y} &amp; c^{2}_{Y} \end{matrix} \right] +\frac{Q}{\bar{L}} \left[\begin{matrix} -c^{2}_{Y} &amp; c_{X}c_{Y} &amp; c^{2}_{Y} &amp; -c_{X}c_{Y} \\ c_{X}c_{Y} &amp; -c^{2}_{X} &amp; -c_{X}c_{Y} &amp; c^{2}_{X} \\ c^{2}_{Y} &amp; -c_{X}c_{Y} &amp; -c^{2}_{Y} &amp; c_{X}c_{Y} \\ -c_{X}c_{Y} &amp; c^{2}_{X} &amp; c_{X}c_{Y} &amp; -c^{2}_{X} \end{matrix} \right]\)</span> with <span class="tex-text">\(\bar{\theta }=\theta\)</span> and Q = 0. These are:</p>
+ <p class="blog">
+<div class="image-clearfix"> <img class="question-image" src="/imagesdb/uploads/2021/11/7-1-300x78.png"></div></p>
+ <p class="blog">
+<div class="image-clearfix"> <img class="question-image" src="/imagesdb/uploads/2021/11/8-1-300x81.png"></div></p>
+ <p class="blog">
+<div class="image-clearfix"> <img class="question-image" src="/imagesdb/uploads/2021/11/9.png"></div></p>
+ <p class="blog">
+The structure stiffness matrix thus obtained is</p>
+ <p class="blog">
+<div class="image-clearfix"> <img class="question-image" src="/imagesdb/uploads/2021/11/5-8.png"></div></p>
+ <p class="blog">
+By solving the linear system of equations<strong> P = S</strong> <span class="tex-text">\(d_{1}\)</span>, we determine the first approximation configuration to be</p>
+ <p class="blog">
+<span class="tex-text">\(d_{1}=\left[\begin{matrix} 0.11809 \\ -0.46497 \\ 0.23618 \end{matrix} \right] \begin{matrix} 1 \\ 2 \\ 3 \end{matrix}\)</span> m</p>
+ <p class="blog">
+<em>Iteration Cycle 1: </em> Next, for the current deformed configuration <span class="tex-text">\(d_{1}\)</span> of the structure, we evaluate its internal joint force vector <span class="tex-text">\(f_{1}\)</span> and the tangent stiffness matrix <span class="tex-text">\(S_{t1}\)</span> by assembling the pertinent elements of the member <strong>F</strong> vectors and <span class="tex-text">\(K_{t}\)</span> matrices, respectively, as follows:</p>
+ <p class="blog">
+<strong>Member 1</strong></p>
+ <p class="blog">
+<span class="tex-text">\(v=\left[\begin{matrix} 0 \\ 0 \\ 0.11809 \\-0.46497 \end{matrix} \right] \begin{matrix} 4 \\ 5 \\ 1 \\2 \end{matrix}\)</span> m</p>
+ <p class="blog">
+L = 5 m, <span class="tex-text">\(\bar{L}\)</span>= 4.8358 m, <span class="tex-text">\(c_{X}\)</span> = 0.85158, <span class="tex-text">\(c_{Y}\)</span> = 0.52422, u = 0.16419 m, Q = 1,483.1 kN</p>
+ <p style="text-align: center"><strong><div class="image-clearfix"> <img class="question-image" src="/imagesdb/uploads/2021/11/4-10-300x55.png"></div></strong> (2)</p>
+ <p class="blog">
+<span class="tex-text">\(v=\left[\begin{matrix} 0.23618 \\ 0 \\ 0.11809 \\-0.46497 \end{matrix} \right] \begin{matrix} 3 \\ 6 \\ 1 \\2 \end{matrix}\)</span> m</p>
+ <p class="blog">
+L =5 m, <span class="tex-text">\(\bar{L}\)</span>=4.8358 m, <span class="tex-text">\(c{X}\)</span>=0.85158, <span class="tex-text">\(c_{Y}\)</span>=0.52422, u=0.16419 m, Q=1,483.1 kN</p>
+ <p style="text-align: center"><div class="image-clearfix"> <img class="question-image" src="/imagesdb/uploads/2021/11/4-9-300x55.png"></div> (3)</p>
+ <p class="blog">
+<strong>Member 3</strong></p>
+ <span class="tex-text">\(v=\begin{bmatrix} 0\\0\\0.23618\\0 \end{bmatrix}\begin{matrix}4\\5\\3\\6\end{matrix}m\)</span> <span class="tex-text">\(L=8 m ,\overline{L}=8.2362m,c_{X}=1,c_{Y}=0,u=-0.23618m,Q=-1,333.3 kN\)</span> <p style="text-align: center"><div class="image-clearfix"> <img class="question-image" src="/imagesdb/uploads/2021/11/F-300x66.png"></div> (4)</p>
+ <p class="blog">
+By assembling the pertinent elements of the member <strong>F</strong> vectors and <span class="tex-text">\(K_{t}\)</span> matrices given in Eqs. (2) through (4), we obtain</p>
+ <p style="text-align: center"><div class="image-clearfix"> <img class="question-image" src="/imagesdb/uploads/2021/11/n-300x54.png"></div></p>
+ <p class="blog">
+By subtracting <span class="tex-text">\(f_{1}\)</span> from <strong>P</strong> (Eq. 1), we compute the unbalanced joint force vector for the truss as</p>
+ <p class="blog">
+<span class="tex-text">\(\Delta U_{1}=P-f_{1}=\left[\begin{matrix} 0 \\ -2,000 \\ 0 \end{matrix} \right]-\left[\begin{matrix} 0 \\ -1,555 \\ 70.322 \end{matrix} \right] =\left[\begin{matrix} 0 \\ -445.02 \\ -70.322 \end{matrix} \right] \begin{matrix} 1 \\ 2 \\ 3 \end{matrix}\)</span> kN</p>
+ <p class="blog">
+By solving the linearized system of equations <span class="tex-text">\(\Delta U_{1}=S_{t1}\Delta d_{1}\)</span>, we determine the displacement correction vector</p>
+ <p class="blog">
+<span class="tex-text">\(\Delta d_{1}=\left[\begin{matrix} 0.03380 \\ -0.16082 \\ 0.067599 \end{matrix} \right] \begin{matrix} 1 \\ 2 \\ 3 \end{matrix}\)</span> m</p>
+ <p class="blog">
+To determine whether or not the iteration has converged, we apply the convergence criterion (Eq. (10.44))<span class="tex-text">\(\sqrt{\frac{\sum\limits_{j=1}^{NDOF}{(\Delta d_{j})^{2}}}{\sum\limits_{j=1}^{NDOF}{(d_{j})^{2}} } }\leq e\)</span> as</p>
+ <span class="tex-text">\(\sqrt{\frac{\sum\limits_{j=1}^{3}{(\Delta d_{j})^{2}}}{\sum\limits_{j=1}^{3}{(d_{j})^{2}} } }=\sqrt{\frac{(0.03380)^{2}+(-0.16082)^{2}+(0.067599)^{2}}{(0.11809)^{2}+(-0.46497)^{2}+(0.23618)^{2}} }=0.33231\gt e(=0.001)\)</span> <p class="blog">
+which indicates that the change in the structure’s configuration is not sufficiently small, and therefore, another iteration is needed based on a new (second) approximate deformed configuration <span class="tex-text">\(d_{2}\)</span> obtained by adding the correction <span class="tex-text">\(\Delta d_{1}\)</span> to the previous (first) approximate configuration <span class="tex-text">\(d_{1}\)</span>, that is,</p>
+ <p class="blog">
+<span class="tex-text">\(d_{2}=d_{1}+\Delta d_{1}=\left[\begin{matrix} 0.11809 \\ -0.46497 \\ 0.23618 \end{matrix} \right] +\left[\begin{matrix} 0.03380 \\ -0.16082 \\ 0.067599 \end{matrix} \right] =\left[\begin{matrix} 0.15189 \\ -0.62579 \\ 0.30378 \end{matrix} \right]\)</span> m</p>
+ <p class="blog">
+<em>Iteration Cycle 2:</em></p>
+ <p class="blog">
+<strong>Member 1</strong></p>
+ <p class="blog">
+v=<span class="tex-text">\(\left[\begin{matrix} 0 \\ 0 \\ 0.15189 \\ -0.62579 \end{matrix} \right] \begin{matrix} 4 \\ 5 \\ 1 \\2 \end{matrix}\)</span> m</p>
+ <p class="blog">
+L = 5 m, <span class="tex-text">\(\bar{L}\)</span>= 4.7828 m, <span class="tex-text">\(c_{X}\)</span> = 0.86809, <span class="tex-text">\(c_{Y}\)</span> = 0.49641, u = 0.21721 m, Q = 1,962.1 kN</p>
+ <p class="blog">
+<div class="image-clearfix"> <img class="question-image" src="/imagesdb/uploads/2021/11/m-300x63.png"></div></p>
+ <p class="blog">
+<strong>Member 2</strong></p>
+ <p class="blog">
+v=<span class="tex-text">\(\left[\begin{matrix} 0.30378 \\ 0 \\ 0.15189 \\ -0.62579 \end{matrix} \right] \begin{matrix} 3 \\ 6 \\ 1 \\2 \end{matrix}\)</span> m</p>
+ <p class="blog">
+L=5 m, <span class="tex-text">\(\bar{L}\)</span>=4.7828 m, <span class="tex-text">\(c_{X}\)</span>=0.86809, <span class="tex-text">\(c_{Y}\)</span>=0.49641, u=0.21721 m, Q=1,962.1 kN</p>
+ <p class="blog">
+<div class="image-clearfix"> <img class="question-image" src="/imagesdb/uploads/2021/11/j-300x56.png"></div></p>
+ <p class="blog">
+<strong>Member 3</strong></p>
+ <p class="blog">
+v=<span class="tex-text">\(\left[\begin{matrix} 0 \\ 0 \\ 0.30378 \\ 0 \end{matrix} \right] \begin{matrix} 4 \\ 5 \\ 3 \\6 \end{matrix}\)</span> m</p>
+ <p class="blog">
+L = 8 m, <span class="tex-text">\(\bar{L}\)</span>= 8.3038 m, <span class="tex-text">\(c_{X}\)</span> = 1, <span class="tex-text">\(c_{Y}\)</span> = 0, u = 0.30378 m, Q = 1,715 kN</p>
+ <p class="blog">
+<div class="image-clearfix"> <img class="question-image" src="/imagesdb/uploads/2021/11/jj-300x58.png"></div></p>
+ <p class="blog">
+The structure’s internal joint force vector <span class="tex-text">\(f_{2}\)</span> and the tangent stiffness matrix <span class="tex-text">\(S_{t2}\)</span> are given by</p>
+ <p class="blog">
+<span class="tex-text">\(f_{2}=\left[\begin{matrix}0 \\ -1,948 \\ 11.722 \end{matrix} \right]\)</span> kN <span class="tex-text">\(S_{t2}=\left[\begin{matrix} 13,412 &amp; 0 &amp; -6,705.8 \\ 0 &amp; 3,833.4 &amp; 4,069.2 \\ -6,705.8 &amp; 4,069.2 &amp; 12,351 \end{matrix} \right]\)</span> kN/m</p>
+ <p class="blog">
+and the unbalanced joint force vector is obtained as</p>
+ <p class="blog">
+<span class="tex-text">\(\Delta U_{2}=P-f_{2}=\left[\begin{matrix} 0 \\ -52.041\\ -11.722 \end{matrix} \right]\)</span> kN</p>
+ <p class="blog">
+Note that the magnitudes of the unbalanced forces are now significantly smaller than in the previous iteration cycle. By solving the linearized system of equations <span class="tex-text">\(ΔU_{2} =S_{t2} Δd_{2}\)</span>, we determine the displacement correction vector</p>
+ <p class="blog">
+<span class="tex-text">\(\Delta d_{2}=\left[\begin{matrix} 0.0046508 \\−0.023449\\ 0.0093015 \end{matrix} \right]\)</span> m</p>
+ <p class="blog">
+To check for convergence, we write</p>
+ <span class="tex-text">\(\sqrt{\frac{\sum\limits_{j=1}^{3}{(\Delta d_{j})^{2}}}{\sum\limits_{j=1}^{3}{(d_{j})^{2}} } }=\sqrt{\frac{(0.0046508)^{2}+(−0.023449)^{2}+(0.0093015)^{2}}{(0.15189)^{2}+(−0.62579)^{2}+(0.30378)^{2}} }=0.036027 &gt; e(=0.001)\)</span> <p class="blog">
+which indicates that, while the change in the structure’s deformed configuration is now considerably smaller than in the previous iteration cycle, it is still not within the prescribed tolerance of 0.1 percent. Thus, we perform another (third) iteration based on a new approximate deformed configuration <span class="tex-text">\(d_{3}\)</span> of the structure, with</p>
+ <p class="blog">
+<span class="tex-text">\(d_{3}=d_{2}+\Delta d_{2}=\left[\begin{matrix}0.15189\\−0.62579\\0.30378\end{matrix} \right]+\left[\begin{matrix}0.00046508\\−0.023449\\0.0093015\end{matrix} \right]=\left[\begin{matrix} 0.15654\\−0.64924\\0.31308 \end{matrix} \right]\)</span> m</p>
+ <p class="blog">
+<em>Iteration Cycle 3:</em></p>
+ <p class="blog">
+<strong>Member 1</strong></p>
+ <p class="blog">
+<span class="tex-text">\(v=\left[\begin{matrix} 0 \\ 0 \\0.15654 \\ -0.64924 \end{matrix} \right]\begin{matrix} 4 \\ 5 \\ 1 \\2 \end{matrix}\)</span> m</p>
+ <p class="blog">
+L = 5 m, <span class="tex-text">\(\bar{L}\)</span>= 4.7752 m, <span class="tex-text">\(c_{X}\)</span> = 0.87044, <span class="tex-text">\(c_{Y}\)</span> = 0.49228, u = 0.22476 m, Q = 2,030.3 kN</p>
+ <p class="blog">
+F=<span class="tex-text">\(\left[\begin{matrix} 1,767.2 \\ 999.45 \\ \overline{−1,767.2} \\ −999.45 \end{matrix} \right]\begin{matrix} 4 \\ 5 \\ 1 \\2 \end{matrix}\)</span> kN</p>
+ <p class="blog">
+<strong>Member 2</strong></p>
+ <p class="blog">
+v=<span class="tex-text">\(\left[\begin{matrix} 0.31308\\0\\0.15654\\−0.64924 \end{matrix} \right]\begin{matrix} 3 \\ 6 \\ 1 \\2 \end{matrix}\)</span> m</p>
+ <p class="blog">
+L = 5 m, <span class="tex-text">\(\bar{L}\)</span>= 4.7752 m, <span class="tex-text">\(c_{X}\)</span> = −0.87044, <span class="tex-text">\(c_{Y}\)</span> = 0.49228, u = 0.22476 m, Q = 2,030.3 kN</p>
+ <p class="blog">
+F=<span class="tex-text">\(\left[\begin{matrix} −1,767.2 \\ \overline{999.45 } \\ \overline{1,767.2} \\ −999.45 \end{matrix} \right]\begin{matrix} 3 \\ 6 \\ 1 \\2 \end{matrix}\)</span> kN <div class="image-clearfix"> <img class="question-image" src="/imagesdb/uploads/2021/11/kt-300x91.png"></div></p>
+ <p class="blog">
+<strong>Member 3</strong></p>
+ <p class="blog">
+v=<span class="tex-text">\(\left[\begin{matrix} 0 \\ 0 \\ 0.31308 \\ 0 \end{matrix} \right]\begin{matrix} 4 \\ 5 \\ 3 \\ 6 \end{matrix}\)</span> m</p>
+ <p class="blog">
+L = 8 m, <span class="tex-text">\(\bar{L}\)</span>= 8.3131 m, <span class="tex-text">\(c_{X}\)</span> = 1, <span class="tex-text">\(c_{Y}\)</span> = 0, u = −0.31308 m, Q = −1,767.5 kN</p>
+ <p style="text-align: center"><div class="image-clearfix"> <img class="question-image" src="/imagesdb/uploads/2021/11/F-1-300x61.png"></div></p>
+ <p class="blog">
+The structure’s internal joint force vector <span class="tex-text">\(f_{3}\)</span> and the tangent stiffness matrix <span class="tex-text">\(S_{t3}\)</span> are given by</p>
+ <p class="blog">
+<span class="tex-text">\(f_{3}=\left[\begin{matrix}0 \\ -1,998.9 \\ 0.27365 \end{matrix} \right]\)</span> kN <span class="tex-text">\(S_{t3}=\left[\begin{matrix} 13,482 &amp; 0 &amp; -6,740.8 \\ 0 &amp; 3,733.8 &amp; 4,052.7 \\ -6,740.8 &amp; 4,052.7 &amp; 12,386 \end{matrix} \right]\)</span> kN/m</p>
+ <p class="blog">
+and the unbalanced joint force vector is</p>
+ <p class="blog">
+<span class="tex-text">\(\Delta U_{3}=P-f_{3}=\left[\begin{matrix} 0 \\ -1.0925 \\ -0.27365 \end{matrix} \right]\)</span> kN</p>
+ <p class="blog">
+By solving the linearized system of equations <span class="tex-text">\(\Delta U_{3} = S_{t3} \Delta d_{3}\)</span>, we determine the displacement correction vector</p>
+ <p class="blog">
+<span class="tex-text">\(\Delta d_{3}=\left[\begin{matrix} 0.000098787 \\ -0.00050706 \\ 0.00019757 \end{matrix} \right]\)</span> m</p>
+ <p class="blog">
+To check for convergence, we write</p>
+ <span class="tex-text">\(\sqrt{\frac{\sum\limits_{j=1}^{3}{(\Delta d_{j})^{2}}}{\sum\limits_{j=1}^{3}{(d_{j})^{2}} } }=\sqrt{\frac{(0.000098787^{2})+(-0.00050706)^{2}+(0.00019757)^{2}}{(0.15654)^{2}+(-0.64924)^{2}+(0.31308)^{2}} }=0.00074985\lt e(=0.001)\)</span> <p class="blog">
+which indicates that the change in the structure’s deformed configuration <span class="tex-text">\(\Delta d_{3}\)</span> is now within the specified tolerance of 0.1 percent and, therefore, the iterative process has converged.</p>
+ <p class="blog">
+<em>Results of Geometrically Nonlinear Analysis: </em> The final deformed configuration of the truss is given by the joint displacement vector</p>
+ <p class="blog">
+<span class="tex-text">\(d=d_{3}+\Delta d_{3}=\left[\begin{matrix} 0.15654 \\ -0.64924 \\ 0.31308 \end{matrix} \right]+\left[\begin{matrix} 0.000098787 \\ -0.00050706 \\ 0.00019757 \end{matrix} \right]=\left[\begin{matrix} 0.15664 \\ -0.64975 \\ 0.31327 \end{matrix} \right]\)</span> m</p>
+ <p class="blog">
+<strong>Member 1</strong></p>
+ <p class="blog">
+<span class="tex-text">\(v=\left[\begin{matrix} 0 \\ 0 \\0.15664 \\ -0.64975 \end{matrix} \right]\begin{matrix} 4 \\ 5 \\ 1 \\2 \end{matrix}\)</span> m</p>
+ <p class="blog">
+L = 5 m, <span class="tex-text">\(\bar{L}\)</span>= 4.7751 m, <span class="tex-text">\(c_{X}\)</span> = 0.87049, <span class="tex-text">\(c_{Y}\)</span> = 0.49219, u = 0.22493 m, Q = 2,031.7 kN<br /> <span class="tex-text">\(Q_{a1}\)</span> = 2,031.7kN(C)</p>
+ <p class="blog">
+F=<span class="tex-text">\(\left[\begin{matrix} 1,768.6 \\ 1,000 \\ \overline{-1,768.6} \\ -1,000 \end{matrix} \right]\begin{matrix} 4 \\ 5 \\ 1 \\2 \end{matrix}\)</span> kN (5)</p>
+ <p class="blog">
+<strong>Member 2</strong></p>
+ <p class="blog">
+v=<span class="tex-text">\(\left[\begin{matrix} 0.31327 \\ 0 \\ 0.15664 \\ -0.64975 \end{matrix} \right]\begin{matrix} 3 \\ 6 \\ 1 \\2 \end{matrix}\)</span> m</p>
+ <p class="blog">
+L = 5 m, <span class="tex-text">\(\bar{L}\)</span>= 4.7751 m, <span class="tex-text">\(c_{X}\)</span> = −0.87049, <span class="tex-text">\(c_{Y}\)</span> = 0.49219, u = 0.22493 m, Q = 2,031.7 kN<br /> <span class="tex-text">\(Q_{a2}\)</span> = 2,031.7 kN (C)</p>
+ <p class="blog">
+F=<span class="tex-text">\(\left[\begin{matrix} -1,768.6 \\ \overline{1,000 } \\ \overline{-1,768.6} \\ -1,000 \end{matrix} \right]\begin{matrix} 3 \\ 6 \\ 1 \\2 \end{matrix}\)</span> kN (6)</p>
+ <p class="blog">
+<strong>Member 3</strong></p>
+ <p class="blog">
+v=<span class="tex-text">\(\left[\begin{matrix} 0 \\ 0 \\ 0.31327 \\ 0 \end{matrix} \right]\begin{matrix} 4 \\ 5 \\ 3 \\ 6 \end{matrix}\)</span> m</p>
+ <p class="blog">
+L = 8 m, <span class="tex-text">\(\bar{L}\)</span>= 8.3133 m, <span class="tex-text">\(c_{X}\)</span> = 1, <span class="tex-text">\(c_{Y}\)</span> = 0, u = −0.31327 m, Q = −1,768.6 kN <span class="tex-text">\(Q_{a3}\)</span> = 1,768.6 kN (T)</p>
+ <p class="blog">
+F=<span class="tex-text">\(\left[\begin{matrix} -1,768.6 \\ 0 \\ \overline{-1,768.6} \\ \overline{0} \end{matrix} \right]\begin{matrix} 4 \\ 5 \\ 3 \\6 \end{matrix}\)</span> kN (7)</p>
+ <p class="blog">
+Finally, the support reaction vector <strong>R</strong> is assembled from the elements of the member <strong>F</strong> vectors given in Eqs. (5) thru (7) as</p>
+ <p class="blog">
+R=<span class="tex-text">\(\left[\begin{matrix} 1,768.6-1,768.6 \\ 1,000+0 \\ 1,000+0 \end{matrix} \right]=\left[\begin{matrix} 0 \\ 1,000 \\ 1,000 \end{matrix} \right] \begin{matrix} 4 \\ 5 \\ 6 \end{matrix}\)</span> kN</p>
+ <p class="blog">
+<em>Equilibrium Check: </em> Applying the equations of equilibrium to the free body of the truss in its deformed state (Fig. 10.8(c)), we obtain</p>
+ <span class="tex-text">\(+ \rightarrow \sum{F_{X}}=0\)</span> <p class="blog">
+<span class="tex-text">\(+ \uparrow \sum{F_{Y}}=0\)</span> 1,000-2,000+1,000=0</p>
+ <p class="blog">
+<span class="tex-text">\(+ \hookrightarrow \sum{M_{1}}=0\)</span> -2,000(4.1566)+1,000(8.3133)=0.1 kN.m≈0</p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="/tos">terms</a>
+                <a href="/privacy">privacy</a>
+                <a href="/contact-us">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="/assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>

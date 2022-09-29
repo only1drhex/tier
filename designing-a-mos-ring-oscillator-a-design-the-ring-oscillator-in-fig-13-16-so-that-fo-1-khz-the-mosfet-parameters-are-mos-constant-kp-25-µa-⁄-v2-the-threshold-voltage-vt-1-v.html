@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/designing-a-mos-ring-oscillator-a-design-the-ring-oscillator-in-fig-13-16-so-that-fo-1-khz-the-mosfet-parameters-are-mos-constant-kp-25-%C2%B5a-%E2%81%84-v2-the-threshold-voltage-vt-1-v" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Designing a MOS ring oscillator (a) Design the ring oscillator in Fig. 13.16 so that fo = 1 kHz. The MOSFET parameters are MOS constant Kp = 25 µA ⁄ V^2 , the threshold voltage Vt = 1 V , length L = 10 µm, width W = 20 µm, and modulation length λ = 0.01. (b) Use PSpice [2] to plot the transient [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Designing a MOS ring oscillator (a) Design the ring oscillator in Fig. 13.16 so that fo = 1 kHz. The MOSFET parameters are MOS constant Kp = 25 µA ⁄ V^2 , the threshold voltage Vt = 1 V , length L = 10 µm, width W = 20 µm, and modulation length λ = 0.01. (b) Use PSpice [2] to plot the transient[solved!] | Vlavar Engineering" />
+<meta name="description" content="(a) Assuming that the MOS is operating in the saturation region, the transconductance of each MOS is  g_{ m }=2 K_{ p }left(v_{ GS }-V_{ t }right)"/>
+<meta property="og:description" content="(a) Assuming that the MOS is operating in the saturation region, the transconductance of each MOS is  g_{ m }=2 K_{ p }left(v_{ GS }-V_{ t }right)" />
+<meta property="og:image" content="https://vlavar.com/imagesdb/uploads/2021/11/Screenshot-2021-11-11-130152-18-768x429.jpg" />
+<meta property="og:updated_time" content="2022-11-19T13:42:47+04:00" />
+<meta name="twitter:description" content="(a) Assuming that the MOS is operating in the saturation region, the transconductance of each MOS is  g_{ m }=2 K_{ p }left(v_{ GS }-V_{ t }right)" />
+<meta name="twitter:title" content="Designing a MOS ring oscillator (a) Design the ring oscillator in Fig. 13.16 so that fo = 1 kHz. The MOSFET parameters are MOS constant Kp = 25 µA ⁄ V^2 , the threshold voltage Vt = 1 V , length L = 10 µm, width W = 20 µm, and modulation length λ = 0.01. (b) Use PSpice [2] to plot the transient[solved!] | Vlavar Engineering" />
+<meta name="twitter:image" content="https://vlavar.com/imagesdb/uploads/2021/11/Screenshot-2021-11-11-130152-18-768x429.jpg" />
+<meta property="article:published_time" content="2022-11-12T15:31:33+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/designing-a-mos-ring-oscillator-a-design-the-ring-oscillator-in-fig-13-16-so-that-fo-1-khz-the-mosfet-parameters-are-mos-constant-kp-25-%C2%B5a-%E2%81%84-v2-the-threshold-voltage-vt-1-v" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="/">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="/">Home</a>
+                    <a id="search">Search</a>
+                    <a href="/tour/1">Tour</a>
+                    <a href="/contact-us">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="/">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="/tour/1">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="/contact-us">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog"><strong>Designing a MOS ring oscillator </strong></p> <p class="blog">(a) Design the ring oscillator in Fig. 13.16 so that <span class="tex-text">\( f_{ o }=1 kHz \)</span>. The MOSFET parameters are MOS constant <span class="tex-text">\( K_{ p }=25 \mu A / V ^{2} \)</span>, the threshold voltage <span class="tex-text">\( V_{ t }=1 V \text {, length } L=10 \mu m \text {, width } W=20 \mu m \)</span>, and modulation length λ = 0.01.</p> <p class="blog">(b) Use PSpice [2] to plot the transient response of the output voltage <span class="tex-text">\( v_{ o }(t) \)</span> in part (a) from 0 to 2 ms. Assume <span class="tex-text">\( V_{ DD }=5 V \)</span>.</p> <div class="image-clearfix"><img class="question-image" src="/imagesdb/uploads/2021/11/Screenshot-2021-11-11-130152-18-768x429.jpg"></div>    
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+(a) Assuming that the MOS is operating in the saturation region, the transconductance of each MOS is <span class="tex-text">\( g_{ m }=2 K_{ p }\left(v_{ GS }-V_{ t }\right) \)</span> which can give the desired value of R to obtain the required gain <span class="tex-text">\( A_{0} \)</span> as given by</p>
+ <p style="text-align: center"><span class="tex-text">\( R=\frac{A_{ o }}{g_{ m }}=\frac{A_{ o }}{2 K_{ p }\left(v_{ GS }-V_{ t }\right)} \)</span> (13.46)</p>
+ <p class="blog">
+Using KVL in the loop formed by <span class="tex-text">\( V_{ DD } \)</span>, R, and the gate–source voltage of <span class="tex-text">\( M _{2} \)</span>, we can write</p>
+ <p style="text-align: center"><span class="tex-text">\( V_{ DD }=R i_{ D 1}+v_{ GS 1}=\frac{A_{ o }}{2 K_{ p }\left(v_{ GS 1}-V_{ t }\right)} \times K_{ p }\left(v_{ GS 1}-V_{ t }\right)^{2}+v_{ GS 1} \)</span></p>
+ <p class="blog">
+which, for identical MOSFETs of <span class="tex-text">\( v_{ GS }=v_{ GS 1}=v_{ GS 2} \)</span> gives the gate–source voltage as</p>
+ <p style="text-align: center"><span class="tex-text">\(v_{ GS }=\frac{V_{ DD }+\left(A_{ o } / 2\right) V_{ t }}{1+\left(A_{ o } / 2\right)}\)</span> (13.47)</p>
+ <p class="blog">
+Letting <span class="tex-text">\(A_{ o }=4\)</span> (higher than 2), Eq. (13.47) gives the DC biasing gate–source voltage</p>
+ <p style="text-align: center"><span class="tex-text">\(\begin{aligned}v_{ GS } &amp;=\frac{5+(4 / 2) \times 1}{1+(4 / 2)}=2.333 V \\i_{ D } &amp;=K_{ p }\left(v_{ GS 1}-V_{ t }\right)^{2}=25 \mu \times(2.333-1)^{2}=44.44 \mu A \\g_{ m } &amp;=2 K_{ p }\left(v_{ GS }-V_{ t }\right)=2 \times 25 \mu \times(2.333-1)=66.67 \mu A / V \\R &amp;=\frac{A_{ o }}{g_{ m }}=\frac{4}{66.67 \mu A / V }=60 k \Omega\end{aligned}\)</span></p>
+ <p class="blog">
+For <span class="tex-text">\( f_{ o }=1 kHz \)</span>, Eq. (13.43) gives</p>
+ <p style="text-align: center"><span class="tex-text">\( \omega_{ o }=\sqrt{3} \omega_{ n }=\frac{\sqrt{3}}{R C} \)</span> (13.43)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p style="text-align: center"><span class="tex-text">\( C=\frac{\sqrt{3}}{2 \pi f_{0} R}=\frac{\sqrt{3}}{2 \pi \times 1 k \times 60 k }=4.59 nF \)</span></p>
+ <p class="blog">
+(b) The PSpice schematic with desired values is shown in Fig. 13.17. The PSpice plot of the output voltage <span class="tex-text">\( v_{ o } \equiv V ( C 3: 2) \)</span> is shown in Fig. 13.18, which gives the peak-to-peak voltage of <span class="tex-text">\( V_{ pp }=(3.7974-1.4154)= 2.38 V \text { at } f_{ o }=1 /(2.6499 ms -1.7135 ms )=1046 Hz \)</span> (expected 1 kHz). Note that an initial voltage of 0 has been assigned to the capacitor <span class="tex-text">\( C _{1} \)</span> in order to start the oscillator, and the UIC (use initial condition) is used in transient analysis. In practice, random noise or transients can cause the oscillations to begin, and they are sustained by the feedback of the appropriate signal.</p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="/tos">terms</a>
+                <a href="/privacy">privacy</a>
+                <a href="/contact-us">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="/assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>
