@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/consider-a-simply-supported-beam-subjected-to-a-mid-span-point-load-and-with-span-of-8-m-calculate-the-deflection-and-curvature-along-the-member-length-with-the-finite-element-approach-for-the" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Consider a simply-supported beam subjected to a mid-span point load and with span of 8 m. Calculate the deflection and curvature along the member length with the finite element approach for the following two applied mid-span loads: (1) P = 405 kN and (2) P = 475 kN. Use the Newton–Raphson method [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Consider a simply-supported beam subjected to a mid-span point load and with span of 8 m. Calculate the deflection and curvature along the member length with the finite element approach for the following two applied mid-span loads: (1) P = 405 kN and (2) P = 475 kN. Use the Newton–Raphson method[solved!] | Vlavar Engineering" />
+<meta name="description" content="(1) The load P = 405 kN is applied in one load step and is included in the load vector Q. In the first iteration, we assume that the beam is undeformed,"/>
+<meta property="og:description" content="(1) The load P = 405 kN is applied in one load step and is included in the load vector Q. In the first iteration, we assume that the beam is undeformed," />
+<meta property="og:image" content="https://vlavar.com/imagesdb/uploads/2021/08/15.15-1.png" />
+
+<meta name="twitter:description" content="(1) The load P = 405 kN is applied in one load step and is included in the load vector Q. In the first iteration, we assume that the beam is undeformed," />
+<meta name="twitter:title" content="Consider a simply-supported beam subjected to a mid-span point load and with span of 8 m. Calculate the deflection and curvature along the member length with the finite element approach for the following two applied mid-span loads: (1) P = 405 kN and (2) P = 475 kN. Use the Newton–Raphson method[solved!] | Vlavar Engineering" />
+<meta name="twitter:image" content="https://vlavar.com/imagesdb/uploads/2021/08/15.15-1.png" />
+<meta property="article:published_time" content="2022-09-02T00:48:38+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/consider-a-simply-supported-beam-subjected-to-a-mid-span-point-load-and-with-span-of-8-m-calculate-the-deflection-and-curvature-along-the-member-length-with-the-finite-element-approach-for-the" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="/">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="/">Home</a>
+                    <a id="search">Search</a>
+                    <a href="/tour/1">Tour</a>
+                    <a href="/contact-us">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="/">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="/tour/1">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="/contact-us">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Consider a simply-supported beam subjected to a mid-span point load and with span of 8 m. Calculate the deflection and curvature along the member length with the finite element approach for the following two applied mid-span loads: (1) P = 405 kN and (2) P = 475 kN. Use the Newton–Raphson method and, for the convergence criteria, take <span class="tex-text">\( norm_{tol2}\)</span> equal to <span class="tex-text">\( 10^{–5}\)</span> (Equation 15.59b). Consider the rectangular cross-section (width of 100 mm and height of 360 mm) and the elastic–perfectly plastic material properties (E = 200 GPa and <span class="tex-text">\( f_y = 300\)</span> MPa) of . Compare the calculated results with those obtained using the analytical solutions in Section 15.3.2 and plotted in Figure 15.15. For the numerical integrations, use three Gauss integration points.</p> <p class="blog"><span class="tex-text">\( norm_{tol2} = \frac{\left|r ^{(i+1)}_R\right| }{\left|r_e\right| } \)</span> (15.59b).</p> <div class="image-clearfix"><img class="question-image" src="/imagesdb/uploads/2021/08/15.15-1.png"></div>    
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+(1) The load P = 405 kN is applied in one load step and is included in the load vector Q.</p>
+ <p class="blog">
+In the first iteration, we assume that the beam is undeformed, therefore described by a nil vector of displacements. Based on this, we can calculate the internal actions resisted by the beam <span class="tex-text">\( K(D^{(1)}_e) \)</span> and substitute it in Equation 15.62 for the calculation of the residual loads to be used in the analysis: <span class="tex-text">\( Q^{(1)}_R = Q-K(D^{(1)}_e) \)</span> . In particular, <span class="tex-text">\( K(D^{(1)}_e) \)</span> is obtained by collecting the contribution of each element <span class="tex-text">\( k_e(x,d^{(1)} \)</span> from Equation 15.82a</p>
+ <p class="blog">
+<span class="tex-text">\( Q^{(i)}_R = Q-K(D^{(i)}_e) \)</span> (15.62).</p>
+ <p class="blog">
+<span class="tex-text">\( k_e\Bigl(x , d^{(i)}_e\Bigr) = \frac{L}{2}\sum\limits_{k=1}^{n_G}{w_k B^T(x_k)r^{(i)} \Bigl(x_k,d^{(i)}\Bigr) } = \frac{L}{2} \sum\limits_{k=1}^{n_G}{w_k}\begin{bmatrix} N^{\prime }_{u1} (x_k) &amp; 0 \\ 0 &amp; N^{\prime \prime}_{ν1} (x_k) \\ 0 &amp; N^{\prime \prime}_{ν2} \\ N^{\prime }_{u2} (x_k) &amp; 0 \\ N^{\prime }_{u3} (x_k) &amp; 0 \\ 0 &amp; N^{\prime \prime}_{ν3} (x_k) \\ 0 &amp; N^{\prime \prime}_{ν4} (x_k) \end{bmatrix} \begin{bmatrix} N\Bigl(x_k,d^{(i)}_e\Bigr) \\ M\Bigl(x_k,d^{(i)}_e\Bigr) \end{bmatrix} \)</span> (15.82a).</p>
+ <p class="blog">
+We then calculate the tangent stiffness matrices for each element from Equations 15.89 to 15.92 and assemble these in <span class="tex-text">\( K_t(D^{(1)}_e) \)</span> . At this point, we can evaluate the unknown displacement increment by solving Equation 15.61 for <span class="tex-text">\( Δ D^{(1)}_e \)</span>.</p>
+ <p class="blog">
+<span class="tex-text">\( k_{et}\Bigl(x , d^{(i)}_e\Bigr) = \frac{L}{2}\sum\limits_{k=1}^{n_G}{w_k} \begin{bmatrix} N^{\prime }_{u1} (x_k) &amp; 0 \\ 0 &amp; N^{\prime \prime}_{ν1} (x_k) \\ 0 &amp; N^{\prime \prime}_{ν2} \\ N^{\prime }_{u2} (x_k) &amp; 0 \\ N^{\prime }_{u3} (x_k) &amp; 0 \\ 0 &amp; N^{\prime \prime}_{ν3} (x_k) \\ 0 &amp; N^{\prime \prime}_{ν4} (x_k) \end{bmatrix} × \begin{bmatrix} \frac{∂N^{(i)}_k}{∂d_{e1}} &amp; \frac{∂N^{(i)}_k}{∂d_{e2}} &amp; \frac{∂N^{(i)}_k}{∂d_{e3}} &amp; \frac{∂N^{(i)}_k}{∂d_{e4}} &amp; \frac{∂N^{(i)}_k}{∂d_{e5}} &amp; \frac{∂N^{(i)}_k}{∂d_{e6}} &amp; \frac{∂N^{(i)}_k}{∂d_{e7}} \\ \frac{∂M^{(i)}_k}{∂d_{e1}} &amp; \frac{∂M^{(i)}_k}{∂d_{e2}} &amp; \frac{∂M^{(i)}_k}{∂d_{e3}} &amp; \frac{∂M^{(i)}_k}{∂d_{e4}} &amp; \frac{∂M^{(i)}_k}{∂d_{e5}} &amp; \frac{∂M^{(i)}_k}{∂d_{e6}} &amp; \frac{∂M^{(i)}_k}{∂d_{e7}}\end{bmatrix} \)</span> (15.89).</p>
+ <p class="blog">
+<span class="tex-text">\( \frac{\partial \varepsilon ^{(i)}_k}{\partial d_{e1}} = \frac{\partial \left\{\bigl[1-y_i\bigr] B (x_k)d^{(i)}_e\right\} }{\partial d_{e1} } = &#8211; \frac{3}{L} +\frac{4x_k}{L^2} \)</span> (15.90a).</p>
+ <p class="blog">
+<span class="tex-text">\( \frac{\partial \varepsilon ^{(i)}_k}{\partial d_{e2}} = -y_i \Bigl(\frac{12x_k}{L^3} &#8211; \frac{6}{L^2} \Bigr) \)</span>, <span class="tex-text">\( \frac{\partial \varepsilon ^{(i)}_k}{\partial d_{e3}} = -y_i \Bigl(\frac{6x_k}{L^2} &#8211; \frac{4}{L} \Bigr) \)</span> (15.90b,c).</p>
+ <p class="blog">
+<span class="tex-text">\( \frac{\partial \varepsilon ^{(i)}_k}{\partial d_{e4}} = \frac{4}{L} &#8211; \frac{8x_k}{L^2} \)</span> , <span class="tex-text">\( \frac{\partial \varepsilon ^{(i)}_k}{\partial d_{e5}} = -\frac{1}{L}+ \frac{4x_k}{L^2} \)</span> (15.90d,e).</p>
+ <p class="blog">
+<span class="tex-text">\( \frac{\partial \varepsilon ^{(i)}_k}{\partial d_{e6}} = -y_i \Bigl(\frac{6}{L^2} &#8211; \frac{12x_k}{L^3} \Bigr) \)</span>, <span class="tex-text">\( \frac{\partial \varepsilon ^{(i)}_k}{\partial d_{e7}} = -y_i \Bigl(\frac{6x_k}{L^2} &#8211; \frac{2}{L} \Bigr) \)</span> (15.90f,g).</p>
+ <p class="blog">
+<span class="tex-text">\( \frac{\partial N^{(i)}_k}{\partial d_{e1}} \approx \sum\limits_{j=1}^{n_j}{A_j} \frac{\partial \sigma \bigl(x_k,y_j,d^{(i)}_e\bigr) }{\partial \varepsilon } \frac{\partial \varepsilon ^{(i)}_k}{\partial d_{e1}} = \sum\limits_{j=1}^{n_j}{A_j} \frac{\partial \sigma \bigl(x_k,y_j,d^{(i)}_e\bigr) }{\partial \varepsilon }\frac{\partial \left\{\bigl[1-y_i\bigr] B (x_k)d^{(i)}_e\right\} }{\partial d_{e1} } = \sum\limits_{j=1}^{n_j}{A_j} \frac{\partial \sigma \bigl(x_k,y_j,d^{(i)}_e\bigr) }{\partial \varepsilon } \Bigl(-\frac{3}{L} &#8211; \frac{4x_k}{L^2} \Bigr) \)</span> (15.91a).</p>
+ <p class="blog">
+<span class="tex-text">\( \frac{\partial N^{(i)}_k}{\partial d_{e2}} \approx \sum\limits_{j=1}^{n_j}{A_j} \frac{\partial \sigma \bigl(x_k,y_j,d^{(i)}_e\bigr) }{\partial \varepsilon } \frac{\partial \varepsilon ^{(i)}_k}{\partial d_{e2}} = \sum\limits_{j=1}^{n_j}{A_j} \frac{\partial \sigma \bigl(x_k,y_j,d^{(i)}_e\bigr) }{\partial \varepsilon } \biggl[-y_i \Bigl( \frac{12x_k}{L^3}- \frac{6}{L^2} \Bigr)\biggr] \)</span> (15.91b).</p>
+ <p class="blog">
+<span class="tex-text">\( \frac{\partial N^{(i)}_k}{\partial d_{e3}} \approx \sum\limits_{j=1}^{n_j}{A_j} \frac{\partial \sigma \bigl(x_k,y_j,d^{(i)}_e\bigr) }{\partial \varepsilon } biggl[-y_i \Bigl( \frac{6x_k}{L^2}- \frac{4}{L} \Bigr)\biggr] \)</span> (15.91c).</p>
+ <p class="blog">
+<span class="tex-text">\( \frac{\partial N^{(i)}_k}{\partial d_{e4}} \approx \sum\limits_{j=1}^{n_j}{A_j} \frac{\partial \sigma \bigl(x_k,y_j,d^{(i)}_e\bigr) }{\partial \varepsilon } \Bigl( \frac{4}{L^2}- \frac{8x_k}{L^2} \Bigr) \)</span> (15.91d).</p>
+ <p class="blog">
+<span class="tex-text">\( \frac{\partial N^{(i)}_k}{\partial d_{e5}} \approx \sum\limits_{j=1}^{n_j}{A_j} \frac{\partial \sigma \bigl(x_k,y_j,d^{(i)}_e\bigr) }{\partial \varepsilon } \Bigl( &#8211; \frac{1}{L}+ \frac{4x_k}{L^2} \Bigr) \)</span> (15.91e).</p>
+ <p class="blog">
+<span class="tex-text">\( \frac{\partial N^{(i)}_k}{\partial d_{e6}} \approx \sum\limits_{j=1}^{n_j}{A_j} \frac{\partial \sigma \bigl(x_k,y_j,d^{(i)}_e\bigr) }{\partial \varepsilon } biggl[-y_i \Bigl( \frac{6}{L^2}- \frac{12x_k}{L^3} \Bigr)\biggr] \)</span> (15.91f).</p>
+ <p class="blog">
+<span class="tex-text">\( \frac{\partial N^{(i)}_k}{\partial d_{e7}} \approx \sum\limits_{j=1}^{n_j}{A_j} \frac{\partial \sigma \bigl(x_k,y_j,d^{(i)}_e\bigr) }{\partial \varepsilon } biggl[-y_i \Bigl( \frac{6x_k}{L^2}- \frac{2}{L} \Bigr)\biggr] \)</span> (15.91g).</p>
+ <p class="blog">
+<span class="tex-text">\( \frac{\partial M^{(i)}_k}{\partial d_{e1}} \approx- \sum\limits_{j=1}^{n_j}{y_jA_j} \frac{\partial \sigma \bigl(x_k,y_j,d^{(i)}_e\bigr) }{\partial \varepsilon } \Bigl( &#8211; \frac{3}{L}+ \frac{4x_k}{L^2} \Bigr) \)</span> (15.92a).</p>
+ <p class="blog">
+<span class="tex-text">\( \frac{\partial M^{(i)}_k}{\partial d_{e2}} \approx -\sum\limits_{j=1}^{n_j}{y_jA_j} \frac{\partial \sigma \bigl(x_k,y_j,d^{(i)}_e\bigr) }{\partial \varepsilon } biggl[-y_i \Bigl( \frac{12x_k}{L^3}- \frac{6}{L^2} \Bigr)\biggr] =\sum\limits_{j=1}^{n_j}{y^2_jA_j} \frac{\partial \sigma \bigl(x_k,y_j,d^{(i)}_e\bigr) }{\partial \varepsilon } \Bigl( \frac{12x_k}{L^3}- \frac{6}{L^2} \Bigr) \)</span> (15.92b).</p>
+ <p class="blog">
+<span class="tex-text">\( \frac{\partial M^{(i)}_k}{\partial d_{e3}} \approx \sum\limits_{j=1}^{n_j}{y^2_jA_j} \frac{\partial \sigma \bigl(x_k,y_j,d^{(i)}_e\bigr) }{\partial \varepsilon } \Bigl( \frac{6x_k}{L^2}- \frac{4}{L} \Bigr) \)</span> (15.92c).</p>
+ <p class="blog">
+<span class="tex-text">\( \frac{\partial M^{(i)}_k}{\partial d_{e4}} \approx -\sum\limits_{j=1}^{n_j}{y_jA_j} \frac{\partial \sigma \bigl(x_k,y_j,d^{(i)}_e\bigr) }{\partial \varepsilon } \Bigl( \frac{4}{L}- \frac{8x_k}{L^2} \Bigr) \)</span> (15.92d).</p>
+ <p class="blog">
+<span class="tex-text">\( \frac{\partial M^{(i)}_k}{\partial d_{e5}} \approx -\sum\limits_{j=1}^{n_j}{y_jA_j} \frac{\partial \sigma \bigl(x_k,y_j,d^{(i)}_e\bigr) }{\partial \varepsilon } \Bigl( &#8211; \frac{1}{L}+ \frac{4x_k}{L^2} \Bigr) \)</span> (15.92e).</p>
+ <p class="blog">
+<span class="tex-text">\( \frac{\partial M^{(i)}_k}{\partial d_{e6}} \approx \sum\limits_{j=1}^{n_j}{y^2_jA_j} \frac{\partial \sigma \bigl(x_k,y_j,d^{(i)}_e\bigr) }{\partial \varepsilon } \Bigl( \frac{6x_k}{L^2}- \frac{2}{L} \Bigr) \)</span> (15.92f).</p>
+ <p class="blog">
+<span class="tex-text">\( \frac{\partial M^{(i)}_k}{\partial d_{e7}} \approx \sum\limits_{j=1}^{n_j}{y^2_jA_j} \frac{\partial \sigma \bigl(x_k,y_j,d^{(i)}_e\bigr) }{\partial \varepsilon } \Bigl( \frac{6x_k}{L^2}- \frac{2}{L} \Bigr) \)</span> (15.92g).</p>
+ <p class="blog">
+<span class="tex-text">\( K_t \Bigl(D^{(i)}_e\Bigr) ΔD^{(i)}_e = Q^{(i)}_R \)</span> (15.61).</p>
+ <p class="blog">
+We then assign <span class="tex-text">\( D^{(2)}_e = D^{(1)}_e + ΔD^{(1)}_e = ΔD^{(1)}_e \)</span> and recalculate the internal actions <span class="tex-text">\( K \Bigl(D^{(i)}_e\Bigr) \)</span> so that we can verify the acceptance criteria of the convergence on the basis of <span class="tex-text">\( norm_{tol2} = \left|Q ^{(2)}_R\right| / \left|Q\right| \)</span>, where <span class="tex-text">\( Q ^{(2)}_R = Q &#8211; K \Bigl(D^{(2)}_e\Bigr) \)</span>. If <span class="tex-text">\( norm_{tol2} \)</span> is less than <span class="tex-text">\( 10^{-5} \)</span>, then convergence is reached and the solution can be post-processed; otherwise, an additional iteration is required. The actual number of iterations depends on the number of layers and mesh discretisation specified in the solution process.</p>
+ <p class="blog">
+Comparisons between the results obtained at mid-span with the analytical solutions derived in Section 15.3.2 (referred to in the figure as ‘CFS’ for closed-form solution) and the finite element results (referred to in the figure as ‘FEA’) are plotted in Figure 15.21 for different levels of discretisation to provide better insight into the convergence behaviour. The number of layers used at the cross-section has been varied between 40, 80 and 200 to highlight how the results obtained with the discretisation of 40 layers (selected in  for this particular cross-section) provide an acceptable prediction of the structural response. As expected, the convergence of the curvature is slower than convergence of the deflection because the former is based on the second derivative of the latter.</p>
+ <p class="blog">
+(2) A similar procedure is followed for the calculation of the solution when the beam is subjected to the load P = 475 kN. Comparisons between analytical (CFS) and numerical (FEA) values for the mid-span results of deflection and curvature are illustrated in Figure 15.22, which show similar trends to those observed at point 1. Because of the higher level of nonlinearity developed in the beam, a larger number of elements are required, when compared to point 1, to approach the values calculated with the analytical solution.</p>
+ <p class="blog">
+The variations along the member length are presented in Figure 15.23 for both deflection and curvature using the values plotted in Figure 15.15 as reference. Good agreement between the analytical and finite element results (calculated with a highly refined mesh) is evident.</p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="/tos">terms</a>
+                <a href="/privacy">privacy</a>
+                <a href="/contact-us">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="/assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>

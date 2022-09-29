@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/design-the-digital-butterworth-filter-based-on-the-following-specifications20log10hej%CF%89p%E2%89%A5-0-5-db-20log10hej%CF%89s%E2%89%A4-15-db-where-%CF%89p-0-25%CF%80-and-%CF%89s-0-55" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Design the digital Butterworth filter based on the following specifications:20log10|H(ejωp)|≥-0.5 dB, 20log10|H(ejωs)|≤-15 dB, where ωp = 0.25π and ωs = 0.55π.Use: a. the impulse invariant method, and b. the bilinear method. [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Design the digital Butterworth filter based on the following specifications:20log10|H(ejωp)|≥-0.5 dB, 20log10|H(ejωs)|≤-15 dB, where ωp = 0.25π and ωs = 0.55π.Use: a. the impulse invariant method, and b. the bilinear method.[solved!] | Vlavar Engineering" />
+<meta name="description" content="a. The impulse invariant method We choose as a sampling period T = 1s, since it does not affect the design of the filter. The corresponding analog frequencies"/>
+<meta property="og:description" content="a. The impulse invariant method We choose as a sampling period T = 1s, since it does not affect the design of the filter. The corresponding analog frequencies" />
+
+
+<meta name="twitter:description" content="a. The impulse invariant method We choose as a sampling period T = 1s, since it does not affect the design of the filter. The corresponding analog frequencies" />
+<meta name="twitter:title" content="Design the digital Butterworth filter based on the following specifications:20log10|H(ejωp)|≥-0.5 dB, 20log10|H(ejωs)|≤-15 dB, where ωp = 0.25π and ωs = 0.55π.Use: a. the impulse invariant method, and b. the bilinear method.[solved!] | Vlavar Engineering" />
+
+<meta property="article:published_time" content="2022-09-08T13:23:42+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/design-the-digital-butterworth-filter-based-on-the-following-specifications20log10hej%CF%89p%E2%89%A5-0-5-db-20log10hej%CF%89s%E2%89%A4-15-db-where-%CF%89p-0-25%CF%80-and-%CF%89s-0-55" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="/">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="/">Home</a>
+                    <a id="search">Search</a>
+                    <a href="/tour/1">Tour</a>
+                    <a href="/contact-us">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="/">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="/tour/1">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="/contact-us">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Design the digital Butterworth filter based on the following specifications:<span class="tex-text">\( 20 \log_{10}|H(e^{jω_{p}})|≥-0.5 dB, 20\log _{10}|H(e^{jω_{s}})|≤-15 dB,\)</span> where <span class="tex-text">\( ω_{p} = 0.25π\)</span> and <span class="tex-text">\( ω_{s} = 0.55π.\)</span></p> <p class="blog">Use:</p> <p class="blog">a. the impulse invariant method, and</p> <p class="blog">b. the bilinear method.</p>      
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+a. The impulse invariant method<br /> We choose as a sampling period T = 1s, since it does not affect the design of the filter. The corresponding analog frequencies (Ω = ω/T) will be <span class="tex-text">\(Ω_{p} = 0.25π\)</span> and <span class="tex-text">\(Ω_{s} = 0.55π.\)</span> Therefore, the given specifications for the continuous-time filter are written as follows:</p>
+ <p style="text-align: center"><span class="tex-text">\(20 \log _{10}|H_{a}(j\Omega _{p})|\geq -0.5 dB, 20\log _{10}|H_{a}(j\Omega _{s})|\leq -15 dB,\)</span></p>
+ <p class="blog">
+or:</p>
+ <p style="text-align: center"><span class="tex-text">\(|H_{a}(j\Omega _{p})|^{2}\geq 10^{-0.05},|H_{a}(j\Omega _{s})|^{2}\leq 10^{-1.5}\)</span></p>
+ <p class="blog">
+The squared magnitude of the Butterworth filter of order N is:</p>
+ <p style="text-align: center"><span class="tex-text">\(|H_{a}(j\Omega )|^{2}=\frac{1}{1+(\frac{j\Omega }{j\Omega _{c}} )^{2N}}\)</span></p>
+ <p class="blog">
+Now, considering only the equalities to the above equations and the form of <span class="tex-text">\(|H_{a}(jΩ)|^{2}\)</span>, we obtain the following system of equations with respect to N and <span class="tex-text">\(Ω_{c}\)</span>:</p>
+ <p style="text-align: center"><span class="tex-text">\(1+(\frac{j\Omega_{p} }{j\Omega _{c}} )^{2N}=10^{0.05}\)</span> and <span class="tex-text">\(1+(\frac{j\Omega_{s} }{j\Omega _{c}} )^{2N}=10^{1.5}\)</span></p>
+ <p class="blog">
+We rewrite them in the form</p>
+ <p style="text-align: center"><span class="tex-text">\((\frac{j\Omega_{p} }{j\Omega _{c}} )^{2N}=10^{0.05}-1\)</span> and <span class="tex-text">\((\frac{j\Omega_{s} }{j\Omega _{c}} )^{2N}=10^{1.5}-1\)</span></p>
+ <p style="text-align: left">or <span class="tex-text">\((\frac{j\Omega_{p} }{j\Omega _{s}} )^{2N}=\frac{10^{0.05}-1}{10^{1.5}-1}\)</span></p>
+ <p class="blog">
+resulting to the following value for N:</p>
+ <p style="text-align: center"><span class="tex-text">\(N=\frac{\log (\frac{10^{0.05}-1}{10^{1.5}-1} )}{2\log (\frac{\Omega _{p}}{\Omega _{s}} )}=3.5039.\)</span></p>
+ <p class="blog">
+Since N must be an integer, we choose the order of the filter by rounding the above result to the nearest integer, i.e., N=4. By substituting it to the first of the two equations, the following is obtained:<span class="tex-text">\((\frac{\Omega _{p}}{\Omega _{c}} )^{8}=10^{0.05}-1\)</span> and solving for <span class="tex-text">\(Ω_{c}\)</span>:</p>
+ <p style="text-align: center"><span class="tex-text">\(\Omega _{c}=\frac{\Omega _{p}}{(10^{0.05}-1)^{1/8}}=\frac{0.25\pi }{0.7688}=1.0216.\)</span></p>
+ <p class="blog">
+This value satisfies the specification for the stop band. It is:</p>
+ <p style="text-align: center"><span class="tex-text">\(|H_{a}(j\Omega _{s})|^{2}=0.0147&lt;0.0316=10^{-1.5}\)</span></p>
+ <p class="blog">
+The poles of <span class="tex-text">\(H_{a}(s)H_{a}(–s)\)</span>, which are located in the left half of the complex plane (leading to a stable filter) are:</p>
+ <p class="blog">
+<span class="tex-text">\(s_{0}\)</span> = –0.3909 + j 0.9438,<span class="tex-text">\(s_{1}\)</span> = –0.9438 + 0.3909 j as well as their conjugates.<br /> Thus, the following transfer function is derived:</p>
+ <p style="text-align: center"><span class="tex-text">\(H_{a}(s)=\frac{\Omega _{c}^{N}}{(s-s_{0})(s-s_{0}^{*})(s-s_{1})(s-s_{1}^{*})}\)</span><br /> <span class="tex-text">\(=\frac{\Omega _{c}^{N}}{(s^{2}-2Re(s_{0})s+|s_{0}|^{2})(s^{2}-2Re(s_{1})s+|s_{1}|^{2})}\)</span><br /> <span class="tex-text">\(=\frac{1.0892}{(s^{2}+0.7818s+1.0436)(s^{2}+1.8876s+1.0436)}\)</span></p>
+ <p class="blog">
+Rewriting the above function as a sum of partial fractions, we obtain:</p>
+ <p style="text-align: center"><span class="tex-text">\(H_{a}(s)=\frac{a}{s-s_{0}}+\frac{b}{s-s_{0}^{*}}+\frac{c}{s-s_{1}}+\frac{d}{s-s_{1}^{*}}\)</span></p>
+ <p class="blog">
+where a = –0.4719 + j 0.1955,b = a*,c = 0.4719 – j1.1393,d = c*. The transfer function is then:</p>
+ <p style="text-align: center"><span class="tex-text">\(H(z)=\frac{a}{1-e^{s_{0}T}z^{-1}}+\frac{a^{*}}{1-e^{s_{0}^{*}T}z^{-1}}+\frac{c}{1-e^{s_{1}T}z^{-1}}+ \frac{c^{*}}{1-e^{s_{1}^{*}T}z^{-1}}\)</span><br /> <span class="tex-text">\(=\frac{2Re(a)-2Re(a^{*}e^{s_{0}T})z^{-1}}{1-2Re(e^{s_{0}T})z^{-1}+e^{2Re(s_{0})T}z^{-2}}+\frac{2Re(c)-2Re(c^{*}e^{s_{1}T})z^{-1}}{1-2Re(e^{s_{1}T})z^{-1}+e^{2Re(s_{1})T}z^{-2}}\)</span><br /> <span class="tex-text">\(=\frac{-0.9438+0.1604z^{-1}}{1-0.7937z^{-1}+0.4576z^{-2}}+\frac{0.9438-0.0017z^{-1}}{1-0.7196z^{-1}+0.1514z^{-2}}\)</span><br /> <span class="tex-text">\(=\frac{0.0888z^{-1}+0.1749z^{-2}+0.0235z^{-3}}{1.0000-1.5133z^{-1}+1.1801z^{-2}-0.4495z^{-3}+0.0693z^{-4}} \)</span></p>
+ <p class="blog">
+The magnitude of the frequency response of the digital filter is plotted (in dB) in the following figure:</p>
+ <p class="blog">
+We observe that the specifications are satisfied. The overlapping problem (as a result of the use of the impulse invariant method) is not apparent, here, as the analog filter is of limited bandwidth.</p>
+ <p class="blog">
+b. The bilinear method<br /> The analog frequencies are computed as follows:</p>
+ <p style="text-align: center"><span class="tex-text">\(\Omega _{p}=2\tan (\frac{\omega _{p}}{2} )=0.8284, \Omega _{s}=2\tan (\frac{\omega _{s}}{2} )=2.3417.\)</span></p>
+ <p class="blog">
+For N, it is true, as before:</p>
+ <p style="text-align: center"><span class="tex-text">\(N=\frac{\log (\frac{10^{0.05}-1}{10^{1.5}-1} )}{2\log (\frac{\Omega _{p}}{\Omega _{s}} )}=2.6586.\)</span></p>
+ <p class="blog">
+Therefore, the required order for the Butterworth filter is N = 3 and is less than that required in the impulse invariant method. The frequency, <span class="tex-text">\(Ω_{c&#039;}\)</span> is derived as follows:</p>
+ <p style="text-align: center"><span class="tex-text">\(\Omega _{c}=\frac{\Omega _{p}}{(10^{0.05}-1)^{1/6}}=\frac{0.8284}{0.7043}=1.1762.\)</span></p>
+ <p class="blog">
+and it satisfies the second condition:</p>
+ <p style="text-align: center"><span class="tex-text">\(|H_{a}(j\Omega _{s})|^{2}=0.0158&lt;0.0316=10^{-1.5}\)</span></p>
+ <p class="blog">
+The poles located in the left half plane are: <span class="tex-text">\(s_{0} \)</span>= −0.5881 + j1.0186, <span class="tex-text">\(s_{0}* , s_{1}\)</span> = −1.1762.<br /> The transfer function of the analog filter is:</p>
+ <p style="text-align: center"><span class="tex-text">\(H_{a}(s)=\frac{\Omega _{c}^{N}}{(s-s_{0})(s-s_{0}^{*})(s-s_{1})}=\frac{1.6272}{(s^{2}-2Re(s_{0})s+|s_{0}|^{2})(s-s_{1})}\)</span><br /> <span class="tex-text">\(=\frac{1.6272}{(s^{2}+1.1762s+1.3834)(s+1.1762)}\)</span></p>
+ <p class="blog">
+Finally, we apply the bilinear method:</p>
+ <p style="text-align: center"><span class="tex-text">\(H(z)=H_{a}(s)_{s=2(1-z^{-1})(1+z^{-1})}=\frac{0.0662+0.1987z^{-1}+0.1987z^{-2}+0.0662z^{-3}}{1-0.9359z^{-1}+0.5673z^{-2}-0.1016z^{-3}} \)</span></p>
+ <p class="blog">
+The magnitude of the frequency response of the resulting digital filter is illustrated in the figure below. We notice that the specifications are satisfied. In addition, although of lower order, the resulting filter has a response much closer to the ideal than the filter we designed using the impulse invariant method.</p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="/tos">terms</a>
+                <a href="/privacy">privacy</a>
+                <a href="/contact-us">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="/assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>

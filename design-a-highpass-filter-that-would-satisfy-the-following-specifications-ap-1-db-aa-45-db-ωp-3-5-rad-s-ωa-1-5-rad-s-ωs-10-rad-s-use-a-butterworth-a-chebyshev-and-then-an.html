@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/design-a-highpass-filter-that-would-satisfy-the-following-specifications-ap-1-db-aa-45-db-%CF%89p-3-5-rad-s-%CF%89a-1-5-rad-s-%CF%89s-10-rad-s-use-a-butterworth-a-chebyshev-and-then-an" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Design a highpass filter that would satisfy the following specifications: Ap = 1 dB Aa = 45 dB Ωp = 3.5 rad/s Ωa = 1.5 rad/s ωs = 10 rad/s Use a Butterworth, a Chebyshev, and then an elliptic approximation. [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Design a highpass filter that would satisfy the following specifications: Ap = 1 dB Aa = 45 dB Ωp = 3.5 rad/s Ωa = 1.5 rad/s ωs = 10 rad/s Use a Butterworth, a Chebyshev, and then an elliptic approximation.[solved!] | Vlavar Engineering" />
+<meta name="description" content="Butterworth filter: The sampling period is &nbsp; T=frac{2 pi}{omega_{s}}=frac{2 pi}{10} &nbsp; From Table 12.2 &nbsp;"/>
+<meta property="og:description" content="Butterworth filter: The sampling period is &nbsp; T=frac{2 pi}{omega_{s}}=frac{2 pi}{10} &nbsp; From Table 12.2 &nbsp;" />
+
+
+<meta name="twitter:description" content="Butterworth filter: The sampling period is &nbsp; T=frac{2 pi}{omega_{s}}=frac{2 pi}{10} &nbsp; From Table 12.2 &nbsp;" />
+<meta name="twitter:title" content="Design a highpass filter that would satisfy the following specifications: Ap = 1 dB Aa = 45 dB Ωp = 3.5 rad/s Ωa = 1.5 rad/s ωs = 10 rad/s Use a Butterworth, a Chebyshev, and then an elliptic approximation.[solved!] | Vlavar Engineering" />
+
+<meta property="article:published_time" content="2022-08-06T17:51:06+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/design-a-highpass-filter-that-would-satisfy-the-following-specifications-ap-1-db-aa-45-db-%CF%89p-3-5-rad-s-%CF%89a-1-5-rad-s-%CF%89s-10-rad-s-use-a-butterworth-a-chebyshev-and-then-an" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="/">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="/">Home</a>
+                    <a id="search">Search</a>
+                    <a href="/tour/1">Tour</a>
+                    <a href="/contact-us">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="/">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="/tour/1">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="/contact-us">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Design a highpass filter that would satisfy the following specifications:</p> <p class="blog"><span class="tex-text">\(A_{p}=1 dB \quad A_{a}=45 dB \quad \tilde{\Omega}_{p}=3.5 rad / s\)</span> <span class="tex-text">\(\tilde{\Omega}_{a}=1.5 rad / s \quad \omega_{s}=10 rad / s\)</span></p> <p class="blog">Use a Butterworth, a Chebyshev, and then an elliptic approximation.</p>      
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+<strong>Butterworth filter: </strong>The sampling period is</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(T=\frac{2 \pi}{\omega_{s}}=\frac{2 \pi}{10}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+From Table 12.2</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(K_{0}=\frac{\tan (3.5 \pi / 10)}{\tan (1.5 \pi / 10)}=3.851840\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Hence from Table 12.4</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(D=\frac{10^{4.5}-1}{10^{0.1}-1}=1.221270 \times 10^{5}\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(n \geq \frac{\log D}{2 \log K_{0}} \approx 4.34 \rightarrow 5\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\omega_{p}=\left(10^{0.1}-1\right)^{0.1}=8.736097 \times 10^{-1}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Now from Table 12.2</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\lambda=\frac{2}{T} \omega_{p} \tan \frac{\tilde{\Omega}_{p} T}{2}=5.457600\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<strong>Chebyshev filter: </strong>From Table 12.5</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(n \geq \frac{\cosh ^{-1} \sqrt{D}}{\cosh ^{-1} K_{0}}=\frac{\ln (\sqrt{D}+\sqrt{D-1})}{\ln \left(K_{0}+\sqrt{K_{0}^{2}-1}\right)} \approx 3.24 \rightarrow 4\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\omega_{p}=1\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Hence from Table 12.2</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\lambda=6.247183\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<strong>Elliptic filter: </strong>From Table 12.6</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(k=\frac{1}{K_{0}}=2.596162 \times 10^{-1}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Now, from Eqs. (10.86)–(10.88), we obtain</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(k^{\prime}=\sqrt{1-k^{2}}\)</span> (10.86)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(q_{0}=\frac{1}{2}\left(\frac{1-\sqrt{k^{\prime}}}{1+\sqrt{k^{\prime}}}\right)\)</span> (10.87)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(q=q_{0}+2 q_{0}^{5}+15 q_{0}^{9}+150 q_{0}^{13}\)</span> (10.88)</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(k^{\prime}=\sqrt{1-k^{2}}=9.657119 \times 10^{-1}\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(q_{0}=\frac{1}{2}\left(\frac{1-\sqrt{k^{\prime}}}{1+\sqrt{k^{\prime}}}\right)=4.361108 \times 10^{-3}\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(q=q_{0}+2 q_{0}^{5}+\cdots \approx q_{0}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Hence from Table 12.6</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(n \geq \frac{\log 16 D}{\log (1 / q)} \approx 2.67 \rightarrow 3\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\omega_{p}=\sqrt{k}=5.095255 \times 10^{-1}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+and from Table 12.2</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\lambda=3.183099\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+At this point the normalized LP Butterworth, Chebyshev, and elliptic approximations can be obtained. The designs can be completed by applying the LPtoHP transformation and after that the bilinear transformation to each of the three approximations.</p>
+ <p class="blog">
+The transfer functions <span class="tex-text">\(H_{N}(s), H_{H P}(\bar{s}), \text { and } H_{D}(z)\)</span> can be put in the form</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(H_{0} \prod_{j=1}^{J} \frac{a_{0 j}+a_{1 j} w+a_{2 j} w^{2}}{b_{0 j}+b_{1 j} w+b_{2 j} w^{2}}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+where <span class="tex-text">\(H_{0}\)</span> is a multiplier constant and <span class="tex-text">\(w=s, \bar{s}, \text { or } z\)</span>. The coefficients of <span class="tex-text">\(H_{N}(s)\)</span> can be computed as in Table 12.7, those of <span class="tex-text">\(H_{ HP }(\bar{s})\)</span> as in Table 12.8, and those of <span class="tex-text">\(H_{D}(z)\)</span> as in Table 12.9.</p>
+ <p class="blog">
+The loss characteristics of the three filters are plotted in Fig. 12.4. The actual minimum stopband loss for the Butterworth, Chebyshev, and elliptic filter are 52.70, 58.45, and 52.90 dB, respectively.</p>
+ <p class="blog">
+&nbsp;</p>
+ <div class="table-overflow"><table  width="320"> <tbody> <tr> <td colspan="2" width="320">Table 12.2 Lowpass and highpass filters</td> </tr> <tr> <td rowspan="2">LP</td> <td><span class="tex-text">\(\frac{\omega_{p}}{\omega_{a}} \geq K_{0}\)</span></td> </tr> <tr> <td><span class="tex-text">\(\lambda=\frac{\omega_{p} T}{2 \tan \left(\tilde{\Omega}_{p} T / 2\right)}\)</span></td> </tr> <tr> <td rowspan="2">HP</td> <td><span class="tex-text">\(\frac{\omega_{p}}{\omega_{a}} \geq \frac{1}{K_{0}}\)</span></td> </tr> <tr> <td><span class="tex-text">\(\lambda=\frac{2 \omega_{p} \tan \left(\tilde{\Omega}_{p} T / 2\right)}{T}\)</span></td> </tr> <tr> <td>where</td> <td><span class="tex-text">\(K_{0}=\frac{\tan \left(\tilde{\Omega}_{p} T / 2\right)}{\tan \left(\tilde{\Omega}_{a} T / 2\right)}\)</span></td> </tr> </tbody> </table></div> <p class="blog">
+&nbsp;</p>
+ <div class="table-overflow"><table  width="320"> <tbody> <tr> <td colspan="2" width="320">Table 12.4 Butterworth filters</td> </tr> <tr> <td>LP</td> <td><span class="tex-text">\(K=K_{0}\)</span></td> </tr> <tr> <td>HP</td> <td><span class="tex-text">\(K=\frac{1}{K_{0}}\)</span></td> </tr> <tr> <td>BP</td> <td><span class="tex-text">\(K= \begin{cases}K_{1} &amp; \text { if } K_{C} \geq K_{B} \\ K_{2} &amp; \text { if } K_{C}&lt;K_{B}\end{cases}\)</span></td> </tr> <tr> <td>BS</td> <td><span class="tex-text">\(K= \begin{cases}\frac{1}{K_{2}} &amp; \text { if } K_{C} \geq K_{B} \\ \frac{1}{K_{1}} &amp; \text { if } K_{C}&lt;K_{B}\end{cases}\)</span></td> </tr> <tr> <td colspan="2"><span class="tex-text">\(n \geq \frac{\log D}{2 \log (1 / K)} \quad D=\frac{10^{0.1 A_{a}}-1}{10^{0.1 A_{p}}-1}\)</span></td> </tr> <tr> <td colspan="2"><span class="tex-text">\(\omega_{p}=\left(10^{0.1 A_{p}}-1\right)^{1 / 2 n}\)</span></td> </tr> </tbody> </table></div> <p class="blog">
+&nbsp;</p>
+ <div class="table-overflow"><table  width="321"> <tbody> <tr> <td colspan="2" width="321">Table 12.5 Chebyshev filters</td> </tr> <tr> <td>LP</td> <td><span class="tex-text">\(K=K_{0}\)</span></td> </tr> <tr> <td>HP</td> <td><span class="tex-text">\(K=\frac{1}{K_{0}}\)</span></td> </tr> <tr> <td>BP</td> <td><span class="tex-text">\(K= \begin{cases}K_{1} &amp; \text { if } K_{C} \geq K_{B} \\ K_{2} &amp; \text { if } K_{C}&lt;K_{B}\end{cases}\)</span></td> </tr> <tr> <td>BS</td> <td><span class="tex-text">\(K= \begin{cases}\frac{1}{K_{2}} &amp; \text { if } K_{C} \geq K_{B} \\ \frac{1}{K_{1}} &amp; \text { if } K_{C}&lt;K_{B}\end{cases}\)</span></td> </tr> <tr> <td colspan="2"><span class="tex-text">\(n \geq \frac{\cosh ^{-1} \sqrt{D}}{\cosh ^{-1}(1 / K)} \quad D=\frac{10^{0.1 A_{a}}-1}{10^{0.1 A_{p}}-1}\)</span></td> </tr> <tr> <td colspan="2"><span class="tex-text">\(\omega_{p}=1\)</span></td> </tr> </tbody> </table></div> <p class="blog">
+&nbsp;</p>
+ <div class="table-overflow"><table  width="256"> <tbody> <tr> <td colspan="4" width="256">Table 12.6 Elliptic filters</td> </tr> <tr> <td></td> <td></td> <td>k</td> <td><span class="tex-text">\(\omega_{p}\)</span></td> </tr> <tr> <td>LP</td> <td colspan="2"><span class="tex-text">\(K_{0}\)</span></td> <td><span class="tex-text">\(\sqrt{K_{0}}\)</span></td> </tr> <tr> <td>HP</td> <td colspan="2"><span class="tex-text">\(\frac{1}{K_{0}}\)</span></td> <td><span class="tex-text">\(\frac{1}{\sqrt{K_{0}}}\)</span></td> </tr> <tr> <td rowspan="2">BP</td> <td><span class="tex-text">\(K_{1}\)</span></td> <td><span class="tex-text">\(\text { if } K_{C} \geq K_{B}\)</span></td> <td><span class="tex-text">\(\sqrt{K_{1}}\)</span></td> </tr> <tr> <td><span class="tex-text">\(K_{2}\)</span></td> <td><span class="tex-text">\(\text { if } K_{C}&lt;K_{B}\)</span></td> <td><span class="tex-text">\(\sqrt{K_{2}}\)</span></td> </tr> <tr> <td rowspan="2">BS</td> <td><span class="tex-text">\(\frac{1}{K_{2}}\)</span></td> <td><span class="tex-text">\(\text { if } K_{C} \geq K_{B}\)</span></td> <td><span class="tex-text">\(\frac{1}{\sqrt{K_{2}}}\)</span></td> </tr> <tr> <td><span class="tex-text">\(\frac{1}{K_{1}}\)</span></td> <td><span class="tex-text">\(\text { if } K_{C}&lt;K_{B}\)</span></td> <td><span class="tex-text">\(\frac{1}{\sqrt{K_{1}}}\)</span></td> </tr> <tr> <td colspan="4"><span class="tex-text">\(n \geq \frac{\log 16 D}{\log (1 / q)} \quad D=\frac{10^{0.1 A_{a}}-1}{10^{0.1 A_{p}}-1}\)</span></td> </tr> </tbody> </table></div> <p class="blog">
+&nbsp;</p>
+ <div class="table-overflow"><table  width="675"> <tbody> <tr> <td colspan="8" width="675">Table 12.7 Coefficients of <span class="tex-text">\(H _{N}( s )\)</span> (Example 12.1)</td> </tr> <tr> <td></td> <td>j</td> <td><span class="tex-text">\(a_{0 j}\)</span></td> <td><span class="tex-text">\(a_{1 j}\)</span></td> <td><span class="tex-text">\(a_{2 j}\)</span></td> <td><span class="tex-text">\(b_{0 j}\)</span></td> <td><span class="tex-text">\(b_{1 j}\)</span></td> <td><span class="tex-text">\(b_{2 j}\)</span></td> </tr> <tr> <td rowspan="4">Butterworth</td> <td>1</td> <td>1</td> <td>0</td> <td>0</td> <td>1</td> <td>1</td> <td>0</td> </tr> <tr> <td>2</td> <td>1</td> <td>0</td> <td>0</td> <td>1</td> <td>1.618034</td> <td>1</td> </tr> <tr> <td>3</td> <td>1</td> <td>0</td> <td>0</td> <td>1</td> <td>6.180340E −1</td> <td>1</td> </tr> <tr> <td colspan="7"><span class="tex-text">\(H_{0}=1.0\)</span></td> </tr> <tr> <td rowspan="3">Chebyshev</td> <td>1</td> <td>1</td> <td>0</td> <td>0</td> <td>2.793981E −1</td> <td>6.737394E −1</td> <td>1</td> </tr> <tr> <td>2</td> <td>1</td> <td>0</td> <td>0</td> <td>9.865049E −1</td> <td>2.790720E −1</td> <td>1</td> </tr> <tr> <td colspan="7"><span class="tex-text">\(H_{0}=2.456533 E-1\)</span></td> </tr> <tr> <td rowspan="3">Elliptic</td> <td>1</td> <td>1</td> <td>0</td> <td>0</td> <td>2.573050E −1</td> <td>1</td> <td>0</td> </tr> <tr> <td>2</td> <td>5.091668</td> <td>0</td> <td>1</td> <td>2.592344E −1</td> <td>2.442048E −1</td> <td>1</td> </tr> <tr> <td colspan="7"><span class="tex-text">\(H_{0}=1.310029 E-2\)</span></td> </tr> </tbody> </table></div> <p class="blog">
+&nbsp;</p>
+ <div class="table-overflow"><table  width="675"> <tbody> <tr> <td colspan="8" width="675">Table 12.8 Coefficients of <span class="tex-text">\(H_{H P}(\bar{s})\)</span> (Example 12.1)</td> </tr> <tr> <td></td> <td>j</td> <td><span class="tex-text">\(a_{0 j}\)</span></td> <td><span class="tex-text">\(a_{1 j}\)</span></td> <td><span class="tex-text">\(a_{2 j}\)</span></td> <td><span class="tex-text">\(b_{0 j}\)</span></td> <td><span class="tex-text">\(b_{1 j}\)</span></td> <td><span class="tex-text">\(b_{2 j}\)</span></td> </tr> <tr> <td rowspan="4">Butterworth</td> <td>1</td> <td>0</td> <td>1</td> <td>0</td> <td>5.4576</td> <td>1</td> <td>0</td> </tr> <tr> <td>2</td> <td>0</td> <td>0</td> <td>1</td> <td>2.978540E +1</td> <td>8.830582</td> <td>1</td> </tr> <tr> <td>3</td> <td>0</td> <td>0</td> <td>1</td> <td>2.978540E +1</td> <td>3.372982</td> <td>1</td> </tr> <tr> <td colspan="7"><span class="tex-text">\(H_{0}=1.0\)</span></td> </tr> <tr> <td rowspan="3">Chebyshev</td> <td>1</td> <td>0</td> <td>0</td> <td>1</td> <td>1.396835E +2</td> <td>1.506443E +1</td> <td>1</td> </tr> <tr> <td>2</td> <td>0</td> <td>0</td> <td>1</td> <td>3.956118E +1</td> <td>1.767263</td> <td>1</td> </tr> <tr> <td colspan="7"><span class="tex-text">\(H_{0}=8.912509E − 1\)</span></td> </tr> <tr> <td rowspan="3">Elliptic</td> <td>1</td> <td>0</td> <td>1</td> <td>0</td> <td>1.237091E +1</td> <td>1</td> <td>0</td> </tr> <tr> <td>2</td> <td>1.989941</td> <td>0</td> <td>1</td> <td>3.908478E +1</td> <td>2.998552</td> <td>1</td> </tr> <tr> <td colspan="7"><span class="tex-text">\(H_{0}=1.0\)</span></td> </tr> </tbody> </table></div> <p class="blog">
+&nbsp;</p>
+ <div class="table-overflow"><table  width="675"> <tbody> <tr> <td colspan="8" width="675">Table 12.9 Coefficients of <span class="tex-text">\(H_{ D }(z)\)</span>(Example 12.1)</td> </tr> <tr> <td></td> <td>j</td> <td><span class="tex-text">\(a_{0 j}\)</span></td> <td><span class="tex-text">\(a_{1 j}\)</span></td> <td><span class="tex-text">\(a_{2 j}\)</span></td> <td><span class="tex-text">\(b_{0 j}\)</span></td> <td><span class="tex-text">\(b_{1 j}\)</span></td> <td><span class="tex-text">\(b_{2 j}\)</span></td> </tr> <tr> <td rowspan="4">Butterworth</td> <td>1</td> <td>-1</td> <td>1</td> <td>0</td> <td>2.632312E−1</td> <td>1</td> <td>0</td> </tr> <tr> <td>2</td> <td>1</td> <td>-2</td> <td>1</td> <td>1.735936E−1</td> <td>5.778156E−1</td> <td>1</td> </tr> <tr> <td>3</td> <td>1</td> <td>-2</td> <td>1</td> <td>5.760838E−1</td> <td>7.759805E−1</td> <td>1</td> </tr> <tr> <td colspan="7"><span class="tex-text">\(H_{0}=1.097518E − 2\)</span></td> </tr> <tr> <td rowspan="3">Chebyshev</td> <td>1</td> <td>1</td> <td>-2</td> <td>1</td> <td>5.150704E−1</td> <td>1.31014</td> <td>1</td> </tr> <tr> <td>2</td> <td>1</td> <td>-2</td> <td>1</td> <td>7.966193E−1</td> <td>1.063983</td> <td>1</td> </tr> <tr> <td colspan="7"><span class="tex-text">\(H_{0}=8.363241E − 3\)</span></td> </tr> <tr> <td rowspan="3">Elliptic</td> <td>1</td> <td>-1</td> <td>1</td> <td>0</td> <td>5.907039E−1</td> <td>1</td> <td>0</td> </tr> <tr> <td>2</td> <td>1</td> <td>−1.343365</td> <td>1</td> <td>6.751385E−1</td> <td>9.854281E −1</td> <td>1</td> </tr> <tr> <td colspan="7"><span class="tex-text">\(H_{0}=4.221731E − 2\)</span></td> </tr> </tbody> </table></div> 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="/tos">terms</a>
+                <a href="/privacy">privacy</a>
+                <a href="/contact-us">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="/assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>
