@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/calculating-the-pressure-field-in-cylindrical-coordinates-consider-the-steady-two-dimensional-incompressible-velocity-field-of-example-9-5-with-function-f%F0%9D%9C%83-t-equal-to-0-this-r" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Calculating the Pressure Field in Cylindrical Coordinates Consider the steady, two-dimensional, incompressible velocity field of Example 9–5 with function f(𝜃, t) equal to 0. This represents a line vortex whose axis lies along the z-coordinate (Fig. 9–49) [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Calculating the Pressure Field in Cylindrical Coordinates Consider the steady, two-dimensional, incompressible velocity field of Example 9–5 with function f(𝜃, t) equal to 0. This represents a line vortex whose axis lies along the z-coordinate (Fig. 9–49)[solved!] | Vlavar Engineering" />
+<meta name="description" content="SOLUTION For a given velocity field, we are to calculate the pressure field. Assumptions 1 The flow is steady. 2 The fluid is incompressible with constant"/>
+<meta property="og:description" content="SOLUTION For a given velocity field, we are to calculate the pressure field. Assumptions 1 The flow is steady. 2 The fluid is incompressible with constant" />
+<meta property="og:image" content="https://vlavar.com/imagesdb/uploads/2022/02/9-49.png" />
+<meta property="og:updated_time" content="2022-02-26T12:46:02+04:00" />
+<meta name="twitter:description" content="SOLUTION For a given velocity field, we are to calculate the pressure field. Assumptions 1 The flow is steady. 2 The fluid is incompressible with constant" />
+<meta name="twitter:title" content="Calculating the Pressure Field in Cylindrical Coordinates Consider the steady, two-dimensional, incompressible velocity field of Example 9–5 with function f(𝜃, t) equal to 0. This represents a line vortex whose axis lies along the z-coordinate (Fig. 9–49)[solved!] | Vlavar Engineering" />
+<meta name="twitter:image" content="https://vlavar.com/imagesdb/uploads/2022/02/9-49.png" />
+<meta property="article:published_time" content="2022-02-17T01:33:11+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/calculating-the-pressure-field-in-cylindrical-coordinates-consider-the-steady-two-dimensional-incompressible-velocity-field-of-example-9-5-with-function-f%F0%9D%9C%83-t-equal-to-0-this-r" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="/">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="/">Home</a>
+                    <a id="search">Search</a>
+                    <a href="/tour/1">Tour</a>
+                    <a href="/contact-us">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="/">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="/tour/1">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="/contact-us">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Calculating the Pressure Field in Cylindrical Coordinates</p> <p class="blog"><span class="fontstyle0">Consider the steady, two-dimensional, incompressible velocity field of  with function </span><span class="fontstyle2">f</span><span class="fontstyle0">(𝜃, </span><span class="fontstyle2">t</span><span class="fontstyle0">) equal to 0. This represents a line vortex whose axis lies along the </span><span class="fontstyle2">z-</span><span class="fontstyle0">coordinate (Fig. 9–49). The velocity components are</span> <span class="tex-text">\(u_{r}=0 \text { and } u_{\theta}=K / r\)</span>, <span class="fontstyle0">where </span><span class="fontstyle2">K </span><span class="fontstyle0">is a constant. Calculate the pressure as a function of </span><span class="fontstyle2">r </span><span class="fontstyle0">and 𝜃.</span></p> <div class="image-clearfix"><img class="question-image" src="/imagesdb/uploads/2022/02/9-49.png"></div>    
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+<span class="fontstyle0">SOLUTION </span><span class="fontstyle2">For a given velocity field, we are to calculate the pressure field.</span></p>
+ <p class="blog">
+<span class="fontstyle0">Assumptions </span><span class="fontstyle2">1 </span><span class="fontstyle3">The flow is steady. </span><span class="fontstyle2">2 </span><span class="fontstyle3">The fluid is incompressible with constant properties. </span><span class="fontstyle2">3 </span><span class="fontstyle3">The flow is two-dimensional in the </span><span class="fontstyle4">r</span><span class="fontstyle3">𝜃-plane. </span><span class="fontstyle2">4 </span><span class="fontstyle3">Gravity does not act in either the </span><span class="fontstyle4">r</span><span class="fontstyle3">&#8211; or the 𝜃-direction.</span></p>
+ <p class="blog">
+<span class="fontstyle0">Analysis </span><span class="fontstyle2">The flow field must satisfy both the continuity and the momentum equations, Eqs. 9–62. For steady, two-dimensional, incompressible flow,</span></p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Incompressible continuity equation:</p>
+ <p class="blog">
+<span class="tex-text">\(\frac{1}{r} \frac{\partial\left(r u_{r}\right)}{\partial r}+\frac{1}{r} \frac{\partial\left(u_{\theta}\right)}{\partial \theta}+\frac{\partial\left(u_{z}\right)}{\partial z}=0\)</span> (9-62a)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+r-component of the incompressible Navier–Stokes equation:</p>
+ <p class="blog">
+<span class="tex-text">\(\begin{aligned}&amp;\rho\left(\frac{\partial u_{r}}{\partial t}+u_{r} \frac{\partial u_{r}}{\partial r}+\frac{u_{\theta}}{r} \frac{\partial u_{r}}{\partial \theta}-\frac{u_{\theta}^{2}}{r}+u_{z} \frac{\partial u_{r}}{\partial z}\right) \\&amp;\quad=-\frac{\partial P}{\partial r}+\rho g_{r}+\mu\left[\frac{1}{r} \frac{\partial}{\partial r}\left(r \frac{\partial u_{r}}{\partial r}\right)-\frac{u_{r}}{r^{2}}+\frac{1}{r^{2}} \frac{\partial^{2} u_{r}}{\partial \theta^{2}}-\frac{2}{r^{2}} \frac{\partial u_{\theta}}{\partial \theta}+\frac{\partial^{2} u_{r}}{\partial z^{2}}\right]\end{aligned}\)</span> (9-62b)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+𝜃-component of the incompressible Navier–Stokes equation:</p>
+ <p class="blog">
+<span class="tex-text">\(\begin{aligned}&amp;\rho\left(\frac{\partial u_{\theta}}{\partial t}+u_{r} \frac{\partial u_{\theta}}{\partial r}+\frac{u_{\theta}}{r} \frac{\partial u_{\theta}}{\partial \theta}+\frac{u_{r} u_{\theta}}{r}+u_{z} \frac{\partial u_{\theta}}{\partial z}\right) \\&amp;\quad=-\frac{1}{r} \frac{\partial P}{\partial \theta}+\rho g_{\theta}+\mu\left[\frac{1}{r} \frac{\partial}{\partial r}\left(r \frac{\partial u_{\theta}}{\partial r}\right)-\frac{u_{\theta}}{r^{2}}+\frac{1}{r^{2}} \frac{\partial^{2} u_{\theta}}{\partial \theta^{2}}+\frac{2}{r^{2}} \frac{\partial u_{r}}{\partial \theta}+\frac{\partial^{2} u_{\theta}}{\partial z^{2}}\right]\end{aligned}\)</span> (9-62c)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+z-component of the incompressible Navier–Stokes equation:</p>
+ <p class="blog">
+<span class="tex-text">\(\begin{aligned}\rho\left(\frac{\partial u_{z}}{\partial t}\right.&amp;\left.+u_{r} \frac{\partial u_{z}}{\partial r}+\frac{u_{\theta}}{r} \frac{\partial u_{z}}{\partial \theta}+u_{z} \frac{\partial u_{z}}{\partial z}\right) \\&amp;=-\frac{\partial P}{\partial z}+\rho g_{z}+\mu\left[\frac{1}{r} \frac{\partial}{\partial r}\left(r \frac{\partial u_{z}}{\partial r}\right)+\frac{1}{r^{2}} \frac{\partial^{2} u_{z}}{\partial \theta^{2}}+\frac{\partial^{2} u_{z}}{\partial z^{2}}\right]\end{aligned}\)</span> (9-62d)</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\frac{1}{r} \underbrace{\frac{\partial(r u _r)}{\partial r}}_{0}+{\frac{1}{r}} \underbrace{\frac{\partial\left(u_{\theta}\right)}{\partial \theta}}_{0}+\underbrace{\frac{\partial\left(u_{z}\right)}{\partial z}}_{0}=0\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="fontstyle0">Thus, the incompressible continuity equation is satisfied. Now we look at the 𝜃 component of the Navier–Stokes equation (Eq. 9–62c):</span></p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(\rho(\underbrace{\frac{\partial u_{\theta}}{\partial t}}_{0 \text { (steady) }}+\underbrace{u_{r} \frac{\partial u_{\theta}}{\partial r}}_{(0)\left(-\frac{K}{r^{2}}\right)}+\underbrace{\frac{u_{\theta}}{r} \frac{\partial u_{\theta}}{\partial \theta}}_{\left(\frac{K}{r^{2}}\right)(0)}+\underbrace{\frac{u_{r} u_{\theta}}{r}}_{0}+\underbrace{u_{z} \frac{\partial u_{\theta}}{\partial z}}_{0(2-D)})\)</span> <span class="tex-text">\(=-\frac{1}{r} \frac{\partial P}{\partial \theta}+\ \underbrace{\rho \text g_{\theta}}_{0}+\mu(\underbrace{\frac{1}{r} \frac{\partial}{\partial r}\left(r \frac{\partial u_{\theta}}{\partial r}\right)}_{\frac{K}{r^{3}}}-\underbrace{\frac{u_{\theta}}{r^{2}}}_{\frac{K}{r^{3}}}+\underbrace{\frac{1}{r^{2}} \frac{\partial^{2} u_{\theta}}{\partial \theta^{2}}}_{0}+\underbrace{\frac{2}{r^{2}} \frac{\partial u_{r}}{\partial \theta}}_{0}+\underbrace{\frac{\partial^{2} u_{\theta}}{\partial z^{2}}}_{0 \text { (2-D) }})\)</span></p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="fontstyle0">The 𝜃-momentum equation therefore reduces to</span></p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+𝜃-momentum: <span class="tex-text">\(\frac{\partial P}{\partial \theta}=0\)</span> (1)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="fontstyle0">Thus, the 𝜃-momentum equation is satisfied if we can generate an appropriate pressure field that satisfies Eq. 1. In similar fashion, the </span><span class="fontstyle2">r</span><span class="fontstyle0">-momentum equation (Eq. 9–62b) reduces to</span></p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="fontstyle0">r</span><span class="fontstyle1">&#8211;</span><span class="fontstyle0">momentum</span><span class="fontstyle1">:</span> <span class="tex-text">\(\frac{\partial P}{\partial r}=\rho \frac{K^{2}}{r^{3}}\)</span> (2)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="fontstyle0">Thus, the </span><span class="fontstyle2">r</span><span class="fontstyle0">-momentum equation is satisfied if we can generate a pressure field that satisfies Eq. 2.</span></p>
+ <p class="blog">
+<span class="fontstyle0">In order for a steady flow solution to exist, </span><span class="fontstyle2">P </span><span class="fontstyle0">cannot be a function of time. Furthermore, a physically realistic steady, incompressible flow field requires a pressure field </span><span class="fontstyle2">P</span><span class="fontstyle0">(</span><span class="fontstyle2">r</span><span class="fontstyle0">, 𝜃) that is a smooth function of </span><span class="fontstyle2">r </span><span class="fontstyle0">and 𝜃. Mathematically, this requires that the order of differentiation (</span><span class="fontstyle2">r </span><span class="fontstyle0">then 𝜃 versus 𝜃 then </span><span class="fontstyle2">r </span><span class="fontstyle0">) should not matter (Fig. 9–50). We check whether this is so by cross-differentiating the pressure:</span></p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(\frac{\partial^{2} P}{\partial r \partial \theta}=\frac{\partial}{\partial r}\left(\frac{\partial P}{\partial \theta}\right)=0 \quad \text { and } \quad \frac{\partial^{2} P}{\partial \theta \partial r}=\frac{\partial}{\partial \theta}\left(\frac{\partial P}{\partial r}\right)=0\)</span> (3)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="fontstyle0">Equation 3 shows that </span><span class="fontstyle2">P </span><span class="fontstyle0">is indeed a smooth function of </span><span class="fontstyle2">r </span><span class="fontstyle0">and 𝜃. </span><span class="fontstyle2">Thus, the given velocity field satisfies the steady, two-dimensional, incompressible Navier–Stokes equation</span><span class="fontstyle0">.</span></p>
+ <p class="blog">
+<span class="fontstyle0">We integrate Eq. 1 with respect to 𝜃 to obtain an expression for </span><span class="fontstyle2">P </span><span class="fontstyle0">(</span><span class="fontstyle2">r</span><span class="fontstyle0">, 𝜃),</span></p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="fontstyle0">Pressure field from </span><span class="fontstyle2">𝜃-</span><span class="fontstyle0">momentum</span><span class="fontstyle2">: </span><span class="fontstyle0">P</span><span class="fontstyle2">(</span><span class="fontstyle0">r</span><span class="fontstyle2">, 𝜃) = 0 + </span><span class="fontstyle0">g</span><span class="fontstyle2">(</span><span class="fontstyle0">r</span><span class="fontstyle2">) </span><span class="fontstyle3">(4)</span></p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="fontstyle0">Note that we added an arbitrary function of the other variable </span><span class="fontstyle2">r</span><span class="fontstyle0">, rather than a constant of integration, since this is a partial integration. We take the partial derivative of Eq. 4 with respect to </span><span class="fontstyle2">r </span><span class="fontstyle0">to obtain</span></p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(\frac{\partial P}{\partial r}=g^{\prime}(r)=\rho \frac{K^{2}}{r^{3}}\)</span> (5)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="fontstyle0">where we have equated our result to Eq. 2 for consistency. We integrate Eq. 5 to obtain the function </span><span class="fontstyle2">g</span><span class="fontstyle0">(</span><span class="fontstyle2">r</span><span class="fontstyle0">):</span></p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(g(r)=-\frac{1}{2} \rho \frac{K^{2}}{r^{2}}+C\)</span> (6)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="fontstyle0">where </span><span class="fontstyle2">C </span><span class="fontstyle0">is an arbitrary constant of integration. Finally, we substitute Eq. 6 into Eq. 4 to obtain our final expression for </span><span class="fontstyle2">P </span><span class="fontstyle0">(</span><span class="fontstyle2">r</span><span class="fontstyle0">, 𝜃). The result is</span></p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(P(r, \theta)=-\frac{1}{2} \rho \frac{K^{2}}{r^{2}}+C\)</span> (7)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="fontstyle0">Thus the pressure field for a line vortex decreases like 1/</span><span class="fontstyle2">r</span><span class="fontstyle0">² </span><span class="fontstyle0">as we approach the origin. (The origin itself is a singular point.) This flow field is a simplistic model of a tornado or hurricane, and the low pressure at the center is the “eye of the storm” (Fig. 9–51). We note that this flow field is irrotational, and thus Bernoulli’s equation can be used instead to calculate the pressure. If we call the pressure </span><span class="fontstyle0"><span class="tex-text">\(P_{\infty}\)</span> </span><span class="fontstyle0">far away from the origin (</span><span class="fontstyle2">r </span><span class="fontstyle0">→ ∞), where the local velocity approaches zero, Bernoulli’s equation shows that at any distance </span><span class="fontstyle2">r </span><span class="fontstyle0">from the origin,</span></p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="fontstyle0">Bernoulli equation</span><span class="fontstyle2">:</span> <span class="tex-text">\(P+\frac{1}{2} \rho V^{2}=P_{\infty} \quad \rightarrow \quad P=P_{\infty}-\frac{1}{2} \rho \frac{K^{2}}{r^{2}}\)</span> (8)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="fontstyle0">Equation 8 agrees with our solution (Eq. 7) from the Navier–Stokes equation if we set constant </span><span class="fontstyle2">C </span><span class="fontstyle0">equal to </span><span class="fontstyle0"><span class="tex-text">\(P_{\infty}\)</span></span><span class="fontstyle0">. A region of rotational flow near the origin would avoid the singularity there and would yield a more physically realistic model of a tornado.</span></p>
+ <p class="blog">
+<span class="fontstyle0">Discussion </span><span class="fontstyle2">For practice, try to obtain Eq. 7 by starting with Eq. 2 rather than Eq. 1; you should get the same answer.</span></p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="/tos">terms</a>
+                <a href="/privacy">privacy</a>
+                <a href="/contact-us">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="/assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>

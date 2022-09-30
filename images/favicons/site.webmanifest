@@ -1,0 +1,20 @@
+{
+    "name": "Vlavar",
+    "short_name": "Vlavar",
+    "icons": [
+        {
+            "src": "/assets/images/favicons/android-chrome-192x192.png?v=0.1v",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/favicons/android-chrome-512x512.png?v=0.1v",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#10106d",
+    "background_color": "#10106d",
+    "start_url": "https://vlavar.com",
+    "display": "standalone"
+}

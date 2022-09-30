@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/find-the-singular-value-decomposition-of-a-0-1-2-1-1-0" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Find the singular value decomposition of A = [0 -1 -2 1 1 0] [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Find the singular value decomposition of A = [0 -1 -2 1 1 0][solved!] | Vlavar Engineering" />
+<meta name="description" content="The first step is to write down the transpose of this matrix, which is &nbsp; A^{T}=left[begin{array}{ccc}0 &amp; -2 &amp; 1 \-1 &amp; 1 &amp;"/>
+<meta property="og:description" content="The first step is to write down the transpose of this matrix, which is &nbsp; A^{T}=left[begin{array}{ccc}0 &amp; -2 &amp; 1 \-1 &amp; 1 &amp;" />
+
+
+<meta name="twitter:description" content="The first step is to write down the transpose of this matrix, which is &nbsp; A^{T}=left[begin{array}{ccc}0 &amp; -2 &amp; 1 \-1 &amp; 1 &amp;" />
+<meta name="twitter:title" content="Find the singular value decomposition of A = [0 -1 -2 1 1 0][solved!] | Vlavar Engineering" />
+
+<meta property="article:published_time" content="2022-04-10T13:47:08+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/find-the-singular-value-decomposition-of-a-0-1-2-1-1-0" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="/">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="/">Home</a>
+                    <a id="search">Search</a>
+                    <a href="/tour/1">Tour</a>
+                    <a href="/contact-us">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="/">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="/tour/1">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="/contact-us">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Find the singular value decomposition of</p> <span class="tex-text">\(A=\left[\begin{array}{cc}0 &amp; -1 \\-2 &amp; 1 \\1 &amp; 0\end{array}\right]\)</span>      
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+The first step is to write down the transpose of this matrix, which is</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(A^{T}=\left[\begin{array}{ccc}0 &amp; -2 &amp; 1 \\-1 &amp; 1 &amp; 0\end{array}\right]\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Now we compute</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(W=A A^{T}=\left[\begin{array}{cc}0 &amp; -1 \\-2 &amp; 1 \\1 &amp; 0\end{array}\right]\left[\begin{array}{ccc}0 &amp; -2 &amp; 1 \\-1 &amp; 1 &amp; 0\end{array}\right]=\left[\begin{array}{ccc}1 &amp; -1 &amp; 0 \\-1 &amp; 5 &amp; -2 \\0 &amp; -2 &amp; 1\end{array}\right]\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+The next step is to find the eigenvalues of W. These are (exercise) {0, 1, 6}. Only positive eigenvalues are important. The singular values are the square roots, and so</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\sigma_{1}=1, \quad \sigma_{2}=\sqrt{6}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+D is constructed by placing these elements on the diagonal. They are arranged from greatest to lowest in value. There are two singular values, and so D is a 2 × 2 matrix</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(D=\left[\begin{array}{cc}\sqrt{6} &amp; 0 \\0 &amp; 1\end{array}\right]\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Next we find the eigenvectors of W that correspond to the eignvalues {1, 6}. These must be normalized. We demonstrate with the second eigenvalue. The equation is</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\left[\begin{array}{ccc}1 &amp; -1 &amp; 0 \\-1 &amp; 5 &amp; -2 \\0 &amp; -2 &amp; 1\end{array}\right]\left[\begin{array}{l}a \\b \\c\end{array}\right]=6\left[\begin{array}{l}a \\b \\c\end{array}\right]\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+This eigenvector equation leads to the relationships (check)</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\begin{array}{l}b=-5 a \\c=2 a\end{array}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Therefore we can write the eigenvector as</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(v=\left[\begin{array}{c}-a \\5 a \\-2 a\end{array}\right]\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Now we normalize the eigenvector</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(1=v^{T} v=\left[\begin{array}{lll}a &amp; -5 a &amp; 2 a\end{array}\right]\left[\begin{array}{c}a \\-5 a \\2 a\end{array}\right]=a^{2}+25 a^{2}+4 a^{2}=30 a^{2}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+and so we have</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(1=30 a^{2} \Rightarrow a=\frac{1}{\sqrt{30}}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+And the normalized eigenvector is</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(v=\left[\begin{array}{c}-\frac{1}{\sqrt{30}} \\\frac{5}{\sqrt{30}} \\-\frac{2}{\sqrt{30}}\end{array}\right]\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+The other normalized eigenvector, corresponding to the eigenvalue {1}, is (exercise)</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(w=\left[\begin{array}{c}-\frac{2}{\sqrt{5}} \\0 \\\frac{1}{\sqrt{5}}\end{array}\right]\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Now we construct U. The columns of U are the eigenvectors</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(U=\left[\begin{array}{cc}-\frac{1}{\sqrt{30}} &amp; -\frac{2}{\sqrt{5}} \\\frac{5}{\sqrt{30}} &amp; 0 \\-\frac{2}{\sqrt{30}} &amp; \frac{1}{\sqrt{5}}\end{array}\right]\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Now we compute</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(W^{\prime}=A^{T} A=\left[\begin{array}{ccc}0 &amp; -2 &amp; 1 \\-1 &amp; 1 &amp; 0\end{array}\right]\left[\begin{array}{cc}0 &amp; -1 \\-2 &amp; 1 \\1 &amp; 0\end{array}\right]=\left[\begin{array}{cc}5 &amp; -2 \\-2 &amp; 2\end{array}\right]\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+The eigenvalues of this matrix are {1, 6} (why?). The normalized eigvectors are</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(v_{1}=\left[\begin{array}{c}-\frac{2}{\sqrt{5}} \\\frac{1}{\sqrt{5}}\end{array}\right], \quad v_{2}=\left[\begin{array}{c}\frac{1}{\sqrt{5}} \\\frac{2}{\sqrt{5}}\end{array}\right]\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+respectively. We construct V by mapping these eigenvectors to the columns of the matrix</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(V=\left[\begin{array}{cc}-\frac{2}{\sqrt{5}} &amp; \frac{1}{\sqrt{5}} \\\frac{1}{\sqrt{5}} &amp; \frac{2}{\sqrt{5}}\end{array}\right]\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+(Are these columns orthogonal?). In this case the transpose is equal to V.</p>
+ <p class="blog">
+We have found the singular value decomposition of the matrix A. Recalling that <span class="tex-text">\(A=U D V^{T}\)</span>, we verify the result. First we have</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(D V^{T}=\left[\begin{array}{cc}\sqrt{6} &amp; 0 \\0 &amp; 1\end{array}\right]\left[\begin{array}{cc}-\frac{2}{\sqrt{5}} &amp; \frac{1}{\sqrt{5}} \\\frac{1}{\sqrt{5}} &amp; \frac{2}{\sqrt{5}}\end{array}\right]=\left[\begin{array}{cc}-\frac{2 \sqrt{6}}{\sqrt{5}} &amp; \frac{\sqrt{6}}{\sqrt{5}} \\\frac{1}{\sqrt{5}} &amp; \frac{2}{\sqrt{5}}\end{array}\right]\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+and so we obtain</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(U D V^{T}=\left[\begin{array}{cc}-\frac{1}{\sqrt{30}} &amp; -\frac{2}{\sqrt{5}} \\\frac{5}{\sqrt{30}} &amp; 0 \\-\frac{2}{\sqrt{30}} &amp; \frac{1}{\sqrt{5}}\end{array}\right]\left[\begin{array}{cc}-\frac{2 \sqrt{6}}{\sqrt{5}} &amp; \frac{\sqrt{6}}{\sqrt{5}} \\\frac{1}{\sqrt{5}} &amp; \frac{2}{\sqrt{5}}\end{array}\right]=\left[\begin{array}{cc}0 &amp; -1 \\-2 &amp; 1 \\1 &amp; 0\end{array}\right]=A\)</span> 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="/tos">terms</a>
+                <a href="/privacy">privacy</a>
+                <a href="/contact-us">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="/assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>

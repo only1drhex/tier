@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/boundary-layer-flow-between-parallel-plates-comsol-this-example-is-essentially-a-reproduction-on-our-part-of-one-of-the-sample-problems-that-was-part-of-the-comsol-model-library-of-several-years-a" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Boundary-Layer Flow Between Parallel Plates (COMSOL) This example is essentially a reproduction, on our part, of one of the sample problems that was part of the COMSOL Model Library of several years ago, and we are indebted to COMSOL for the idea. A fluid of density 1,000 kg/m^3 and viscosity 0.01 [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Boundary-Layer Flow Between Parallel Plates (COMSOL) This example is essentially a reproduction, on our part, of one of the sample problems that was part of the COMSOL Model Library of several years ago, and we are indebted to COMSOL for the idea. A fluid of density 1,000 kg/m^3 and viscosity 0.01[solved!] | Vlavar Engineering" />
+<meta name="description" content="See Chapter 14 for more details about COMSOL Multiphysics. All mouse-clicks are left-clicks (the same as Select) unless specifically denoted as right-click"/>
+<meta property="og:description" content="See Chapter 14 for more details about COMSOL Multiphysics. All mouse-clicks are left-clicks (the same as Select) unless specifically denoted as right-click" />
+<meta property="og:image" content="https://vlavar.com/imagesdb/uploads/2022/02/8-3-1.jpg" />
+<meta property="og:updated_time" content="2022-02-17T18:59:15+04:00" />
+<meta name="twitter:description" content="See Chapter 14 for more details about COMSOL Multiphysics. All mouse-clicks are left-clicks (the same as Select) unless specifically denoted as right-click" />
+<meta name="twitter:title" content="Boundary-Layer Flow Between Parallel Plates (COMSOL) This example is essentially a reproduction, on our part, of one of the sample problems that was part of the COMSOL Model Library of several years ago, and we are indebted to COMSOL for the idea. A fluid of density 1,000 kg/m^3 and viscosity 0.01[solved!] | Vlavar Engineering" />
+<meta name="twitter:image" content="https://vlavar.com/imagesdb/uploads/2022/02/8-3-1.jpg" />
+<meta property="article:published_time" content="2022-02-16T03:11:29+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/boundary-layer-flow-between-parallel-plates-comsol-this-example-is-essentially-a-reproduction-on-our-part-of-one-of-the-sample-problems-that-was-part-of-the-comsol-model-library-of-several-years-a" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="/">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="/">Home</a>
+                    <a id="search">Search</a>
+                    <a href="/tour/1">Tour</a>
+                    <a href="/contact-us">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="/">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="/tour/1">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="/contact-us">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog"><strong>Boundary-Layer Flow</strong></p> <p class="blog"><strong>Between Parallel Plates (COMSOL)</strong></p> <p class="blog">This example is essentially a reproduction, on our part, of one of the sample problems that was part of the COMSOL Model Library of several years ago, and we are indebted to COMSOL for the idea.</p> <p class="blog">A fluid of density <span class="tex-text">\(1,000 \mathrm{~kg} / \mathrm{m}^{3}\)</span> and viscosity <span class="tex-text">\(0.01 \mathrm{~kg} / \mathrm{m}\)</span> s flows freely in the <span class="tex-text">\(y\)</span> direction with an initially uniform velocity <span class="tex-text">\(v_{0}=0.02 \mathrm{~m} / \mathrm{s}\)</span>. After a distance of <span class="tex-text">\(y=0.01\)</span>, it encounters flat plates of length <span class="tex-text">\(0.04\)</span> located at <span class="tex-text">\(x=\pm 0.01 \mathrm{~m}\)</span> (all units are SI). The exit pressure from the plates is <span class="tex-text">\(p=0\)</span>. The corresponding boundary conditions are shown in Fig. E8.3.1.</p> <p class="blog">We wish to solve for the velocities, make the following plots, and comment on them:</p> <ol> <li>The streamlines.</li> <li>Arrows showing the velocity vectors.</li> <li>A two-dimensional contour plot of the velocity.</li> </ol> <p class="blog">Additionally, for <span class="tex-text">\(y=0.015\)</span>, we want to make and comment on the following cross-sectional plots:</p> <ol start="4"> <li>The <span class="tex-text">\(y\)</span> velocity.</li> <li>The <span class="tex-text">\(x\)</span> velocity.</li> <li>The vorticity.</li> </ol> <p class="blog">Finally, we comment on the relative values of the pressure and <span class="tex-text">\(y\)</span> velocity <span class="tex-text">\(v_{y}\)</span> at <span class="tex-text">\(x=0, y=0.01\)</span>, marked as <span class="tex-text">\(\mathrm{P}\)</span> in Fig. E8.3.1, and at the exit <span class="tex-text">\((x=0, y=0.05)\)</span>.</p> <div class="image-clearfix"><img class="question-image" src="/imagesdb/uploads/2022/02/8-3-1.jpg"></div>    
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+See Chapter 14 for more details about COMSOL Multiphysics. All mouse-clicks are left-clicks (the same as Select) unless specifically denoted as right-click (R).</p>
+ <p class="blog">
+Select the Physics</p>
+ <ol> <li>Open COMSOL and L-click Model Wizard, 2D, Fluid Flow (the little rotating triangle is called a &#8220;glyph&#8221;), Single-Phase Flow, Laminar Flow. L-click Add. Note the COMSOL names <span class="tex-text">\(u, v, w\)</span> for the three velocity components, and <span class="tex-text">\(p\)</span> for pressure.</li> <li>L-click Study, Stationary, Done.</li> <li>Pull down the Windows menu to Desktop Layout and then Regular Screen Layout &#8211; it gives more graphics window space, at the expense of somewhat reducing the Model Builder and Settings windows, in which you may have to scroll down.</li> </ol> <p class="blog">
+Define the Parameters</p>
+ <ol start="4"> <li>R-click Global Definitions and select Parameters. In the Settings window (now below the Model Builder window), enter the parameter rho1 in the Name column and <span class="tex-text">\(1000\left[\mathrm{~kg} / \mathrm{m}^{3}\right]\)</span> in the Expression column. Similarly, define <span class="tex-text">\(m u 1=0.01\)</span> <span class="tex-text">\([\mathrm{Pa} * \mathrm{~s}], v 0=0.02[\mathrm{~m} / \mathrm{s}], x 0=-0.01[\mathrm{~m}], y 0=0.015[\mathrm{~m}], x 1=0.01[\mathrm{~m}]\)</span>, and <span class="tex-text">\(y 1=\)</span> <span class="tex-text">\(0.015[\mathrm{~m}] .\)</span> Finally, add ySlip <span class="tex-text">\(=0.01[\mathrm{~m}]\)</span> and <span class="tex-text">\(H=0.05[\mathrm{~m}]\)</span>, which are the length of the slip boundary and height of the entire domain, respectively.</li> </ol> <p class="blog">
+Establish the Geometry</p>
+ <ol start="5"> <li>R-click Geometry and select Rectangle. Note the default is based on the lower left corner being at <span class="tex-text">\((0,0)\)</span>. Enter the values for Width and Height as <span class="tex-text">\(x 1-x 0\)</span> and <span class="tex-text">\(H .\)</span> Modify the values of the base corner to be <span class="tex-text">\((x 0,0) .\)</span> L-click Build Selected.</li> <li>Add an embedded rectangle to form the region for the full slip condition. R-click Geometry and select Rectangle. Enter the values for Width and Height as <span class="tex-text">\(x 1-x 0\)</span> and <span class="tex-text">\(y\)</span> Slip. Set the base corner at <span class="tex-text">\((x 0,0)\)</span>. L-click Build Selected.</li> <li>R-click Geometry and select Boolean and Partitions, Union. Add the two geometries to the union by L-clicking each in the Graphics window. Ensure that the Keep interior boundaries option is selected in Settings. L-click Build Selected.&nbsp; <p class="blog">
+Define the Fluid Properties</li> <li>R-click the Materials node within Component 1 and select Blank Material. Enter the parameters <span class="tex-text">\(r h o 1\)</span> and <span class="tex-text">\(m u 1\)</span> as values for Density and Dynamic viscosity.&nbsp; <p class="blog">
+Define the Boundary Conditions</li> <li>L-click the Laminar Flow glyph, select Wall 1, and note the six default No-slip boundary conditions.</li> <li>R-click the Laminar Flow node and select Inlet to define an inlet boundary condition. L-click the bottom boundary <span class="tex-text">\((\# 2)\)</span> to select it as the inlet. Within the Settings window note that the default form for the Boundary Condition is Velocity. Change the value of the Normal inflow velocity to <span class="tex-text">\(v 0\)</span>.</li> <li>R-click the Laminar Flow node and select Outlet to define an outlet boundary condition. L-click the top boundary <span class="tex-text">\((\# 5)\)</span> to select it as the outlet. Additionally, deselect the Suppress backflow option and select Normal flow option. Note that the exit pressure is zero.</li> <li>Add the slip boundary conditions by overriding a portion of the default Wall boundary conditions. R-click the Laminar Flow node and L-click Wall. Within the Settings window change the Boundary Condition from No Slip to Slip. Add the two slip walls to the Boundary selection by L-clicking the two lower vertical segments (#1 and #6).</li> </ol> <p class="blog">
+Create the Mesh and Solve the Problem</p>
+ <ol start="13"> <li>L-click the Mesh node and change the Element Size in the Settings window to Fine. L-click Build All to construct the mesh, which contains approximately 4,000 elements.</li> <li>R-click the Study node and select Compute, which takes about 5 seconds and gives a plot of the magnitude of the velocity, Fig. E8.3.2(c).</li> </ol> <p class="blog">
+15 Save the model file regularly!</p>
+ <p class="blog">
+Display the Results</p>
+ <ol start="16"> <li>Create a data set at the line segment representing section A-A. R-click the Data Sets node within the Results tree and select Cut Line 2D. In the Settings window enter the values <span class="tex-text">\((x 0, y 0)\)</span> and <span class="tex-text">\((x 1, y 1)\)</span> for Points 1 and 2 . L-click Plot near the top of the Settings window to display the cut line.</li> <li>Generate the streamline plot. R-click the Results node and select 2D Plot Group. R-click this newly created Plot Group 3 and select Streamline. Within the Settings window, note the default positioning option is set to On selected boundaries. Select the inlet <span class="tex-text">\((\# 2)\)</span> as the boundary for positioning and set the Number to 40. L-click Plot, giving Fig. E8.3.2(a).</li> <li>Generate the velocity-vector plot. R-click the Results node and select 2D Plot Group. R-click this newly created Plot Group 4 and select Arrow Surface. In the Settings window, modify the number of points for the <span class="tex-text">\(x\)</span> grid points to be 20 . L-Click Plot at the top of the Settings window, giving Fig. E8.3.2(b). Change the color to black and increase the arrow length for better printing.</li> <li>Create the plot for the upward velocity across the section A-A. R-click Results and L-click 1D Plot Group. In the Settings window, L-click the dropdown dialog and change the data set to Cut Line 2D 1 created above. R-click the 1D Plot Group 5 and select Line Graph. Within the Settings window enter the variable for the <span class="tex-text">\(y\)</span>-component of velocity, <span class="tex-text">\(v\)</span>, in the Expression field. Additionally, change the <span class="tex-text">\(x\)</span>-Axis Data Parameter to be Expression using the dropdown dialog and enter <span class="tex-text">\(x\)</span>. L-Click Plot at the top of the Settings window, giving Fig. E8.3.3.</li> <li>Create the plot for the transverse velocity along the section A-A. R-click Results and L-click 1D Plot Group. In the Settings window, L-click the dropdown dialog and change the data set to Cut Line 2D 1 created above. R-click the 1D Plot Group 6 and select Line Graph. Within the Settings window enter the variable for the <span class="tex-text">\(x\)</span>-component of velocity, <span class="tex-text">\(u\)</span>, in the Expression field. Additionally, change the <span class="tex-text">\(x\)</span>-Axis Data Parameter to be Expression using the dropdown dialog and enter the expression <span class="tex-text">\(x\)</span>. L-Click Plot at the top of the Settings window, giving Fig. E8.3.4.</li> <li>Create the plot for vorticity across the section A-A. R-click Results and L-click 1D Plot Group. In the Settings window, L-click the dropdown dialog and change the data set to Cut Line 2D 1 created above. R-click the 1D Plot Group 7 and select Line Graph. Use the Expression Builder (the little glyph at the right-hand end of the <span class="tex-text">\(y\)</span>-Axis Data line, also shown in Fig. E11.3.5) to plot the vorticity. L-click Component 1, Laminar Flow, Velocity and pressure, Vorticity field, spf.vorticityz-Vorticity field, <span class="tex-text">\(z\)</span>-component. Additionally, change the <span class="tex-text">\(x\)</span>-Axis Data Parameter from Arc Length to Expression using the dropdown dialog and enter the expression <span class="tex-text">\(x\)</span>. L-click Plot.</li> <li>Note the discontinuous nature of the vorticity plot, since it is based on gradient data. Smooth the data by accessing the Quality section in the Settings window. Change the Recovery option to Within domains. Plot, giving Fig. E8.3.5.</li> </ol> <p class="blog">
+<strong>Discussion of Results</strong></p>
+ <p class="blog">
+Overall plots. The overall picture of the flow is displayed in Fig. E8.3.2. After the initial small &#8220;free-flow&#8221; entrance region, the formation of boundary layers on the two plates is very evident, either by examining the movement of the streamlines away from the plates or by noting the reduction in velocity adjacent to the plates. From continuity, this velocity reduction also causes an acceleration in the middle of the stream.</p>
+ <p class="blog">
+The results for the cross section A-A are shown in Figs. E8.3.3-E8.3.5, for which we make the following comments:</p>
+ <ol> <li>The velocity <span class="tex-text">\(v_{y}\)</span> in the primary flow direction is still essentially flat in the central region, falling to zero as the wall is reached.</li> </ol> <p class="blog">
+(a) At values of <span class="tex-text">\(x\)</span> that are clearly in the boundary layer, such as <span class="tex-text">\(x=-0.008\)</span> and <span class="tex-text">\(x=0.008\)</span> in Fig. E8.3.3, <span class="tex-text">\(v_{y}\)</span> would continue to decrease in the <span class="tex-text">\(y\)</span> direction, so that <span class="tex-text">\(\partial v_{y} / \partial y\)</span> is negative at these locations.</p>
+ <p class="blog">
+(b) In the central core <span class="tex-text">\(v_{y}\)</span> continues to accelerate as seen in Fig. E8.3.2(c), so that the reverse occurs and <span class="tex-text">\(\partial v_{y} / \partial y\)</span> is positive.</p>
+ <ol start="2"> <li>Following on Item 1 (a), the continuity equation, <span class="tex-text">\(\partial v_{x} / \partial x+\partial v_{y} / \partial y=0\)</span>, mandates that <span class="tex-text">\(\partial v_{x} / \partial x\)</span> must be positive in the boundary layer, and this is evidenced in Fig. E8.3.4 at, for example, <span class="tex-text">\(x=-0.008\)</span> and <span class="tex-text">\(x=0.008\)</span>. Conversely, from Item <span class="tex-text">\(1(\mathrm{~b}), \partial v_{x} / \partial x\)</span> must be negative in the central core, and this is also seen.</li> <li>The vorticity is <span class="tex-text">\(\zeta=\partial v_{y} / \partial x-\partial v_{x} / \partial y \doteq \partial v_{y} / \partial x\)</span> (because <span class="tex-text">\(v_{y} \gg v_{x}\)</span> ), leading to a positive vorticity (counterclockwise rotation) near the left-hand plate and a negative vorticity (clockwise rotation) near the right-hand plate. In the central region the vorticity is essentially zero because <span class="tex-text">\(v_{y}\)</span> is virtually constant there.</li> </ol> <p class="blog">
+Values at point <span class="tex-text">\(P\)</span>. Finally, we investigate the pressure <span class="tex-text">\(p\)</span> and velocity <span class="tex-text">\(v_{y}\)</span> at the entrance point <span class="tex-text">\(\mathrm{P}\)</span> and exit. By constructing a surface plot for <span class="tex-text">\(p\)</span> (we already have one for the magnitude of the velocity, which is essentially <span class="tex-text">\(v\)</span> ), and clicking on <span class="tex-text">\(\mathrm{P}(x=0, y=0.01)\)</span> and the exit <span class="tex-text">\((x=0, y=0.05)\)</span>, we find <span class="tex-text">\(p=0.3340 \mathrm{~Pa}\)</span> and <span class="tex-text">\(v_{y}=0.02215 \mathrm{~m} / \mathrm{s}\)</span> at point P. Similarly, the exit centerline values are <span class="tex-text">\(p=0\)</span> (given) and <span class="tex-text">\(v_{y}=0.02984\)</span>. As expected at the centerline, there is an acceleration from P to the exit and a corresponding reduction in pressure, and we leave it to the reader to check numerically to what extent these values conform to Bernoulli&#8217;s equation.</p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="/tos">terms</a>
+                <a href="/privacy">privacy</a>
+                <a href="/contact-us">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="/assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>

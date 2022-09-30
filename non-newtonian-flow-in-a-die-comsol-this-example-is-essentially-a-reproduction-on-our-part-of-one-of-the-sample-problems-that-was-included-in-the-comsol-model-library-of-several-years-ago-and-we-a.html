@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/non-newtonian-flow-in-a-die-comsol-this-example-is-essentially-a-reproduction-on-our-part-of-one-of-the-sample-problems-that-was-included-in-the-comsol-model-library-of-several-years-ago-and-we-a" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Non-Newtonian Flow in a Die (COMSOL) This example is essentially a reproduction, on our part, of one of the sample problems that was included in the COMSOL Model Library of several years ago, and we are indebted to COMSOL for the idea. The problem is that of non-Newtonian flow of a solution of poly [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Non-Newtonian Flow in a Die (COMSOL) This example is essentially a reproduction, on our part, of one of the sample problems that was included in the COMSOL Model Library of several years ago, and we are indebted to COMSOL for the idea. The problem is that of non-Newtonian flow of a solution of poly[solved!] | Vlavar Engineering" />
+<meta name="description" content="Chapter 14 has more details about running COMSOL Multiphysics. All mouseclicks are left-clicks (the same as Select), unless denoted as right-clicks (R)."/>
+<meta property="og:description" content="Chapter 14 has more details about running COMSOL Multiphysics. All mouseclicks are left-clicks (the same as Select), unless denoted as right-clicks (R)." />
+<meta property="og:image" content="https://vlavar.com/imagesdb/uploads/2022/02/11-3-1-768x544.jpg" />
+<meta property="og:updated_time" content="2022-02-19T12:36:18+04:00" />
+<meta name="twitter:description" content="Chapter 14 has more details about running COMSOL Multiphysics. All mouseclicks are left-clicks (the same as Select), unless denoted as right-clicks (R)." />
+<meta name="twitter:title" content="Non-Newtonian Flow in a Die (COMSOL) This example is essentially a reproduction, on our part, of one of the sample problems that was included in the COMSOL Model Library of several years ago, and we are indebted to COMSOL for the idea. The problem is that of non-Newtonian flow of a solution of poly[solved!] | Vlavar Engineering" />
+<meta name="twitter:image" content="https://vlavar.com/imagesdb/uploads/2022/02/11-3-1-768x544.jpg" />
+<meta property="article:published_time" content="2022-02-18T03:32:25+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/non-newtonian-flow-in-a-die-comsol-this-example-is-essentially-a-reproduction-on-our-part-of-one-of-the-sample-problems-that-was-included-in-the-comsol-model-library-of-several-years-ago-and-we-a" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="/">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="/">Home</a>
+                    <a id="search">Search</a>
+                    <a href="/tour/1">Tour</a>
+                    <a href="/contact-us">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="/">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="/tour/1">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="/contact-us">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog"><strong>Non-Newtonian Flow in a Die (COMSOL)</strong></p> <p class="blog">This example is essentially a reproduction, on our part, of one of the sample problems that was included in the COMSOL Model Library of several years ago, and we are indebted to COMSOL for the idea. The problem is that of non-Newtonian flow of a solution of polystyrene in 1-chloronaphthalene, which is being extruded through the axisymmetric die shown in Fig. E11.3.1(a); because of symmetry about the centerline, COMSOL only needs to solve the problem in the region shown in Fig. E11.3.1(b) &#8211; rotated through <span class="tex-text">\(90^{\circ}\)</span> to coincide with the direction given in the COMSOL Graphics window. The dimensions of the die in meters are given above and in , which also shows how it is drawn. Later, variations of properties over the narrow cross section AB will be of special interest. The problem will be solved for six different values of the inlet pressure <span class="tex-text">\(p_{\text {in }}(\mathrm{Pa}): 10,000,50,000\)</span>, <span class="tex-text">\(90,000,130,000,170,000\)</span>, and <span class="tex-text">\(210,000 \mathrm{~Pa}\)</span>.</p> <p class="blog">The viscosity of the polystyrene solution is predicted by the Carreau model of Eqn. (11.18):</p> <p style="text-align: center;"><span class="tex-text">\(\frac{\eta-\eta_{\infty}}{\eta_{0}-\eta_{\infty}}=\frac{1}{\left(1+\lambda^{2} \dot{\gamma}^{2}\right)^{(1-n) / 2}}.\)</span> (11.18)</p> <p style="text-align: center;"><span class="tex-text">\(\eta=\eta_{\infty}+\left(\eta_{0}-\eta_{\infty}\right) \frac{1}{\left[1+(\lambda \dot{\gamma})^{2}\right]^{(1-n) / 2}},\)</span> (E11.3.1)</p> <p class="blog">in which the strain rate is given by Eqn. (11.14), which in axisymmetric cylindrical coordinates amounts to:</p> <p style="text-align: center;"><span class="tex-text">\(\dot{\gamma}=\sqrt{\frac{1}{2} I_{2}}=\sqrt{\Phi}=s\)</span> (for simple shear), (11.14)</p> <p style="text-align: center;"><span class="tex-text">\(\dot{\gamma}=\sqrt{\frac{1}{2}\left[\left(2 \frac{\partial v_{r}}{\partial r}\right)^{2}+2\left(\frac{\partial v_{z}}{\partial r}+\frac{\partial v_{r}}{\partial z}\right)^{2}+\left(2 \frac{\partial v_{z}}{\partial z}\right)^{2}\right]}.\)</span> (E11.3.2)</p> <p class="blog">The polystyrene solution is typical of shear-thinning polymers, which have a value <span class="tex-text">\(n&lt;1\)</span>. Thus, as the strain rate <span class="tex-text">\(\dot{\gamma}\)</span> increases, the effective viscosity <span class="tex-text">\(\eta\)</span> decreases. Values of the density and the Carreau model parameters appear in Table E11.3.</p>  <div class="table-overflow"><table  width="337"> <tbody> <tr> <td style="text-align: center;" colspan="3" width="337">Table E11.3 Parameter Values</td> </tr> <tr> <td>Parameter</td> <td>Value</td> <td>Units</td> </tr> <tr> <td><span class="tex-text">\(\eta_{\infty}\)</span></td> <td>0</td> <td>kg/m s</td> </tr> <tr> <td><span class="tex-text">\(\eta_{0}\)</span></td> <td>166</td> <td>kg/m s</td> </tr> <tr> <td>λ</td> <td>0.0173</td> <td>s</td> </tr> <tr> <td>n</td> <td>0.538</td> <td>&#8212;</td> </tr> <tr> <td>ρ</td> <td>450</td> <td>kg/<span class="tex-text">\(m^{3} \)</span></td> </tr> </tbody> </table></div> <div class="image-clearfix"><img class="question-image" src="/imagesdb/uploads/2022/02/11-3-1-768x544.jpg"></div>    
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+Chapter 14 has more details about running COMSOL Multiphysics. All mouseclicks are left-clicks (the same as Select), unless denoted as right-clicks (R).</p>
+ <p class="blog">
+Select the Physics</p>
+ <ol> <li>Open COMSOL and L-click Model Wizard, 2D Axisymmetric, Fluid Flow (the small rotating triangle is a &#8220;glyph&#8221;), Single Phase Flow, Laminar Flow, Add.</li> <li>L-click Study, Stationary, Done.</li> </ol> <p class="blog">
+Define the Parameters</p>
+ <ol start="3"> <li>R-click Global Definitions and select Parameters. In the Settings Window to the right of the Model Builder, enter the parameters pin and rho1 in the Name column and enter their values <span class="tex-text">\(10[\mathrm{kPa}]\)</span> and <span class="tex-text">\(450\left[\mathrm{~kg} / \mathrm{m}^{3}\right]\)</span>, respectively, in the Expression column. Similarly, define Carreau model parameters muZero <span class="tex-text">\(=166\)</span> <span class="tex-text">\(\left[\mathrm{Pa}^{*} \mathrm{~s}\right]\)</span>, muInf <span class="tex-text">\(=0\left[\mathrm{~Pa}^{*} \mathrm{~s}\right]\)</span>, lambda <span class="tex-text">\(=0.0173[\mathrm{~s}]\)</span>, and <span class="tex-text">\(n E x p=0.538[1]\)</span> (note the method &#8220;[1]&#8221; for specifying a dimensionless quantity).</li> </ol> <p class="blog">
+Import the Geometry</p>
+ <ol start="4"> <li>Import the previously defined set of steps for the die geometry that were established in  in the COMSOL file Ex14.2-9.mph. R-click the Geometry 1 node and L-click Insert Sequence. Navigate to the Ex14.2-9.mph file and L-click its name, followed by selecting Difference 1 and Zoom Extents.</li> </ol> <p class="blog">
+Define the Fluid Properties</p>
+ <ol start="5"> <li>L-click Fluid Properties in the Laminar Flow model node. In the Settings window, L-click the Density drop-down dialog, select User defined, and enter the parameter rho1 in the density field. L-click the Dynamic viscosity dropdown dialog and select Non-Newtonian Carreau model. Enter the parameters muZero, muInf, lambda, and <span class="tex-text">\(n E x p\)</span> in the four fields for the Carreau model, as in Fig. E11.3.2.</li> </ol> <p class="blog">
+Define the Boundary Conditions</p>
+ <ol start="6"> <li>Examine the default boundary conditions Axial Symmetric and Wall within the Laminar Flow physics node by L-clicking each.</li> <li>Add a pressure inlet boundary condition by R-clicking the Laminar Flow node and select Inlet. Assign the top boundary segment (#2) by hovering and L-clicking that segment in the Graphics window. In Settings, locate the Boundary condition section and L-click the drop-down dialog and select Pressure. Locate the Pressure definition <span class="tex-text">\(P_{o}\)</span> and enter the inlet pressure parameter pin. Note that Normal flow is the default setting and that Suppress backflow is checked.</li> <li>Add an outlet boundary condition by R-clicking the Laminar Flow node and select Outlet. Assign the bottom boundary segment (#4) by hovering and L-clicking that segment in the Graphics window. In the Settings window, locate the Boundary condition section and note the default is Pressure, with reference pressure zero. Note that Suppress backflow is checked, but Normal flow is not checked.</li> </ol> <p class="blog">
+Create the Mesh and Solve the Problem</p>
+ <ol start="9"> <li>L-click the Mesh node and set the element size by accessing the element size drop-down dialog in the Settings window and select Extra Fine. L-click Build All in the Settings window, giving (under Statistics) 22,446 domain elements. Although this is an excessively fine mesh for most of this problem, we have found it necessary when constructing a smooth cross-plot of the viscosity in Step 20 .</li> <li>Set up the model to sweep over the required inlet pressures. R-click the Study node and select Parametric sweep. In the Settings window, locate the Study settings. At the bottom of the Parameter definition, L-click the plus icon to add a parameter to the study. You can now use the drop-down box to select pin. Enter the values to &#8220;sweep&#8221; using the range function by entering &#8220;range <span class="tex-text">\((10,40,210)\)</span> &#8221; in the parameter list and set the Parameter units to <span class="tex-text">\(\mathrm{kPa}\)</span>.</li> <li>Remember to save the model file periodically.</li> <li>R-click the Study node and select Compute. The solution will take about half a minute, a fairly short time considering that COMSOL has to solve a very large set of simultaneous equations &#8211; six times, once for each inlet pressure. The equations are nonlinear because the computed velocities depend on the non-Newtonian viscosity <span class="tex-text">\(\eta\)</span> that appears in Eqn. (E11.3.4), and <span class="tex-text">\(\eta\)</span> in turn depends on the velocities according to Eqns. (E11.3.1) and (E11.3.2). Much iteration is needed.</li> </ol> <p class="blog">
+Display the Results</p>
+ <ol start="13"> <li>Note the default Results plots. Examine the velocity magnitude by Leftclicking the Velocity results node. Ensure that the final desired value for the parameter pin of <span class="tex-text">\(210 \mathrm{kPa}\)</span> is being displayed by selecting it in the drop-down dialog in the Data section of the Settings window, giving Fig. E11.3.3.</li> <li>R-click the Results node and select 2D Plot Group. Note the value <span class="tex-text">\(210 \mathrm{kPa}\)</span> for pin in the Parameter value field for the plot group. R-click 2D Plot Group 4 and select Arrow Surface. Note the default values and L-click Plot at the top of the Settings window, giving Fig. E11.3.4. (Here, we changed the arrow color from red to black and also lengthened the arrows.)</li> </ol> <p class="blog">
+Prepare the <span class="tex-text">\(A B\)</span> Cut Line</p>
+ <ol start="15"> <li>Create a data set containing the results on the required cut line. R-click Data Sets within the Results tree and select Cut Line 2D. In the Settings window, enter the <span class="tex-text">\(r\)</span> and <span class="tex-text">\(z\)</span> values <span class="tex-text">\((7.75[\mathrm{~mm}], 0.32[\mathrm{~mm}])\)</span> and <span class="tex-text">\((9.97[\mathrm{~mm}], 3.79[\mathrm{~mm}])\)</span> for Points 1 and 2 (Points A and B in Fig. 11.3.1(b)). L-click Plot near the top of the Settings window to inspect the cut-line location, which will be needed in Item 16 and thereafter.</li> <li>R-click Results and L-click 1D Plot Group. In the Settings window, click the dropdown dialog and change the Data set to Cut Line 2D 1. Also, ensure that the Parameter selection for the parameter pin is set to All to plot all curves.</li> <li>R-click the 1D Plot Group 5 and select Line Graph.</li> <li>Because some line-plot values will be based on gradient data, we must arrange for smoothing of the line plots. In the Settings window, expand the Quality input section by L-clicking the triangular glyph to its left. Set the value of Recover to Within Domains.</li> <li>Plot the velocity magnitude profiles across the cut-line AB. In the Settings window, change the expression being plotted by L-clicking the Replacement Expression in the Expression Builder that is represented by the triangular glyph at the right-hand end of the <span class="tex-text">\(y\)</span>-axis Data line (see Fig. E11.3.5). Then L-click Component 1, Laminar Flow, Velocity and pressure, spf.U-Velocity magnitude. Note that this was the default expression when creating the plot. Change the resolution from Normal to Finer. L-click Plot, giving the six velocity profiles in Fig. E11.3.6.</li> <li>Noting that Line Graph 1 is still highlighted, similarly use the Expression Builder within the Settings window to plot the instantaneous dynamic viscosity. Left-click Component 1, Laminar Flow, Material properties, spf.mu-Dynamic viscosity. (Or you can just enter spf.mu if you remember the name.) Under Quality, set the resolution to Finer. L-click Plot, giving the viscosity profiles in Fig. E11.3.7.</li> <li>Plot the pressure along the cut-line by directly entering <span class="tex-text">\(p\)</span> for the expression. Note that this can be done for all variables as you become familiar with their names. L-click Plot, giving the pressures profiles in Fig. E11.3.8.</li> <li>Use the Expression Builder within the Settings window to plot the vorticity. L-click Component 1, Laminar Flow, Velocity and pressure, Vorticity field, spf.vorticityphi-Vorticity field, phi component. L-click Plot, giving the vorticity profiles in Fig. E11.3.9.</li> <li>Finally, use the Expression Builder to plot the shear rate. L-click Component 1, Laminar Flow, Velocity and pressure, spf.sr-Shear rate. L-click Plot, giving the shear-rate profiles in Fig. E11.3.10.</li> </ol> <p class="blog">
+<strong>Discussion of Results</strong></p>
+ <p class="blog">
+Velocity Magnitude Surface Plot-Fig. E11.3.3. We note:</p>
+ <ol> <li>At the inlet, a progression of velocities from high at the centerline to low near the wall.</li> <li>At the constriction <span class="tex-text">\(\mathrm{AB}\)</span>, a generally high velocity.</li> <li>At the exit, where there is a relatively large area for flow, a generally low velocity.</li> </ol> <p class="blog">
+Velocity Arrow Plot Fig. E11.3.4. The same information is conveyed as for the velocity magnitude surface plot above.</p>
+ <p class="blog">
+Velocity Profiles Across AB-Fig. E11.3.6. The resulting plot contains six curves, one for each of the inlet pressures. The velocities, of course, increase as the inlet pressure rises. But the profiles are only approximately parabolic and are steeper than parabolas near the walls A and B because shear-thinning reduces the viscosity in those regions.</p>
+ <p class="blog">
+Viscosity Profiles Across <span class="tex-text">\(A B\)</span>&#8212;Fig. E11.3.7. The shear-thinning is seen to cause a drastic reduction in the viscosity as the walls are approached because of the higher velocity gradients and hence strain rates in those regions. The effect is enhanced as the inlet pressure is increased because it leads to generally higher velocities and velocity gradients.</p>
+ <p class="blog">
+Pressure Profiles Across <span class="tex-text">\(A B\)</span>&#8212;Fig. E11.3.8. The pressure is nearly constant across the section A-B. This observation lends strong support to a key conclusion in boundary-layer and other nearly unidirectional flows, namely, that the pressure is essentially constant in the direction transverse to the primary flow direction.</p>
+ <p class="blog">
+Vorticity Profiles Across <span class="tex-text">\(A B\)</span>&#8212;Fig. E11.3.9. For axisymmetric cylindrical coordinates, the <span class="tex-text">\(\theta\)</span>-component of the vorticity (see Table 5.4) is <span class="tex-text">\(\left(\partial v_{r} / \partial z-\partial v_{z} / \partial r\right)\)</span>. A careful examination of the velocities across AB from Fig. E11.3.5, bearing in mind the coordinate directions, will indeed verify the change of sign of the vorticity evidenced in Fig. E11.3.9.</p>
+ <div class="table-overflow"><table  width="645"> <tbody> <tr> <td style="text-align: center" width="645">Table 5.4 Expressions for the Curl of a Vector</td> </tr> <tr> <td>Rectangular : <span class="tex-text">\(\begin{aligned}\nabla \times \mathbf{v}=\left(\frac{\partial v_{z}}{\partial y}-\frac{\partial v_{y}}{\partial z}\right) \mathbf{e}_{x}+\left(\frac{\partial v_{x}}{\partial z}-\frac{\partial v_{z}}{\partial x}\right) \mathbf{e}_{y}+\left(\frac{\partial v_{y}}{\partial x}-\frac{\partial v_{x}}{\partial y}\right) \mathbf{e}_{z} .\end{aligned}\)</span></td> </tr> <tr> <td> <span class="tex-text">\(\begin{aligned}\text { Cylindrical :}\nabla \times \mathbf{v}=&amp;\left(\frac{1}{r} \frac{\partial v_{z}}{\partial \theta}-\frac{\partial v_{\theta}}{\partial z}\right) \mathbf{e}_{r}+\left(\frac{\partial v_{r}}{\partial z}-\frac{\partial v_{z}}{\partial r}\right) \mathbf{e}_{\theta} \\ &amp;+\frac{1}{r}\left(\frac{\partial\left(r v_{\theta}\right)}{\partial r}-\frac{\partial v_{r}}{\partial \theta}\right) \mathbf{e}_{z}.\end{aligned} \)</span></td> </tr> <tr> <td width="645"> <span class="tex-text">\(\begin{aligned} \text { Spherical :}\nabla \times \mathbf{v}=&amp; \frac{1}{r \sin \theta}\left(\frac{\partial\left(v_{\phi} \sin \theta\right)}{\partial \theta}-\frac{\partial v_{\theta}}{\partial \phi}\right) \mathbf{e}_{r} \\ &amp;+\left(\frac{1}{r \sin \theta} \frac{\partial v_{r}}{\partial \phi}-\frac{1}{r} \frac{\partial\left(r v_{\phi}\right)}{\partial r}\right) \mathbf{e}_{\theta}+\frac{1}{r}\left(\frac{\partial\left(r v_{\theta}\right)}{\partial r}-\frac{\partial v_{r}}{\partial \theta}\right) \mathbf{e}_{\phi}. \end{aligned}\)</span></td> </tr> </tbody> </table></div> <p class="blog">
+Strain Rate Profiles Across AB &#8212; Fig. E11.3.10. The increased strain rates as the walls are approached account for the shear-thinning behavior.</p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="/tos">terms</a>
+                <a href="/privacy">privacy</a>
+                <a href="/contact-us">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="/assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>
