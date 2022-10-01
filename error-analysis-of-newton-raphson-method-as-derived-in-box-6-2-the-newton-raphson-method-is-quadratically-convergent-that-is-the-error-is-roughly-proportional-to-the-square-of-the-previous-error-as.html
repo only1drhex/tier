@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/error-analysis-of-newton-raphson-method-as-derived-in-box-6-2-the-newton-raphson-method-is-quadratically-convergent-that-is-the-error-is-roughly-proportional-to-the-square-of-the-previous-error-as" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Error Analysis of Newton-Raphson Method As derived in Box 6.2, the Newton-Raphson method is quadratically convergent. That is, the error is roughly proportional to the square of the previous error, as in Et,i+1 ≅ -f&quot;(xr)/2f&#039;(xr) E^2t,i (E6.4.1) Examine this formula and see if it applies to the [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Error Analysis of Newton-Raphson Method As derived in Box 6.2, the Newton-Raphson method is quadratically convergent. That is, the error is roughly proportional to the square of the previous error, as in Et,i+1 ≅ -f&quot;(xr)/2f&#039;(xr) E^2t,i (E6.4.1) Examine this formula and see if it applies to the[solved!] | Vlavar Engineering" />
+<meta name="description" content="The first derivative of f(x) = e^{-x }- x is f&#039;(x) = 2e^{-x} - 1 which can be evaluated at x_r = 0.56714329 as"/>
+<meta property="og:description" content="The first derivative of f(x) = e^{-x }- x is f&#039;(x) = 2e^{-x} - 1 which can be evaluated at x_r = 0.56714329 as" />
+
+
+<meta name="twitter:description" content="The first derivative of f(x) = e^{-x }- x is f&#039;(x) = 2e^{-x} - 1 which can be evaluated at x_r = 0.56714329 as" />
+<meta name="twitter:title" content="Error Analysis of Newton-Raphson Method As derived in Box 6.2, the Newton-Raphson method is quadratically convergent. That is, the error is roughly proportional to the square of the previous error, as in Et,i+1 ≅ -f&quot;(xr)/2f&#039;(xr) E^2t,i (E6.4.1) Examine this formula and see if it applies to the[solved!] | Vlavar Engineering" />
+
+<meta property="article:published_time" content="2022-02-25T12:12:54+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/error-analysis-of-newton-raphson-method-as-derived-in-box-6-2-the-newton-raphson-method-is-quadratically-convergent-that-is-the-error-is-roughly-proportional-to-the-square-of-the-previous-error-as" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="/">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="/">Home</a>
+                    <a id="search">Search</a>
+                    <a href="/tour/1">Tour</a>
+                    <a href="/contact-us">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="/">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="/tour/1">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="/contact-us">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Error Analysis of Newton-Raphson Method</p> <p class="blog">As derived in Box 6.2,</p>  <div class="table-overflow"><table  width="144"> <tbody> <tr> <td colspan="2" width="144">Box 6.2 Derivation and Error Analysis of the Newton-Raphson Method</td> </tr> <tr> <td>Aside from the geometric derivation [Eqs. (6.5) and (6.6)], the Newton-Raphson method may also be developed from the Taylor series expansion. This alternative derivation is useful in that it also provides insight into the rate of convergence of the method.</p> <p class="blog"><span class="tex-text">\(f^\prime (x_i)=\frac{f(x_i)-0}{x_i-x_{i+1}} \)</span> (6.5)</td> <td>be obtained. For this situation <span class="tex-text">\(x_{i+1}=x_{r}\)</span>, where x is the true value of the root. Substituting this value along with f <span class="tex-text">\((x_r) = 0 \)</span> into Eq. (B6.2.1) yields</td> </tr> <tr> <td>Recall from Chap. 4 that the Taylor series expansion can be represented as</td> <td><span class="tex-text">\(0=f\left(x_{i}\right)+f^{\prime}\left(x_{i}\right)\left(x_{r}-x_{i}\right)+\frac{f^{\prime \prime}(\xi)}{2 !}\left(x_{r}-x_{i}\right)^{2}\)</span> (B6.2.3)</td> </tr> <tr> <td><span class="tex-text">\(f\left(x_{i+1}\right)=f\left(x_{i}\right)+f^{\prime}\left(x_{i}\right)\left(x_{i+1}-x_{i}\right)+\frac{f^{\prime \prime}(\xi)}{2 !}\left(x_{i+1}-x_{i}\right)^{2}\)</span> (B6.2.1)</td> <td>Equation (B6.2.2) can be subtracted from Eq. (B6.2.3) to give <span class="tex-text">\(0=f^{\prime}\left(x_{i}\right)\left(x_{r}-x_{i+1}\right)+\frac{f^{\prime \prime}(\xi)}{2 !}\left(x_{r}-x_{i}\right)^{2}\)</span> (B6.2.4)</td> </tr> <tr> <td width="72">where ξ lies somewhere in the interval from <span class="tex-text">\(x_i\)</span> to <span class="tex-text">\(x_{i+1} \)</span>. An approximate version is obtainable by runcating the series after the first derivative term: <span class="tex-text">\(f\left(x_{i+1}\right) con f \left(x_{i}\right) +f^{\prime}\left(x_{i}\right)\left(x_{i+1}-x_{i}\right)\)</span></td> <td>Now, realize that the error is equal to the discrepancy between <span class="tex-text">\(x_{i+1}\)</span> and the true value <span class="tex-text">\(xx_r \)</span>x, as in <span class="tex-text">\(E_{t, i+1}=x_{r}-x_{i+1}\)</span> and Eq. (B6.2.4) can be expressed as <span class="tex-text">\(0=f^{\prime}\left(x_{i}\right) E_{t, i+1}+\frac{f^{\prime\prime}(\xi)}{2 !} E_{t, i}^{2}\)</span> (B6.2.5)</td> </tr> <tr> <td colspan="2">At the intersection with the x axis, <span class="tex-text">\(f(x_{i+1}\)</span>) would be equal to zero, or</td> </tr> <tr> <td><span class="tex-text">\(0=f\left(x_{i}\right)+f^{\prime}\left(x_{i}\right)\left(x_{i+1}-x_{i}\right)\)</span> (B6.2.2)</td> <td width="72">If we assume convergence, both xi and j should eventually be approximated<br /> by the root xr, and Eq. (B6.2.5) can be rearranged to yield</td> </tr> <tr> <td>which can be solved for <span class="tex-text">\(x_{i+1}=x_{i}-\frac{f\left(x_{i}\right)}{f^{\prime}\left(x_{i}\right)}\)</span></td> <td><span class="tex-text">\(E_{t, i+1}=\frac{-f^{\prime \prime}\left(x_{r}\right)}{2 f^{\prime}\left(x_{r}\right)} E_{t, i}^{2}\)</span> (B6.2.6)</td> </tr> <tr> <td width="72">which is identical to Eq. (6.6). Thus, we have derived the Newton- Raphson formula using a Taylor series. Aside from the derivation, the Taylor series can also be used to estimate the error of the formula. This can be done by realizing that if the complete Taylor series were employed, an exact result would</p> <p class="blog"><span class="tex-text">\(x_{i+1}=x_i-\frac{f(x_i)}{f^\prime (x_i)} \)</span> (6.6)</td> <td>According to Eq. (B6.2.6), the error is roughly proportional to the square of the previous error. This means that the number of correct decimal places approximately doubles with each iteration. Such behavior is referred to as quadratic convergence. Example 6.4 manifests this property.</td> </tr> </tbody> </table></div>      
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+The first derivative of <span class="tex-text">\(f(x) = e^{-x }- x\)</span> is</p>
+ <span class="tex-text">\(f&#039;(x) = 2e^{-x} &#8211; 1\)</span> <p class="blog">
+which can be evaluated at <span class="tex-text">\(x_r = 0.56714329\)</span> as <span class="tex-text">\(f&#039;(0.56714329) = &#8211; 1.56714329\)</span>. The second derivative is</p>
+ <span class="tex-text">\(f&#039;&#039;(x) = e^{-x} \)</span> <p class="blog">
+which can be evaluated as <span class="tex-text">\(f&#039;&#039;(0.56714329) = 0.56714329\)</span>. These results can be substituted into Eq. (E6.4.1) to yield</p>
+ <span class="tex-text">\(E_{t,i+1}\cong \frac{0.56714329}{2(- 1.56714329)}E^2_{t,i}= 0.18095 E^2_{t,i}\)</span> <p class="blog">
+From, the initial error was <span class="tex-text">\(E_{t,0} = 0.56714329\)</span>, which can be substituted into the error equation to predict</p>
+ <span class="tex-text">\(E_{t,1}\cong 0.18095(0.56714329)^2 = 0.0582\)</span> <p class="blog">
+which is close to the true error of 0.06714329. For the next iteration,</p>
+ <span class="tex-text">\(E_{t,3}\cong 0.18095(0.0008323)^2 = 0.000000125\)</span> <p class="blog">
+which is the error obtained in . The error estimate improves in this manner because, as we come closer to the root, x and j are better approximated by xr [recall our assumption in going from Eq. (B6.2.5) to Eq. (B6.2.6) in Box 6.2]. Finally,</p>
+ <span class="tex-text">\(E_{t,4}\cong 0.18095(0.000000125)^2 = 2.83 \times 10^{-15}\)</span> <p class="blog">
+Thus, this example illustrates that the error of the Newton-Raphson method for this case is, in fact, roughly proportional (by a factor of 0.18095) to the square of the error of the previous iteration.</p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="/tos">terms</a>
+                <a href="/privacy">privacy</a>
+                <a href="/contact-us">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="/assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>

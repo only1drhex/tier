@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="../assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="../assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="../assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="../assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/find-the-control-law-that-minimizes-the-performance-index-x12-x22-u2-dt-for-the-system-x1-x2-0-1-0-0-x1-x2-0-1-u" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Find the control law that minimizes the performance index (x1^2 + x2^2 + u^2) dt for the system [x1 x2] = [0 1 0 0 ] [x1 x2] + [0 1] [u] [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Find the control law that minimizes the performance index (x1^2 + x2^2 + u^2) dt for the system [x1 x2] = [0 1 0 0 ] [x1 x2] + [0 1] [u][solved!] | Vlavar Engineering" />
+<meta name="description" content="First we need to determine the weighting matrices Q and R. The performance index is expressed as J=int_{0}^{infty }{(x^TQx+eta ^TReta )dt}"/>
+<meta property="og:description" content="First we need to determine the weighting matrices Q and R. The performance index is expressed as J=int_{0}^{infty }{(x^TQx+eta ^TReta )dt}" />
+
+<meta property="og:updated_time" content="2022-01-30T01:02:34+04:00" />
+<meta name="twitter:description" content="First we need to determine the weighting matrices Q and R. The performance index is expressed as J=int_{0}^{infty }{(x^TQx+eta ^TReta )dt}" />
+<meta name="twitter:title" content="Find the control law that minimizes the performance index (x1^2 + x2^2 + u^2) dt for the system [x1 x2] = [0 1 0 0 ] [x1 x2] + [0 1] [u][solved!] | Vlavar Engineering" />
+
+<meta property="article:published_time" content="2022-01-30T00:53:35+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/find-the-control-law-that-minimizes-the-performance-index-x12-x22-u2-dt-for-the-system-x1-x2-0-1-0-0-x1-x2-0-1-u" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="../index.html">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="../index.html">Home</a>
+                    <a id="search">Search</a>
+                    <a href="../tour/1.html">Tour</a>
+                    <a href="../contact-us.html">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="../index.html">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="../tour/1.html">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="../contact-us.html">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Find the control law that minimizes the performance index <span class="tex-text">\(J=\int_{0}^{\infty }{(x_1^2+x_2^2+u^2)dt} \)</span></p> <p class="blog">for the system</p> <span class="tex-text">\(\left[\begin{matrix} \dot{x_1} \\ \dot{x_2} \end{matrix} \right]=\begin{bmatrix} 0 &amp; 1 \\ 0 &amp; 0 \end{bmatrix}\left[\begin{matrix} {x_1} \\ {x_2} \end{matrix} \right] +\left[\begin{matrix} 0 \\ 1 \end{matrix} \right][u] \)</span>      
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+<span class="fontstyle0">First </span><span class="fontstyle1">we need to determine the weighting matrices Q and </span><span class="fontstyle0">R. </span><span class="fontstyle1">The performance index is expressed as </span></p>
+ <span class="tex-text">\(J=\int_{0}^{\infty }{(x^TQx+\eta ^TR\eta )dt}\)</span> <p class="blog">
+<span class="fontstyle0">The first part of the integrand can be expanded in the following manner.</span></p>
+ <span class="tex-text">\(x^TQx=\left[\begin{matrix} x_1 &amp; x_2 \end{matrix} \right]\begin{bmatrix} Q_{11} &amp; Q_{12} \\ Q_{21} &amp; Q_{22} \end{bmatrix} \left[\begin{matrix} {x_1} \\ {x_2} \end{matrix} \right] \)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(=x_1^2Q_{11}+x_2x_1Q_{21}+x_2x_1Q_{12}+x_2^2Q_{22}\)</span> <p class="blog">
+<span class="fontstyle0">But that part of the integrand related to the state variables is given as <span class="tex-text">\(x_1^2+x_2^2\)</span> therefore </span><span class="fontstyle0"><span class="tex-text">\(Q_{11}=Q_{22}=1 and Q_{12}=Q_{21}=0\)</span>. In a similar manner one can show that <span class="tex-text">\(R=[1]\)</span></span><span class="fontstyle0">. </span><span class="fontstyle0">The weighting matrices Q and </span><span class="fontstyle2">R </span><span class="fontstyle0">follow:</span></p>
+ <span class="tex-text">\(Q=\begin{bmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{bmatrix} \)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(R=[1]\)</span> <p class="blog">
+<span class="fontstyle0">The reduced Riccati equations can be rearranged as follows:</span></p>
+ <span class="tex-text">\(A^TS+SA-SBR^{-1}B^TS+Q=0\)</span> <p class="blog">
+<span class="fontstyle0">We will perform the indicated matrix operations for first two terms in the Riccati equation:</span></p>
+ <span class="tex-text">\(A^TS=\begin{bmatrix} 0 &amp; 0 \\ 1 &amp; 0 \end{bmatrix}\begin{bmatrix} S_{11} &amp; S_{12} \\ S_{21} &amp; S_{22} \end{bmatrix}= \begin{bmatrix} 0 &amp; 0 \\ S_{11} &amp; S_{12} \end{bmatrix}\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(SA=\begin{bmatrix} S_{11} &amp; S_{12} \\ S_{21} &amp; S_{22} \end{bmatrix}\begin{bmatrix} 0 &amp; 1 \\ 0 &amp; 0 \end{bmatrix}= \begin{bmatrix} 0 &amp; S_{11} \\ 0 &amp; S_{21} \end{bmatrix}\)</span> <p class="blog">
+<span class="fontstyle0">The third term <span class="tex-text">\(SBR^{-1}B^TS\)</span></span><span class="fontstyle0"> will be calculated in step</span></p>
+ <span class="tex-text">\(SBR^{-1}B^TS=\begin{bmatrix} S_{11} &amp; S_{12} \\ S_{21} &amp; S_{22} \end{bmatrix}\begin{bmatrix} 0 \\ 1 \end{bmatrix}R^{-1}B^TS\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(=\begin{bmatrix} S_{12} \\ S_{22} \end{bmatrix}R^{-1}B^TS\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(=\begin{bmatrix} S_{12} \\ S_{22} \end{bmatrix}\begin{bmatrix} 0 &amp; 1 \end{bmatrix}S\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(=\begin{bmatrix} 0 &amp; S_{12}\\ 0 &amp; S_{22} \end{bmatrix}S\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(=\begin{bmatrix} 0 &amp; S_{12}\\ 0 &amp; S_{22} \end{bmatrix}\begin{bmatrix} S_{11} &amp; S_{12} \\ S_{21} &amp; S_{22} \end{bmatrix}\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(=\begin{bmatrix} S_{12} S_{21}&amp; S_{12} S_{22} \\ S_{22} S_{21} &amp; S^2_{22} \end{bmatrix}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="fontstyle0">Note that in this problem <span class="tex-text">\(R^{-1}=1\)</span> </span><span class="fontstyle0">Substituting matrices into the Riccati equation yields </span></p>
+ <p class="blog">
+<span class="fontstyle0"><span class="tex-text">\( \begin{bmatrix} 0 &amp; 0 \\ S_{11} &amp; S_{12} \end{bmatrix}+\begin{bmatrix} 0 &amp; S_{11} \\ 0 &amp; S_{21} \end{bmatrix}-\begin{bmatrix} S_{12} S_{21}&amp; S_{12} S_{22} \\ S_{22} S_{21} &amp; S^2_{22} \end{bmatrix} +\begin{bmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{bmatrix}= \begin{bmatrix} 0 &amp; 0 \\ 0 &amp; 0 \end{bmatrix}\)</span></span></p>
+ <p class="blog">
+<span class="fontstyle0"> Combining the matrices yields </span></p>
+ <p class="blog">
+<span class="fontstyle0"><span class="tex-text">\(\begin{bmatrix} -S_{12}S_{21}+1 &amp; S_{11}-S_{12} S_{22}\\ S_{11}-S_{22} S_{21} &amp; S_{12} + S_{21}-S^2_{22}+1\end{bmatrix}=\begin{bmatrix} 0 &amp; 0 \\ 0 &amp; 0 \end{bmatrix}\)</span></span></p>
+ <p class="blog">
+<span class="fontstyle0"> We now must solve the nonlinear algebraic equations for the unknown Riccati gains:</span></p>
+ <span class="tex-text">\(-S_{12}S_{21}+1=0\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(S_{11}-S_{12} S_{22}=0\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(S_{12} + S_{21}-S^2_{22}+1=0\)</span> <p class="blog">
+<span class="fontstyle0">From symmetry</span></p>
+ <span class="tex-text">\(S_{12}=S_{21}\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(-S^2_{12}+1=0\Rightarrow S_{12}=\pm \sqrt{1}= \pm1 \)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(2S_{12}-S^2_{22}+1=0\)</span> <p class="blog">
+<span class="fontstyle0">For <span class="tex-text">\(S_{12}=1\)</span></span><span class="fontstyle0">,</span></p>
+ <span class="tex-text">\(-S^2_{22}+3=0\Rightarrow S_{22}=\pm \sqrt{3} \)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(S_{11}-S_{12} S_{22}=0 \Rightarrow S_{11}=\pm \sqrt{3}\)</span> <p class="blog">
+<span class="fontstyle0">The Riccati matrix S follows:</span></p>
+ <span class="tex-text">\(S=\begin{bmatrix} \sqrt{3} &amp; 1 \\ 1 &amp; \sqrt{3} \end{bmatrix} \)</span> <p class="blog">
+<span class="fontstyle0">he control law <span class="tex-text">\(\eta =-K^Tx\)</span> </span><span class="fontstyle0">where</span></p>
+ <span class="tex-text">\(K=R^{-1}B^T\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(K=[1]\left[\begin{matrix} 0 &amp; 1 \end{matrix} \right] \begin{bmatrix} \sqrt{3} &amp; 1 \\ 1 &amp; \sqrt{3} \end{bmatrix}=\left[\begin{matrix} 1 &amp; \sqrt{3} \end{matrix} \right] \)</span> <p class="blog">
+<span class="fontstyle0">The control law can now be written</span></p>
+ <span class="tex-text">\(\eta =-K^Tx=-\left[\begin{matrix} 1 &amp; \sqrt{3} \end{matrix} \right]\left[\begin{matrix} x_1 \\ x_2 \end{matrix} \right] \)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(-x_1-\sqrt{3}x_2 \)</span> <p class="blog">
+<span class="fontstyle0">For a higher-order system numerical techniques are required. The MATLAB control </span><span class="fontstyle0">system toolbox has numerical algorithms for solving optimal control problems.</span></p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="../tos.html">terms</a>
+                <a href="../privacy.html">privacy</a>
+                <a href="../contact-us.html">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="../assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>

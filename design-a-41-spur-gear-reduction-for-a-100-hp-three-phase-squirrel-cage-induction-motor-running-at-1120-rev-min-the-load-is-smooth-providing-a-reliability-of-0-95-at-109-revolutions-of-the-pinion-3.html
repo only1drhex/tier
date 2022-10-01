@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/design-a-41-spur-gear-reduction-for-a-100-hp-three-phase-squirrel-cage-induction-motor-running-at-1120-rev-min-the-load-is-smooth-providing-a-reliability-of-0-95-at-109-revolutions-of-the-pinion-3" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Design a 4:1 spur-gear reduction for a 100-hp, three-phase squirrel-cage induction motor running at 1120 rev/min. The load is smooth, providing a reliability of 0.95 at 10^9 revolutions of the pinion. Gearing space is meager. Use Nitralloy 135M, grade 1 material to keep the gear size small. The [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Design a 4:1 spur-gear reduction for a 100-hp, three-phase squirrel-cage induction motor running at 1120 rev/min. The load is smooth, providing a reliability of 0.95 at 10^9 revolutions of the pinion. Gearing space is meager. Use Nitralloy 135M, grade 1 material to keep the gear size small. The[solved!] | Vlavar Engineering" />
+<meta name="description" content="Make the a priori decisions: Function: 100 hp, 1120 rev/min, R=0.95, N=10^{9} text { cycles, } K_{o}=1 • Design factor for unquantifiable"/>
+<meta property="og:description" content="Make the a priori decisions: Function: 100 hp, 1120 rev/min, R=0.95, N=10^{9} text { cycles, } K_{o}=1 • Design factor for unquantifiable" />
+
+
+<meta name="twitter:description" content="Make the a priori decisions: Function: 100 hp, 1120 rev/min, R=0.95, N=10^{9} text { cycles, } K_{o}=1 • Design factor for unquantifiable" />
+<meta name="twitter:title" content="Design a 4:1 spur-gear reduction for a 100-hp, three-phase squirrel-cage induction motor running at 1120 rev/min. The load is smooth, providing a reliability of 0.95 at 10^9 revolutions of the pinion. Gearing space is meager. Use Nitralloy 135M, grade 1 material to keep the gear size small. The[solved!] | Vlavar Engineering" />
+
+<meta property="article:published_time" content="2022-03-22T01:57:03+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/design-a-41-spur-gear-reduction-for-a-100-hp-three-phase-squirrel-cage-induction-motor-running-at-1120-rev-min-the-load-is-smooth-providing-a-reliability-of-0-95-at-109-revolutions-of-the-pinion-3" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="/">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="/">Home</a>
+                    <a id="search">Search</a>
+                    <a href="/tour/1">Tour</a>
+                    <a href="/contact-us">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="/">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="/tour/1">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="/contact-us">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Design a 4:1 spur-gear reduction for a 100-hp, three-phase squirrel-cage induction motor running at 1120 rev/min. The load is smooth, providing a reliability of 0.95 at <span class="tex-text">\(10^{9}\)</span> revolutions of the pinion. Gearing space is meager. Use Nitralloy 135M, grade 1 material to keep the gear size small. The gears are heat-treated first then nitrided.</p>      
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+Make the a priori decisions:</p>
+ <p class="blog">
+Function: 100 hp, 1120 rev/min, <span class="tex-text">\(R=0.95, N=10^{9} \text { cycles, } K_{o}=1\)</span></p>
+ <p class="blog">
+• Design factor for unquantifiable exingencies: <span class="tex-text">\(n_{d}=2\)</span></p>
+ <p class="blog">
+• Tooth system: <span class="tex-text">\(\phi_{n}=20^{\circ}\)</span></p>
+ <p class="blog">
+• Tooth count: <span class="tex-text">\(N_{P}=18 \text { teeth, } N_{G}=72\)</span> teeth (no interference)</p>
+ <p class="blog">
+• Quality number: <span class="tex-text">\(Q_{v}=6\)</span>, use grade 1 material</p>
+ <p class="blog">
+• Assume <span class="tex-text">\(m_{B} \geq 1.2 \text { in Eq. (14-40), } K_{B}=1\)</span></p>
+ <p class="blog">
+Pitch: Select a trial diametral pitch of <span class="tex-text">\(P_{d}=4\)</span> teeth/in. Thus, <span class="tex-text">\(d_{p}=18 / 4=4.5\)</span> in and <span class="tex-text">\(d_{G}=72 / 4=18\)</span> in. From Table 14–2, <span class="tex-text">\(Y_{P}=0.309, Y_{G}=0.4324\)</span> (interpolated). From Fig. 14–6, <span class="tex-text">\(J_{P}=0.32, J_{G}=0.415\)</span></p>
+ <p class="blog">
+&nbsp;</p>
+ <div class="table-overflow"><table  style="border-collapse: collapse;width: 192pt" border="0" width="256" cellspacing="0" cellpadding="0"> <tbody> <tr style="height: 15.0pt"> <td class="xl65" style="height: 15.0pt;width: 192pt" colspan="4" width="256" height="20">Table 14–2 Values of the Lewis Form Factor Y (TheseValues Are for a Normal Pressure Angle of 20°, Full-Depth Teeth, and a Diametral Pitch of Unity in the Plane of Rotation)</td> </tr> <tr style="height: 15.0pt"> <td style="height: 15.0pt" height="20">Number of Teeth</td> <td>Y</td> <td>Number of Teeth</td> <td>Y</td> </tr> <tr style="height: 15.0pt"> <td style="height: 15.0pt" align="right" height="20">12</td> <td align="right">0.245</td> <td align="right">28</td> <td align="right">0.353</td> </tr> <tr style="height: 15.0pt"> <td style="height: 15.0pt" align="right" height="20">13</td> <td align="right">0.261</td> <td align="right">30</td> <td align="right">0.359</td> </tr> <tr style="height: 15.0pt"> <td style="height: 15.0pt" align="right" height="20">14</td> <td align="right">0.277</td> <td align="right">34</td> <td align="right">0.371</td> </tr> <tr style="height: 15.0pt"> <td style="height: 15.0pt" align="right" height="20">15</td> <td align="right">0.29</td> <td align="right">38</td> <td align="right">0.384</td> </tr> <tr style="height: 15.0pt"> <td style="height: 15.0pt" align="right" height="20">16</td> <td align="right">0.296</td> <td align="right">43</td> <td align="right">0.397</td> </tr> <tr style="height: 15.0pt"> <td style="height: 15.0pt" align="right" height="20">17</td> <td align="right">0.303</td> <td align="right">50</td> <td align="right">0.409</td> </tr> <tr style="height: 15.0pt"> <td style="height: 15.0pt" align="right" height="20">18</td> <td align="right">0.309</td> <td align="right">60</td> <td align="right">0.422</td> </tr> <tr style="height: 15.0pt"> <td style="height: 15.0pt" align="right" height="20">19</td> <td align="right">0.314</td> <td align="right">75</td> <td align="right">0.435</td> </tr> <tr style="height: 15.0pt"> <td style="height: 15.0pt" align="right" height="20">20</td> <td align="right">0.322</td> <td align="right">100</td> <td align="right">0.447</td> </tr> <tr style="height: 15.0pt"> <td style="height: 15.0pt" align="right" height="20">21</td> <td align="right">0.328</td> <td align="right">150</td> <td align="right">0.46</td> </tr> <tr style="height: 15.0pt"> <td style="height: 15.0pt" align="right" height="20">22</td> <td align="right">0.331</td> <td align="right">300</td> <td align="right">0.472</td> </tr> <tr style="height: 15.0pt"> <td style="height: 15.0pt" align="right" height="20">24</td> <td align="right">0.337</td> <td align="right">400</td> <td align="right">0.48</td> </tr> <tr style="height: 15.0pt"> <td style="height: 15.0pt" align="right" height="20">26</td> <td align="right">0.346</td> <td>Rack</td> <td align="right">0.485</td> </tr> </tbody> </table></div> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(V=\frac{\pi d_{P} n_{P}}{12}=\frac{\pi(4.5) 1120}{12}=1319 ft / min\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(W^{t}=\frac{33000 H}{V}=\frac{33000(100)}{1319}=2502 lbf\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+From Eqs. (14–28) and (14–27),</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(\begin{array}{l}A=50+56(1-B) \\B=0.25\left(12-Q_{v}\right)^{2 / 3}\end{array}\)</span> (14–28)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(K_{v}=\left\{\begin{array}{ll}\left(\frac{A+\sqrt{V}}{A}\right)^{B} &amp; V \text { in } ft / min \\\left(\frac{A+\sqrt{200 V}}{A}\right)^{B} &amp; V \text { in } m / s\end{array}\right.\)</span> (14–27)</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(B=0.25\left(12-Q_{v}\right)^{2 / 3}=0.25(12-6)^{2 / 3}=0.8255\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(A=50+56(1-0.8255)=59.77\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(K_{v}=\left(\frac{59.77+\sqrt{1319}}{59.77}\right)^{0.8255}=1.480\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+From Eq. (14–38), <span class="tex-text">\(K_{R}=0.658-0.0759 \ln (1-0.95)=0.885\)</span>. From Fig. 14–14,</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(K_{R}=\left\{\begin{array}{ll}0.658-0.0759 \ln (1-R) &amp; 0.5&lt;R&lt;0.99 \\0.50-0.109 \ln (1-R) &amp; 0.99 \leq R \leq 0.9999\end{array}\right.\)</span> (14–38)</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\left(Y_{N}\right)_{p}=1.3558\left(10^{9}\right)^{-0.0178}=0.938\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\left(Y_{N}\right)_{G}=1.3558\left(10^{9} / 4\right)^{-0.0178}=0.961\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+From Fig. 14–15,</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\left(Z_{N}\right)_{P}=1.4488\left(10^{9}\right)^{-0.023}=0.900\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\left(Z_{N}\right)_{G}=1.4488\left(10^{9} / 4\right)^{-0.023}=0.929\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+From the recommendation after Eq. (14–8), 3p ≤ F ≤ 5p. Try F = 4p = 4π/P = 4π/4 = 3.14 in. From Eq. (a), Sec. 14–10,</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(\sigma=\frac{K_{v} W^{t}}{F m Y}\)</span> (14–8)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(\sigma=\frac{M}{I / c}=\frac{6 W^{t} l}{F t^{2}}\)</span> (a)</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(K_{s}=1.192\left(\frac{F \sqrt{Y}}{P}\right)^{0.0535}=1.192\left(\frac{3.14 \sqrt{0.309}}{4}\right)^{0.0535}=1.140\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+From Eqs. (14–31), (14–33) and (14–35), <span class="tex-text">\(C_{m c}=C_{p m}=C_{e}=1\)</span>. From Fig. 14–11, <span class="tex-text">\(C_{m a}=0.175\)</span> for commercial enclosed gear units. From Eq. (14–32), <span class="tex-text">\(F /\left(10 d_{P}\right)=3.14 /\)</span> [10(4.5)] = 0.0698. Thus,</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(C_{m c}=\left\{\begin{array}{ll}1 &amp; \text { for uncrowned teeth } \\0.8 &amp; \text { for crowned teeth }\end{array}\right.\)</span> (14–31)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(C_{p m}=\left\{\begin{array}{ll}1 &amp; \text { for straddle-mounted pinion with } S_{1} / S&lt;0.175 \\1.1 &amp; \text { for straddle-mounted pinion with } S_{1} / S \geq 0.175\end{array}\right.\)</span> (14–33)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(C_{e}=\left\{\begin{array}{cl}0.8 &amp; \text { for gearing adjusted at assembly, or compatibility } \\1 &amp; \text { is improved by lapping, or both } \\\text { for all other conditions }\end{array}\right.\)</span> (14–35)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(C_{p f}=\left\{\begin{array}{ll}\frac{F}{10 d}-0.025 &amp; F \leq 1 \text { in } \\\frac{F}{10 d}-0.0375+0.0125 F &amp; 1&lt;F \leq 17 \text { in } \\\frac{F}{10 d}-0.1109+0.0207 F-0.000228 F^{2} &amp; 17&lt;F \leq 40 \text { in }\end{array}\right.\)</span> (14–32)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+From Eq. (14–30),</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(K_{m}=C_{m f}=1+C_{m c}\left(C_{p f} C_{p m}+C_{m a} C_{e}\right)\)</span> (14–30)</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(K_{m}=1+(1)[0.0715(1)+0.175(1)]=1.247\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+From Table 14–8, for steel gears, <span class="tex-text">\(C_{p}=2300 \sqrt{ psi }\)</span>. From Eq. (14–23), with <span class="tex-text">\(m_{G}=4\)</span> and <span class="tex-text">\(m_{N}=1\)</span></p>
+ <p class="blog">
+&nbsp;</p>
+ <div class="table-overflow"><table  width="518"> <tbody> <tr> <td colspan="8" width="518">Table 14–8 Elastic Coefficient <span class="tex-text">\(C_{p}\left(Z_{E}\right), \sqrt{ psi }(\sqrt{ MPa })\)</span> Source: AGMA 218.01</td> </tr> <tr> <td colspan="8">Gear Material and Modulus of Elasticity <span class="tex-text">\(E_{G}, lbf / in ^{2}( MPa )^{*}\)</span></td> </tr> <tr> <td>Pinion Material</td> <td>Pinion Modulus of <span class="tex-text">\(\begin{array}{l}\text { Elasticity Ep }\\\text { psi (MPa) * }\end{array}\)</span></td> <td>Steel <span class="tex-text">\(\begin{array}{l}30 \times 10^{6} \\\left(2 \times 10^{5}\right)\end{array}\)</span></td> <td>Malleable Iron <span class="tex-text">\(\begin{array}{c}25 \times 10^{6} \\\left(1.7 \times 10^{5}\right)\end{array}\)</span></td> <td>Nodular Iron <span class="tex-text">\(\begin{array}{c}24 \times 10^{6} \\\left(1.7 \times 10^{5}\right)\end{array}\)</span></td> <td>Cast Iron <span class="tex-text">\(\begin{array}{r}22 \times 10^{6} \\\left(1.5 \times 10^{5}\right)\end{array}\)</span></td> <td>Aluminum Bronze <span class="tex-text">\(\begin{array}{r}17.5 \times 10^{6} \\\left(1.2 \times 10^{5}\right)\end{array}\)</span></td> <td>Tin Bronze <span class="tex-text">\(\begin{array}{c}16 \times 10^{6} \\\left(1.1 \times 10^{5}\right)\end{array}\)</span></td> </tr> <tr> <td>Steel</td> <td><span class="tex-text">\(30 \times 10^{6}\)</span></td> <td>2300</td> <td>2180</td> <td>2160</td> <td>2100</td> <td>1950</td> <td>1900</td> </tr> <tr> <td></td> <td><span class="tex-text">\(\left(2 \times 10^{5}\right)\)</span></td> <td>(191)</td> <td>(181)</td> <td>(179)</td> <td>(174)</td> <td>(162)</td> <td>(158)</td> </tr> <tr> <td>Malleable iron</td> <td><span class="tex-text">\(25 \times 10^{6}\)</span></td> <td>2180</td> <td>2090</td> <td>2070</td> <td>2020</td> <td>1900</td> <td>1850</td> </tr> <tr> <td></td> <td><span class="tex-text">\(\left(1.7 \times 10^{5}\right)\)</span></td> <td>(181)</td> <td>(174)</td> <td>(172)</td> <td>(168)</td> <td>(158)</td> <td>(154)</td> </tr> <tr> <td>Nodular iron</td> <td><span class="tex-text">\(24 \times 10^{6}\)</span></td> <td>2160</td> <td>2070</td> <td>2050</td> <td>2000</td> <td>1880</td> <td>1830</td> </tr> <tr> <td></td> <td><span class="tex-text">\(\left(1.7 \times 10^{5}\right)\)</span></td> <td>(179)</td> <td>(172)</td> <td>(170)</td> <td>(166)</td> <td>(156)</td> <td>(152)</td> </tr> <tr> <td>Cast iron</td> <td><span class="tex-text">\(22 \times 10^{6}\)</span></td> <td>2100</td> <td>2020</td> <td>2000</td> <td>1960</td> <td>1850</td> <td>1800</td> </tr> <tr> <td></td> <td><span class="tex-text">\(\left(1.5 \times 10^{5}\right)\)</span></td> <td>(174)</td> <td>(168)</td> <td>(166)</td> <td>(163)</td> <td>(154)</td> <td>(149)</td> </tr> <tr> <td>Aluminum bronze</td> <td><span class="tex-text">\(17.5 \times 10^{6}\)</span></td> <td>1950</td> <td>1900</td> <td>1880</td> <td>1850</td> <td>1750</td> <td>1700</td> </tr> <tr> <td></td> <td><span class="tex-text">\(\left(1.2 \times 10^{5}\right)\)</span></td> <td>(162)</td> <td>(158)</td> <td>(156)</td> <td>(154)</td> <td>(145)</td> <td>(141)</td> </tr> <tr> <td>Tin bronze</td> <td><span class="tex-text">\(16 \times 10^{6}\)</span></td> <td>1900</td> <td>1850</td> <td>1830</td> <td>1800</td> <td>1700</td> <td>1650</td> </tr> <tr> <td></td> <td><span class="tex-text">\(\left(1.1 \times 10^{5}\right)\)</span></td> <td>(158)</td> <td>(154)</td> <td>(152)</td> <td>(149)</td> <td>(141)</td> <td>(137)</td> </tr> </tbody> </table></div> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(I=\left\{\begin{array}{ll}\frac{\cos \phi_{t} \sin \phi_{t}}{2 m_{N}} \frac{m_{G}}{m_{G}+1} &amp; \text { external gears } \\\frac{\cos \phi_{t} \sin \phi_{t}}{2 m_{N}} \frac{m_{G}}{m_{G}-1} &amp; \text { internal gears }\end{array}\right.\)</span> (14–23)</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(I=\frac{\cos 20^{\circ} \sin 20^{\circ}}{2} \frac{4}{4+1}=0.1286\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Pinion tooth bending. With the above estimates of <span class="tex-text">\(K_{s} \text { and } K_{m}\)</span> from the trial diametral pitch, we check to see if the mesh width F is controlled by bending or wear considerations. Equating Eqs. (14–15) and (14–17), substituting <span class="tex-text">\(n_{d} W^{t} \text { for } W^{t}\)</span> , and solving for the face width <span class="tex-text">\((F)_{\text {bend }}\)</span> necessary to resist bending fatigue, we obtain</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(\sigma=\left\{\begin{array}{ll}W^{t} K_{o} K_{v} K_{s} \frac{P_{d}}{F} \frac{K_{m} K_{B}}{J} &amp; \text { (U.S. customary units) } \\W^{t} K_{o} K_{v} K_{s} \frac{1}{b m_{t}} \frac{K_{H} K_{B}}{Y_{J}} &amp; \text { (SI units) }\end{array}\right.\)</span> (14–15)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(\sigma_{\text {all }}=\left\{\begin{array}{ll}\frac{S_{t}}{S_{F}} \frac{Y_{N}}{K_{T} K_{R}} &amp; \text { (U.S. customary units) } \\\frac{S_{t}}{S_{F}} \frac{Y_{N}}{Y_{\theta} Y_{Z}} &amp; \text { (SI units) }\end{array}\right.\)</span> (14–17)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\((F)_{\text {bend }}=n_{d} W^{t} K_{o} K_{v} K_{s} P_{d} \frac{K_{m} K_{B}}{J_{P}} \frac{K_{T} K_{R}}{S_{t} Y_{N}}\)</span> (1)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Equating Eqs. (14–16) and (14–18), substituting <span class="tex-text">\(n_{d} W^{t} \text { for } W^{t}\)</span>, and solving for the face width <span class="tex-text">\((F)_{\text {wear }}\)</span> necessary to resist wear fatigue, we obtain</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(\sigma_{c}=\left\{\begin{array}{ll}C_{p} \sqrt{W^{t} K_{o} K_{v} K_{s} \frac{K_{m}}{d_{P} F} \frac{C_{f}}{I}} &amp; \text { (U.S. customary units) } \\Z_{E} \sqrt{W^{t} K_{o} K_{v} K_{s} \frac{K_{H}}{d_{w 1} b} \frac{Z_{R}}{Z_{I}}} &amp; \text { (SI units) }\end{array}\right.\)</span> (14–16)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(\sigma_{c, \text { all }}=\left\{\begin{array}{ll}\frac{S_{c}}{S_{H}} \frac{Z_{N} C_{H}}{K_{T} K_{R}} &amp; \text { (U.S. customary units) } \\\frac{S_{c}}{S_{H}} \frac{Z_{N} Z_{W}}{Y_{\theta} Y_{Z}} &amp; \text { (SI units) }\end{array}\right.\)</span> (14–18)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\((F)_{\text {wear }}=\left(\frac{C_{p} Z_{N}}{S_{c} K_{T} K_{R}}\right)^{2} n_{d} W^{t} K_{o} K_{v} K_{s} \frac{K_{m} C_{f}}{d_{P} I}\)</span> (2)</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+From Table 14–5 the hardness range of Nitralloy 135M is Rockwell C32–36 (302–335 Brinell). Choosing a midrange hardness as attainable, using 320 Brinell. From Fig. 14–4,</p>
+ <p class="blog">
+&nbsp;</p>
+ <div class="table-overflow"><table  width="320"> <tbody> <tr> <td colspan="5" width="320">Table 14–5 Nominal Temperature Used in Nitriding and Hardnesses Obtained Source: Darle W. Dudley, Handbook of Practical Gear Design, rev. ed., McGraw-Hill, New York, 1984.</td> </tr> <tr> <td rowspan="2">Steel</td> <td rowspan="2"> Temperature Before Nitriding, °F</td> <td rowspan="2">Nitriding, °F</td> <td colspan="2">Hardness, Rockwell C Scale</td> </tr> <tr> <td>Case</td> <td>Core</td> </tr> <tr> <td><span class="tex-text">\(\text { Nitralloy } 135^{*}\)</span></td> <td>1150</td> <td>975</td> <td>62–65</td> <td>30–35</td> </tr> <tr> <td>Nitralloy 135M</td> <td>1150</td> <td>975</td> <td>62–65</td> <td>32–36</td> </tr> <tr> <td>Nitralloy N</td> <td>1000</td> <td>975</td> <td>62–65</td> <td>40–44</td> </tr> <tr> <td>AISI 4340</td> <td>1100</td> <td>975</td> <td>48–53</td> <td>27–35</td> </tr> <tr> <td>AISI 4140</td> <td>1100</td> <td>975</td> <td>49–54</td> <td>27–35</td> </tr> <tr> <td>31 Cr Mo V 9</td> <td>1100</td> <td>975</td> <td>58–62</td> <td>27–33</td> </tr> </tbody> </table></div> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(S_{t}=86.2(320)+12730=40310 psi\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Inserting the numerical value of <span class="tex-text">\(S_{t}\)</span> in Eq. (1) to estimate the face width gives</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\((F)_{\text {bend }}=2(2502)(1) 1.48(1.14) 4 \frac{1.247(1)(1) 0.885}{0.32(40310) 0.938}=3.08 \text { in }\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+From Table 14–6 for Nitralloy 135M, <span class="tex-text">\(S_{c}=170000\)</span> psi. Inserting this in Eq. (2), we find</p>
+ <p class="blog">
+&nbsp;</p>
+ <div class="table-overflow"><table  width="384"> <tbody> <tr> <td colspan="6" width="384">Table 14–6 Repeatedly Applied Contact Strength <span class="tex-text">\(S_{c} \text { at } 10^{7}\)</span> Cycles and 0.99 Reliability for Steel Gears Source: ANSI/AGMA 2001-D04.</td> </tr> <tr> <td rowspan="2">Material Designation</td> <td rowspan="2">Heat Treatment</td> <td rowspan="2"> Minimum Surface <span class="tex-text">\(\text { Hardness } 1\)</span></td> <td colspan="3">Allowable Contact Stress <span class="tex-text">\(\text { Number, }^{2}{ }^{\prime} S_{c}, \text { psi }\)</span></td> </tr> <tr> <td>Grade 1</td> <td>Grade 2</td> <td>Grade 3</td> </tr> <tr> <td><span class="tex-text">\(\text { Steel }^{3}\)</span></td> <td>Through <span class="tex-text">\(\text { hardened }{ }^{4}\)</span></td> <td>See Fig. 14–5</td> <td>See Fig. 14–5</td> <td>See Fig. 14–5</td> <td>—</td> </tr> <tr> <td rowspan="5"></td> <td><span class="tex-text">\(\text { Flame }^{5}\)</span> or induction</td> <td> 50 HRC</td> <td>170 000</td> <td>190 000</td> <td>—</td> </tr> <tr> <td><span class="tex-text">\(\text { hardened }^{5}\)</span></td> <td>54 HRC</td> <td>175 000</td> <td>195 000</td> <td>—</td> </tr> <tr> <td>Carburized and <span class="tex-text">\(\text { hardened }^{5}\)</span></td> <td><span class="tex-text">\(\text { See Table } 9^{*}\)</span></td> <td>180 000</td> <td>225 000</td> <td>275 000</td> </tr> <tr> <td><span class="tex-text">\(\text { Nitrided }^{5}\)</span> (through</td> <td>83.5 HR15N</td> <td>150 000</td> <td>163 000</td> <td>175 000</td> </tr> <tr> <td>hardened steels)</td> <td>84.5 HR15N</td> <td>155 000</td> <td>168 000</td> <td>180 000</td> </tr> <tr> <td>2.5% chrome (no aluminum)</td> <td><span class="tex-text">\(\text { Nitrided }^{5}\)</span></td> <td>87.5 HR15N</td> <td>155 000</td> <td>172 000</td> <td>189 000</td> </tr> <tr> <td>Nitralloy 135M</td> <td><span class="tex-text">\(\text { Nitrided }^{5}\)</span></td> <td>90.0 HR15N</td> <td>170 000</td> <td>183 000</td> <td>195 000</td> </tr> <tr> <td>Nitralloy N</td> <td><span class="tex-text">\(\text { Nitrided }^{5}\)</span></td> <td>90.0 HR15N</td> <td>172 000</td> <td>188 000</td> <td>205 000</td> </tr> <tr> <td>2.5% chrome (no aluminum)</td> <td><span class="tex-text">\(\text { Nitrided }^{5}\)</span></td> <td>90.0 HR15N</td> <td>176 000</td> <td>196 000</td> <td>216 000</td> </tr> </tbody> </table></div> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Notes: See ANSI/AGMA 2001-D04 for references cited in notes 1–5.</p>
+ <p class="blog">
+<span class="tex-text">\({ }^{1} \text { Hardness }\)</span> to be equivalent to that at the start of active profile in the center of the face width.</p>
+ <p class="blog">
+<span class="tex-text">\({ }^{2} \text { See }\)</span> Tables 7 through 10 for major metallurgical factors for each stress grade of steel gears.</p>
+ <p class="blog">
+<span class="tex-text">\({ }^{3} \text { The }\)</span> steel selected must be compatible with the heat treatment process selected and hardness required.</p>
+ <p class="blog">
+<span class="tex-text">\({ }^{4} \text { These }\)</span> materials must be annealed or normalized as a minimum.</p>
+ <p class="blog">
+<span class="tex-text">\({ }^{5} \text { The }\)</span> allowable stress numbers indicated may be used with the case depths prescribed in 16.1.</p>
+ <p class="blog">
+*Table 9 of ANSI/AGMA 2001-D04 is a comprehensive tabulation of the major metallurgical factors affecting <span class="tex-text">\(S_{t} \text { and } S_{c}\)</span> of carburized and hardened steel gears.</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\((F)_{\text {wear }}=\left(\frac{2300(0.900)}{170000(1) 0.885}\right)^{2} 2(2502) 1(1.48) 1.14 \frac{1.247(1)}{4.5(0.1286)}=3.44 \text { in }\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Make face width 3.50 in. Correct <span class="tex-text">\(K_{s} \text { and } K_{m}\)</span>:</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(K_{s}=1.192\left(\frac{3.50 \sqrt{0.309}}{4}\right)^{0.0535}=1.147\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\frac{F}{10 d_{p}}=\frac{3.50}{10(4.5)}=0.0778\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(C_{p f}=0.0778-0.0375+0.0125(3.50)=0.0841\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(K_{m}=1+(1)[0.0841(1)+0.175(1)]=1.259\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+The bending stress induced by <span class="tex-text">\(W^{t}\)</span> in bending, from Eq. (14–15), is</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\((\sigma)_{P}=2502(1) 1.48(1.147) \frac{4}{3.50} \frac{1.259(1)}{0.32}=19100 psi\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+The AGMA factor of safety in bending of the pinion, from Eq. (14–41), is</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(S_{F}=\frac{S_{t} Y_{N} /\left(K_{T} K_{R}\right)}{\sigma}=\frac{\text { fully corrected bending strength }}{\text { bending stress }}\)</span> (14–41)</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\left(S_{F}\right)_{P}=\frac{40310(0.938) /[1(0.885)]}{19100}=2.24\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Gear tooth bending. Use cast gear blank because of the 18-in pitch diameter. Use the same material, heat treatment, and nitriding. The load-induced bending stress is in the ratio of <span class="tex-text">\(J_{P} / J_{G}\)</span>. Then</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\((\sigma)_{G}=19100 \frac{0.32}{0.415}=14730 psi\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+The factor of safety of the gear in bending is</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\left(S_{F}\right)_{G}=\frac{40310(0.961) /[1(0.885)]}{14730}=2.97\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+Pinion tooth wear. The contact stress, given by Eq. (14–16), is</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\left(\sigma_{c}\right)_{P}=2300\left[2502(1) 1.48(1.147) \frac{1.259}{4.5(3.5)} \frac{1}{0.129}\right]^{1 / 2}=118000 psi\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+The factor of safety from Eq. (14–42), is</p>
+ <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+<span class="tex-text">\(S_{H}=\frac{S_{c} Z_{N} C_{H} /\left(K_{T} K_{R}\right)}{\sigma_{c}}=\frac{\text { fully corrected contact strength }}{\text { contact stress }}\)</span> (14–42)</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\left(S_{H}\right)_{P}=\frac{170000(0.900) /[1(0.885)]}{118000}=1.465\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+By our definition of factor of safety, pinion bending is <span class="tex-text">\(\left(S_{F}\right)_{P}=2.24\)</span>, and wear is <span class="tex-text">\(\left(S_{H}\right)_{P}^{2}=(1.465)^{2}=2.15\)</span>.</p>
+ <p class="blog">
+Gear tooth wear. The hardness of the gear and pinion are the same. Thus, from Fig. 14–12, <span class="tex-text">\(C_{H}=1\)</span>, the contact stress on the gear is the same as the pinion, <span class="tex-text">\(\left(\sigma_{c}\right)_{G}=\)</span> 118 000 psi. The wear strength is also the same, <span class="tex-text">\(S_{c}=170000\)</span> psi. The factor of safety of the gear in wear is</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(\left(S_{H}\right)_{G}=\frac{170000(0.929) /[1(0.885)]}{118000}=1.51\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+So, for the gear in bending, <span class="tex-text">\(\left(S_{F}\right)_{G}=2.97\)</span>, and wear <span class="tex-text">\(\left(S_{H}\right)_{G}^{2}=(1.51)^{2}=2.29\)</span>.</p>
+ <p class="blog">
+Rim. Keep <span class="tex-text">\(m_{B} \geq 1.2\)</span>. The whole depth is <span class="tex-text">\(h_{t}=\text { addendum }+\text { dedendum }=1 / P_{d}+\)</span> <span class="tex-text">\(1.25 / P_{d}=2.25 / \bar{P}_{d}=2.25 / 4=0.5625\)</span> in. The rim thickness <span class="tex-text">\(t_{R}\)</span> is</p>
+ <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(t_{R} \geq m_{B} h_{t}=1.2(0.5625)=0.675 \text { in }\)</span> <p class="blog">
+&nbsp;</p>
+ <p class="blog">
+In the design of the gear blank, be sure the rim thickness exceeds 0.675 in; if it does not, review and modify this mesh design.</p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="/tos">terms</a>
+                <a href="/privacy">privacy</a>
+                <a href="/contact-us">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="/assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>

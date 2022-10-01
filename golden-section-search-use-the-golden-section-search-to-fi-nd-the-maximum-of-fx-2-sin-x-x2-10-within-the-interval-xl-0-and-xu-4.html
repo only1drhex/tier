@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQPWWZGD1B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQPWWZGD1B');
+        </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7833742603914548"
+     crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/min/@ui.css">
+        <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-152x152-precomposed.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#10106d">
+        <meta name="msapplication-TileColor" content="#10106d">
+        <meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#10106d">
+        <link rel="canonical" href="https://vlavar.com/engineeringdb/golden-section-search-use-the-golden-section-search-to-fi-nd-the-maximum-of-fx-2-sin-x-x2-10-within-the-interval-xl-0-and-xu-4" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Vlavar" />
+        <meta property="article:publisher" content="admin@vlavar" />
+       <title>Golden-Section Search Use the golden-section search to fi nd the maximum of f(x) = 2 sin x - x^2/ 10 within the interval xl = 0 and xu = 4. [solved] | Vlavar Engineering</title>
+<meta property="og:title" content="Golden-Section Search Use the golden-section search to fi nd the maximum of f(x) = 2 sin x - x^2/ 10 within the interval xl = 0 and xu = 4.[solved!] | Vlavar Engineering" />
+<meta name="description" content="First, the golden ratio is used to create the two interior points d =frac{sqrt{5} - 1 }{2}(4 -0)= 2.472 &nbsp; x_1 = 0 + 2.472 ="/>
+<meta property="og:description" content="First, the golden ratio is used to create the two interior points d =frac{sqrt{5} - 1 }{2}(4 -0)= 2.472 &nbsp; x_1 = 0 + 2.472 =" />
+
+
+<meta name="twitter:description" content="First, the golden ratio is used to create the two interior points d =frac{sqrt{5} - 1 }{2}(4 -0)= 2.472 &nbsp; x_1 = 0 + 2.472 =" />
+<meta name="twitter:title" content="Golden-Section Search Use the golden-section search to fi nd the maximum of f(x) = 2 sin x - x^2/ 10 within the interval xl = 0 and xu = 4.[solved!] | Vlavar Engineering" />
+
+<meta property="article:published_time" content="2022-02-13T03:45:11+04:00" />
+        <meta property="og:url" content="https://vlavar.com/engineeringdb/golden-section-search-use-the-golden-section-search-to-fi-nd-the-maximum-of-fx-2-sin-x-x2-10-within-the-interval-xl-0-and-xu-4" />
+        <meta property="article:author" content="admin@vlavar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="admin@vlavar" />
+        <meta name="twitter:creator" content="admin@vlavar" />
+     
+    </head>
+    
+    <body>
+        <nav id="desktop" class="desktop">
+            <div id="desktop-container" class="container">
+                <h1 id="logo"><a href="/">Vlavar</a></h1>
+                <div id="desktop-menu" class="menu">
+                    <a href="/">Home</a>
+                    <a id="search">Search</a>
+                    <a href="/tour/1">Tour</a>
+                    <a href="/contact-us">Contact Us</a>
+                </div>
+                <button id="burger-button" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+        <nav id="mobile-navbar" class="mobile-nav">
+            <div class="one text-fade"><a class="nav-link" href="/">Home</a></div>
+            <div class="two text-fade"><a class="nav-link" id="search-mobile">Search</a></div>
+            <div class="three text-fade"><a class="nav-link" href="/tour/1">Tour</a></div>
+            <div class="four text-fade"><a class="nav-link" href="/contact-us">COntact Us</a></div>
+        </nav>
+    
+        <div id="container" class="container-items tour">
+            <div id="searchbox" class="searchbox">
+                <div class="search">
+                    <div class="icon"></div>
+                    <form class="form">
+                        <div class="input">
+                        <input type="text" id="x" placeholder="Find solutions to engineering problems " autocomplete="off" >
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="items question-block"> <span class="question">Guest Question. </span>
+            <p class="blog">Golden-Section Search</p> <p class="blog">Use the golden-section search to fi nd the maximum of</p> <span class="tex-text">\(f (x) = 2 \sin x - \frac{x^2}{10}\)</span> <p class="blog">within the interval <span class="tex-text">\(x_l = 0\)</span> and <span class="tex-text">\(x_u = 4\)</span>.</p>      
+    <!-- end -->
+            </div>
+    
+            <div class="items blog-solution">
+                <div class="admin"><span>Admin</span> <svg class="verified-badge" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" viewBox="0,0,24,24">
+                        <path
+                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                            fill="#1da1f2" />
+                    </svg> </div>
+    
+                <div class="solution">Solution</div>
+    
+            </div>
+    
+            <div class="items answer-block">
+                <p class="blog">
+First, the golden ratio is used to create the two interior points</p>
+ <span class="tex-text">\(d =\frac{\sqrt{5} &#8211; 1 }{2}(4 -0)= 2.472\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(x_1 = 0 + 2.472 = 2.472\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(x_2 = 4 &#8211; 2.472 = 1.528\)</span> <p class="blog">
+The function can be evaluated at the interior points</p>
+ <span class="tex-text">\(f (x_2) = f (1.528) = 2 sin(1.528) &#8211; \frac{1.528^2}{10} =1.765\)</span> <p class="blog">
+&nbsp;</p>
+ <span class="tex-text">\(f (x_1) = f (2.472) = 0.63\)</span> <p class="blog">
+Because <span class="tex-text">\(f(x_2) &gt; f(x_1)\)</span>, the maximum is in the interval defined by <span class="tex-text">\(x_l, x_2\)</span>, and <span class="tex-text">\(x_1 \)</span>. Thus, for the new interval, the lower bound remains <span class="tex-text">\(x_l = 0 \)</span>, and <span class="tex-text">\(x_1 \)</span> becomes the upper bound, that is, <span class="tex-text">\(x_u = 2.472 \)</span>. In addition, the former <span class="tex-text">\(x_2 \)</span> value becomes the new <span class="tex-text">\(x_1\)</span>, that is, <span class="tex-text">\(x_1 = 1.528 \)</span>. Further, we do not have to recalculate <span class="tex-text">\(f(x_1) \)</span> because it was determined on the previous iteration as <span class="tex-text">\(f(1.528) = 1.765\)</span>.</p>
+ <p class="blog">
+All that remains is to compute the new values of d and <span class="tex-text">\(x_2\)</span>,</p>
+ <span class="tex-text">\(d = \frac{\sqrt{5}- 1 }{2} (2.472 &#8211; 0)= 1.528\)</span> <p class="blog">
+The function evaluation at <span class="tex-text">\(x_2\)</span> is f(0.994) = 1.531. Since this value is less than the function value at <span class="tex-text">\(x_1\)</span>, the maximum is in the interval prescribed by <span class="tex-text">\(x_2, x_1\)</span>, and <span class="tex-text">\(x_u \)</span>. The process can be repeated, with the results tabulated below:</p>
+ <div class="table-overflow"><table  style="border-collapse: collapse;width: 540pt" border="0" width="720" cellspacing="0" cellpadding="0"> <tbody> <tr style="height: 14.25pt"> <td style="height: 14.25pt;width: 54pt" align="left" width="72" height="19">i</td> <td style="width: 54pt" align="left" width="72"><span class="tex-text">\(x_l\)</span></td> <td style="width: 54pt" align="left" width="72"><span class="tex-text">\(f(x_l)\)</span></td> <td style="width: 54pt" align="left" width="72"><span class="tex-text">\(x_2\)</span></td> <td style="width: 54pt" align="left" width="72"><span class="tex-text">\(f(x_2)\)</span></td> <td style="width: 54pt" align="left" width="72"><span class="tex-text">\(x_1\)</span></td> <td style="width: 54pt" align="left" width="72"><span class="tex-text">\(f(x_1)\)</span></td> <td style="width: 54pt" align="left" width="72"><span class="tex-text">\(x_u\)</span></td> <td style="width: 54pt" align="left" width="72"><span class="tex-text">\(f(x_u)\)</span></td> <td style="width: 54pt" align="left" width="72">d</td> </tr> <tr style="height: 15.0pt"> <td style="height: 15.0pt" align="right" height="20">1</td> <td align="right">0</td> <td align="right">0</td> <td class="xl63" align="right">1.5279</td> <td class="xl63" align="right">1.7647</td> <td align="right">2.4721</td> <td align="right">0.63</td> <td align="left">4<span class="font5">·</span><span class="font6">0000</span></td> <td align="right">&#8211; 3.1136</td> <td align="right">2.4721</td> </tr> <tr style="height: 14.25pt"> <td style="height: 14.25pt" align="right" height="19">2</td> <td align="right">0</td> <td align="right">0</td> <td align="right">0.9443</td> <td align="right">1.531</td> <td class="xl63" align="right">1.5279</td> <td class="xl63" align="right">1.7647</td> <td align="right">2.4721</td> <td align="right">0.6300</td> <td align="right">1.5279</td> </tr> <tr style="height: 14.25pt"> <td style="height: 14.25pt" align="right" height="19">3</td> <td align="right">0.9443</td> <td align="right">1.5310</td> <td class="xl63" align="right">1.5279</td> <td class="xl63" align="right">1.7647</td> <td align="right">1.8885</td> <td align="right">1.5432</td> <td align="right">2.4721</td> <td align="right">0.6300</td> <td align="right">0.9443</td> </tr> <tr style="height: 14.25pt"> <td style="height: 14.25pt" align="right" height="19">4</td> <td align="right">0.9443</td> <td align="right">1.5310</td> <td align="right">1.3050</td> <td align="right">1.7595</td> <td class="xl63" align="right">1.5279</td> <td class="xl63" align="right">1.7647</td> <td align="right">1.8885</td> <td align="right">1.5432</td> <td align="right">0.5836</td> </tr> <tr style="height: 14.25pt"> <td style="height: 14.25pt" align="right" height="19">5</td> <td align="right">1.3050</td> <td align="right">1.7595</td> <td class="xl63" align="right">1.5279</td> <td class="xl63" align="right">1.7647</td> <td align="right">1.6656</td> <td align="right">1.7136</td> <td align="right">1.8885</td> <td align="right">1.5432</td> <td align="right">0.3607</td> </tr> <tr style="height: 14.25pt"> <td style="height: 14.25pt" align="right" height="19">6</td> <td align="right">1.3050</td> <td align="right">1.7595</td> <td class="xl63" align="right">1.4427</td> <td class="xl63" align="right">1.7755</td> <td align="right">1.5279</td> <td align="right">1.7647</td> <td align="right">1.6656</td> <td align="right">1.7136</td> <td align="right">0.2229</td> </tr> <tr style="height: 14.25pt"> <td style="height: 14.25pt" align="right" height="19">7</td> <td align="right">1.3050</td> <td align="right">1.7595</td> <td align="right">1.3901</td> <td align="right">1.7742</td> <td class="xl63" align="right">1.4427</td> <td class="xl63" align="right">1.7755</td> <td align="right">1.5279</td> <td align="right">1.7647</td> <td align="right">0.1378</td> </tr> <tr style="height: 14.25pt"> <td style="height: 14.25pt" align="right" height="19">8</td> <td align="right">1.3901</td> <td align="right">1.7742</td> <td class="xl63" align="right">1.4427</td> <td class="xl63" align="right">1.7755</td> <td align="right">1.4752</td> <td align="right">1.7732</td> <td align="right">1.5279</td> <td align="right">1.7647</td> <td align="right">0.0851</td> </tr> </tbody> </table></div> <p class="blog">
+Note that the current maximum is highlighted for every iteration. After the eighth iteration, the maximum occurs at x = 1.4427 with a function value of 1.7755. Thus, the result is converging on the true value of 1.7757 at x = 1.4276.</p>
+ 
+    
+          <!-- end -->
+            </div>
+        </div>
+    
+    
+        <footer class="footer-bg footer-slct">
+            <div class="footer-top">
+                <a href="/tos">terms</a>
+                <a href="/privacy">privacy</a>
+                <a href="/contact-us">contact us</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2022 Vlavar Inc. All Rights Reserved.
+            </div>
+        </footer>    
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+        <script src="/assets/js/min/client-ui.js"></script>
+    </body>
+    
+    </html>
